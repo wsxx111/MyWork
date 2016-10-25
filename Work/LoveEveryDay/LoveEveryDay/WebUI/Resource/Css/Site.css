@@ -23,6 +23,7 @@
 }
 
 .web-right {
+    padding: 0px;
     height: 100%;
     position: relative;
     z-index: 0;
@@ -169,7 +170,7 @@
     }
 
 @media (min-width: 791px) {
-    .nav-left li:hover>ul {
+    .nav-left li:hover > ul {
         display: block;
     }
 }
@@ -221,7 +222,6 @@
         .nav-left > li > ul ul {
             display: none;
         }
- 
 }
 
 
@@ -231,24 +231,55 @@
     height: 40px;
     /*background: #fafafa;*/
     line-height: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
     border-bottom: 1px solid #b9b6b6;
 }
 
-    .content-tabs .btn, .btn-group {
+    .page-tabs-right {
+        display:inline-block;
+        width:100%;
+        height:100%;
+        padding:0px;
+        margin:0xp;
+    }
+
+    .content-tabs .btn {
+        display:inline;
+        height: 102%;
+        position: absolute;
+        z-index:1000;
+        border-radius: 0px;
+        outline: 0;
+        margin: 0px;
+    }
+
+    .content-tabs .btn-group {
+        width: 96px;
         height: 100%;
         position: absolute;
         border-radius: 0px;
         outline: 0;
+         z-index:1000;
+        margin: 0px;
+        right: 64px;
+    }
+
+
+    .content-tabs .roll-btn-left {
+        /*margin-left:0px;*/
+        width: 43px;
+        left: -1px;
+        z-index: 350;
     }
 
     .content-tabs .roll-btn-right {
+        /*margin-left:0px;*/
+        width: 43px;
         right: 160px;
     }
 
-    .content-tabs .roll-group-right {
-        right: 160px;
+    .content-tabs .roll-group-right li{
+        cursor:pointer;
     }
 
     .content-tabs .roll-link-right {
@@ -263,6 +294,7 @@ nav.page-tabs {
     margin-left: 40px;
     width: 100000px;
     height: 40px;
+    left:0px;
     overflow: hidden;
 }
 
@@ -274,7 +306,8 @@ nav.page-tabs {
     display: block;
     text-decoration: none;
     float: left;
-    border-right: solid 2px #eee;
+    border-left: solid 1px #b9b6b6;
+    border-right: solid 1px #eee;
     padding: 0px 15px;
     /*line-height:69px;*/
 }
@@ -294,6 +327,7 @@ nav.page-tabs {
     display: inline-block;
     min-width: 10px;
     padding: 1px 5px 0px 4px;
+    margin-left: 5px;
     font-size: 17px;
     font-weight: bold;
     line-height: 1;

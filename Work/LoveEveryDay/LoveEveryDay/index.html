@@ -12,7 +12,7 @@
             outline: 1px solid red;
         }
     </style>
-    <title>凯世界</title>
+    <title>凯的世界</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -26,7 +26,7 @@
                     </button>
                     <div class="navbar-brand"><span class="glyphicon glyphicon-heart red"></span>&nbsp;&nbsp;&nbsp;凯的世界</div>
                 </div>
-                <div class="navbar-text"></div>           
+                <div class="navbar-text"></div>
 
                 <div class="collapse navbar-collapse navbar-right res">
                     <ul class="nav navbar-nav">
@@ -50,9 +50,9 @@
                     <div id="adminInfo">
                     </div>
                     <div id="menu">
-                         <ul class="nav-left">
+                        <ul class="nav-left">
                             <li>正在加载...</li>
-                        </ul>            
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -60,60 +60,36 @@
             <div class="col-xs-10 row-in">
                 <div class="web-right">
                     <div class="content-tabs">
-                        <button class="btn btn-default roll-left">
+                        <button class="btn btn-default roll-btn-left">
                             <i class="glyphicon glyphicon-backward"></i>
                         </button>
-                        <nav class="page-tabs WK_menuTabs">
+                        <nav class="page-tabs">
                             <div class="page-tabs-content">
-                                <a href="javascript:;" class="active" data-id="index.html">首页</a>
-                                <!--<a href="javascript:;" class="" data-id="index1.html">基本表单
+                                <a href="pageMain.html" class="active" target="frameRight" data-id="pageMain.html">主页</a>
+                                <!--  <a href="javascript:;" target=\"frameRight\" class="" data-id="index1.html">基本表单1
                                     <span class="close-badge"><i>&times;</i></span>
                                 </a>
-                                <a href="javascript:;"  data-id="index2.html">基本表单
+                                <a href="javascript:;" target=\"frameRight\"  data-id="index2.html">基本表单2
                                     <span class="close-badge"><i>&times;</i></span>
-                                </a>
-                                <a href="javascript:;" class="" data-id="index_v1.html">基本表单
-                                    <span class="close-badge"><i>&times;</i></span>
-                                </a>
-                                <a href="javascript:;" class="" data-id="index_v1.html">基本表单
-                                    <span class="close-badge"><i>&times;</i></span>
-                                </a>
-                                <a href="javascript:;" class="" data-id="index_v1.html">基本表单
-                                    <span class="close-badge"><i>&times;</i></span>
-                                </a>
-                                <a href="javascript:;" class="" data-id="index_v1.html">基本表单
-                                    <span class="close-badge"><i>&times;</i></span>
-                                </a>
-                                <a href="javascript:;" class="" data-id="index_v1.html">基本表单
-                                    <span class="close-badge"><i>&times;</i></span>
-                                </a>
-                                <a href="javascript:;" class="" data-id="index_v1.html">基本表单
-                                    <span class="close-badge"><i>&times;</i></span>
-                                </a>
-                                <a href="javascript:;" class="" data-id="index_v1.html">基本表单
-                                    <span class="close-badge"><i>&times;</i></span>
-                                </a>-->
+                                </a>      -->
                             </div>
-                        </nav>
-                        <button class="btn btn-default roll-btn-right">
-                            <i class="glyphicon glyphicon-forward"></i>
-                        </button>
-                        <div class="btn-group roll-group-right">
-                            <button type="button" class="btn btn-default " data-toggle="dropdown">
-                                关闭操作&nbsp;<span class="caret"></span>
+                        </nav>                       
+                            <button class="btn btn-default roll-btn-right">
+                                <i class="glyphicon glyphicon-forward"></i>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li class=""><a>定位当前选项卡</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li class=""><a>关闭全部选项卡</a>
-                                </li>
-                                <li class=""><a>关闭其他选项卡</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="login.html" class="btn btn-default roll-link-right"><i class=""></i>退出</a>
-                    </div>
+                            <div class="btn-group roll-group-right">
+                                <button type="button" class="btn btn-default " data-toggle="dropdown">
+                                    关闭操作&nbsp;<span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">                                   
+                                    <li class=""><a id="tabs_close" href="javascript:void(0)">关闭全部选项卡</a>
+                                    </li>
+                                    <li class=""><a id="tabs_otherclose" href="javascript:void(0)">关闭其他选项卡</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="login.html" class="btn btn-default roll-link-right"><i class=""></i>退出</a>
+                        </div>                   
                     <div class="content-main">
                         <iframe id="frameRight" name="frameRight" height="100%" width="100%" src="pageMain.html" frameborder="0" data-id="pageMain.html" seamless></iframe>
                     </div>
@@ -136,6 +112,7 @@
 <script src="WebUI/Resource/Javascript/bootstrap.min.js"></script>
 <script src="WebUI/Resource/Javascript/menulist.js?v=1.0"></script>
 <script src="WebUI/Resource/Javascript/loadnavlist.js?v=1.0"></script>
+<script src="WebUI/Resource/Javascript/wk-tabs.js?v=1.0"></script>
 
 <script type="text/javascript">
     var win = document.getElementById('frameRight').contentWindow;
@@ -146,15 +123,17 @@
         docHeight = $(docum).height(),
         windowHeight = $(win).height();
         scrollPercent = (scrollTo / (docHeight - windowHeight)) * 100;
-        scrollPercent = scrollPercent.toFixed(1);
-        $('#parcentNum').text(scrollPercent + "%");
+        if (scrollPercent > 0) {
+            scrollPercent = scrollPercent.toFixed(1);
+            $('#parcentNum').text(scrollPercent + "%");
+        }
     }).trigger('scroll');
 
 
 </script>
 <script type="text/javascript">
     $(function () {
-      
 
-    }); 
+
+    });
 </script>

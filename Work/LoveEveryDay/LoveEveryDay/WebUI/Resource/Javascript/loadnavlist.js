@@ -8,7 +8,7 @@ function generateNavHtml(menuList) {
                 innerhtml += "<li><a href=\"javascript:void(0);\"><span>" + menuList.subMenuList[j].title + "</span>";
             }
             else {
-                innerhtml += "<li><a href=\"" + menuList.subMenuList[j].url + "\" target=\"frameRight\"><span>" + menuList.subMenuList[j].title + "</span>";
+                innerhtml += "<li><a class=\"Wk_menuItem\" href=\"" + menuList.subMenuList[j].url + "\" target=\"frameRight\"><span>" + menuList.subMenuList[j].title + "</span>";
             }
             if (menuList.subMenuList[j].subMenuList != "undefined" && menuList.subMenuList[j].subMenuList != null && menuList.subMenuList[j].subMenuList.length > 0) {
                 innerhtml += "<i class=\"glyphicon glyphicon-chevron-right\"></i></a>";
@@ -58,6 +58,7 @@ function browserCheck() {
             });
         });
 
+
         $(".nav-left>li li>a").each(function (index, data) {
             $(data).on('touchstart', function (event) {
                 if ($(data).children("i").hasClass("glyphicon-chevron-right")) {
@@ -72,6 +73,10 @@ function browserCheck() {
                     $(data).next("ul").slideUp();
                     $(data).children("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
                 }
+                if ($(data).children("i").length == 0) {
+                    $(".nav-left>li").find("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+                    $(".nav-left").find("ul").slideUp(500);
+                }
                 event.stopPropagation();
 
             });
@@ -80,12 +85,12 @@ function browserCheck() {
 
     } else {
         // alert('PC端');
-            
+
         if ($(window).width() < 791) {
             forPcLittleScreen();
         }
         $(window).resize(function () {
-            window.location.reload();            
+            window.location.reload();
         });
     }
 }
@@ -123,9 +128,28 @@ function forPcLittleScreen() {
                 $(data).next("ul").slideUp();
                 $(data).children("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
             }
+            if ($(data).children("i").length == 0) {
+                $(".nav-left>li").find("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+                $(".nav-left").find("ul").slideUp(500);
+            }
             event.stopPropagation();
         });
     })
+
+    //末节点折叠
+    //$(".nav-left>li li").each(function (index, data) {
+    //    $(data).on('click', function (event) {
+    //        alert(2);
+    //        if ($(data).children("i").length < 0) {
+    //            alert(1);
+    //        }
+
+
+    //        // $(data).siblings().find("a").children("i").removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-right");
+    //        // $(data).siblings().find("ul").slideUp();
+    //        event.stopPropagation();
+    //    });
+    //});
 }
 
 
@@ -139,24 +163,28 @@ function forPcLittleScreen() {
 
             }
             else {
-                menuLiList += "<li><div class=\"" + menuList[i].iconClass + "\"></div><a href=\"" + menuList[i].url + "\" target=\"frameRight\"><span>" + menuList[i].title + "</span></a>";
+                menuLiList += "<li><div class=\"" + menuList[i].iconClass + "\"></div><a class=\"Wk_menuItem\" href=\"" + menuList[i].url + "\" target=\"frameRight\"><span>" + menuList[i].title + "</span></a>";
             }
             menuLiList += generateNavHtml(menuList[i]);
             menuLiList += "</li>";
         }
     }
-    else {
 
-    }
     menuLiList += "</ul>"
 
     if (menuLiList != "") {
-        console.log(menuLiList);
-
+        // console.log(menuLiList);
         document.getElementById("menu").innerHTML = menuLiList;
     }
 
     browserCheck();
+
+    //折叠式失去焦点
+    $(".nav-left li").on('click touchstart', function (event) {
+
+        //  return false;
+    });
+
 })()
 
 

@@ -10,143 +10,185 @@
     //outerWidth(true) 方法返回元素的宽度（包括内边距、边框和外边距）。
     //<div style="width:300px;height:100px;padding:10px;margin:5px;border:2px solid red"></div>
     // width():300px    innerWidth():(300+10+10)px    outerWidth():(300+10+10+2+2)px   outerWidth(true) (300+10+10+2+2+5+5)px
-    function getElemWidth(elems) {
-        var k = 0;
-        $(elems).each(function () {
-            k += $(this).outerWidth(true)
+
+
+    $(".Wk_menuItem").on("click touchstart", function () {
+        var $_this = $(this);
+        var noTab = true;
+        var $tabActive = "";
+        //获取当前激活tab   判断是否是新tab
+        $(".page-tabs-content>a").each(function (index, data) {
+            if ($(data).attr("href") == $_this.attr("href") && $(data).html().split("<span")[0] == $_this.children("span").text()) {
+                noTab = false;
+                $tabActive = $(data);
+            }
         });
-        return k;
-    }
 
-    function setTabPositionLeft(elems) {
-        var o = getElemWidth($(elems).prevAll()),
-        q = getElemWidth($(elems).nextAll());
-        var l = getElemWidth($(".content-tabs").children().not(".WK_menuTabs"));
-        var k = $(".content-tabs").outerWidth(true) - l;
-        var p = 0;
-        if ($(".page-tabs-content").outerWidth() < k) {
-            p = 0
-        } else {
-            if (q <= (k - $(elems).outerWidth(true) - $(elems).next().outerWidth(true))) {
-                if ((k - $(elems).next().outerWidth(true)) > q) {
-                    p = o;
-                    var m = n;
-                    while ((p - $(elems).outerWidth()) > ($(".page-tabs-content").outerWidth() - k)) {
-                        p -= $(elems).prev().outerWidth();
-                        m = $(elems).prev()
-                    }
+        if (noTab) {
+            //新tab
+            $(".page-tabs-content>a").removeClass("active");
+            var tabHtml = "<a class=\"active\" target=\"frameRight\" href=\"" + $_this.attr("href") + "\"  data-id=\"" + $_this.attr("href") + "\">" + $_this.children("span").text() + "<span class=\"close-badge\"><i>&times;</i></span></a>";
+            $(tabHtml).insertAfter($(".page-tabs-content").children("a:last-child"));
+            $("#frameRight").attr("src", $_this.attr("href"));
+
+            //删除tab    
+            $(".page-tabs-content>a>span").unbind("click");
+            $(".page-tabs-content>a>span").unbind("touchstart");
+            $(".page-tabs-content>a>span").on("click touchstart", function () {
+                var $nextO = $(this).parent().prev();
+                if ($(this).parent().hasClass("active")) {
+                    $(".page-tabs-content>a").removeClass("active");
+                    $nextO.addClass("active");
+                    $("#frameRight").attr("src", $nextO.attr("href"));
                 }
-            } else {
-                if (o > (k - $(elems).outerWidth(true) - $(elems).prev().outerWidth(true))) {
-                    p = o - $(elems).prev().outerWidth(true)
-                }
-            }
+                $(this).parent().remove();
+                MoveTab();
+                return false;
+            });
         }
-        $(".page-tabs-content").animate({
-            marginLeft: 0 - p + "px"
-        },
-        "fast");
-    }
+        else {
 
-    function setTabPositionRight() {
-        var o = Math.abs(parseInt($(".page-tabs-content").css("margin-left")));
-        var l = getElemWidth($(".content-tabs").children().not(".WK_menuTabs"));
-        var k = $(".content-tabs").outerWidth(true) - l;
-        var p = 0;
-        if ($(".page-tabs-content").width() < k) {
-            return false
-        } else {
-            var m = $(".WK_menuTabs:first");
-            var n = 0;
-            while ((n + $(m).outerWidth(true)) <= o) {
-                n += $(m).outerWidth(true);
-                m = $(m).next();
-            }
-            n = 0;
-            if (getElemWidth($(m).prevAll()) > k) {
-                while ((n + $(m).outerWidth(true)) < (k) && m.length > 0) {
-                    n += $(m).outerWidth(true);
-                    m = $(m).prev()
-                }
-                p = getElemWidth($(m).prevAll())
-            }
-        }
-        $(".page-tabs-content").animate({
-            marginLeft: 0 - p + "px"
-        },
-        "fast");
-    }
+            $(".page-tabs-content>a").removeClass("active");
+            $tabActive.addClass("active");
+            $("#frameRight").attr("src", $_this.attr("href"));
 
-    function b() {
-        var o = Math.abs(parseInt($(".page-tabs-content").css("margin-left")));
-        var l = f($(".content-tabs").children().not(".WK_menuTabs"));
-        var k = $(".content-tabs").outerWidth(true) - l;
-        var p = 0;
-        if ($(".page-tabs-content").width() < k) {
-            return false
-        } else {
-            var m = $(".J_menuTab:first");
-            var n = 0;
-            while ((n + $(m).outerWidth(true)) <= o) {
-                n += $(m).outerWidth(true);
-                m = $(m).next()
-            }
-            n = 0;
-            while ((n + $(m).outerWidth(true)) < (k) && m.length > 0) {
-                n += $(m).outerWidth(true);
-                m = $(m).next()
-            }
-            p = f($(m).prevAll());
-            if (p > 0) {
-                $(".page-tabs-content").animate({
-                    marginLeft: 0 - p + "px"
-                },
-                "fast")
-            }
         }
-    }
 
-    $(".Wk_menuItem").each(function (k) {
-        if (!$(this).attr("data-index")) {
-            $(this).attr("data-index", k)
-        }
+        $(".page-tabs-content>a").unbind("click");
+        $(".page-tabs-content>a").unbind("touchstart");
+        $(".page-tabs-content>a").on("click touchstart", function () {
+            $(".page-tabs-content>a").removeClass("active");
+            $(this).addClass("active");
+            $("#frameRight").attr("src", $(this).attr("href"));
+
+
+        })
+        MoveTab();
+
+        return false;
     });
 
-    function c() {
-        var o = $(this).attr("href"),
-        m = $(this).data("index"),
-        l = $.trim($(this).text()),
-        k = true;
-        if (o == undefined || $.trim(o).length == 0) {
-            return false
-        }
-        $(".J_menuTab").each(function () {
-            if ($(this).data("id") == o) {
-                if (!$(this).hasClass("active")) {
-                    $(this).addClass("active").siblings(".J_menuTab").removeClass("active");
-                    g(this);
-                    $(".J_mainContent .J_iframe").each(function () {
-                        if ($(this).data("id") == o) {
-                            $(this).show().siblings(".J_iframe").hide();
-                            return false
-                        }
-                    })
+
+
+
+    //切换tab    
+    $(".roll-btn-left").on("click touchstart", function () {
+        $(".page-tabs-content>a").each(function (index, data) {
+            if ($(data).hasClass("active")) {
+                if ($(data).prev().length > 0) {
+                    $(".page-tabs-content>a").removeClass("active");
+                    $(data).prev().addClass("active");
+                    $("#frameRight").attr("src", $(data).prev().attr("href"));
+                    MoveTab();
                 }
-                k = false;
-                return false
             }
         });
-        if (k) {
-            var p = '<a href="javascript:;" class="active J_menuTab" data-id="' + o + '">' + l + ' <i class="fa fa-times-circle"></i></a>';
-            $(".J_menuTab").removeClass("active");
-            var n = '<iframe class="J_iframe" name="iframe' + m + '" width="100%" height="100%" src="' + o + '" frameborder="0" data-id="' + o + '" seamless></iframe>';
-            $(".J_mainContent").find("iframe.J_iframe").hide().parents(".J_mainContent").append(n);
-            $(".J_menuTabs .page-tabs-content").append(p);
-            g($(".J_menuTab.active"))
-        }
-        return false
-    }
+        return false;
+    });
 
+
+    $(".roll-btn-right").on("click touchstart", function () {
+        $(".page-tabs-content>a").each(function (index, data) {
+            if ($(data).hasClass("active")) {
+                if ($(data).next().length > 0) {
+                    $(".page-tabs-content>a").removeClass("active");
+                    $(data).next().addClass("active");
+                    $("#frameRight").attr("src", $(data).next().attr("href"));
+                    MoveTab();
+                    return false;
+                }
+
+            }
+        });
+        return false;
+    });
+
+    //关闭所有
+    $("#tabs_close").on("click touchstart", function () {
+        var $firstTab = $(".page-tabs-content>a:first");
+        $firstTab.addClass("active");
+        $("#frameRight").attr("src", $firstTab.attr("href"));
+        $(".page-tabs-content>a:not(:first)").remove();
+        MoveTab();
+    });
+
+    //关闭其他所有
+    $("#tabs_otherclose").on("click touchstart", function () {
+        $(".page-tabs-content>a").each(function (index, data) {
+            if ($(data).hasClass("active")) {
+                $(".page-tabs-content>a:not(:eq(" + index + "),:eq(0))").remove();
+            }
+            MoveTab();
+        });
+    });
+
+    var startX, sX, moveX, last_Tab, leftSc = 104;
+    $(".page-tabs").on({
+        touchstart: function (e) {
+            startX = parseInt($(this).css("left")) - e.originalEvent.targetTouches[0].pageX;
+            last_Tab = $(".page-tabs-content>a:last");
+            if ($(window).width() > 790) {
+                leftSc = 180;
+            }
+
+
+            return false;
+        },
+        touchmove: function (e) {
+            e.preventDefault();
+            moveX = e.originalEvent.targetTouches[0].pageX;          
+            if (parseInt($(this).css("left")) <= 0 && last_Tab.offset().left >= leftSc) {
+                $(this).css({
+                    "left": moveX + startX > 0 ? 0 : moveX + startX
+                });
+            }
+            return false;
+        },
+        touchend: function (e) {
+            if (last_Tab.offset().left < leftSc) {
+                $(this).css({
+                    "left": parseInt($(this).css("left")) + 30
+                });
+            }
+            return false;
+        }
+
+    });
 
 
 }()
+
+function getWidth($elem) {
+    return $elem.outerWidth();
+}
+
+
+
+function MoveTab() {
+    $(".page-tabs-content>a").each(function (index, data) {
+        if ($(data).hasClass("active")) {
+            var leftWidth = getAvailWidth($(data)) - getAllPrev($(data));
+            if (leftWidth <= 0) {
+                $(".page-tabs").css("left", leftWidth + "px");
+            }
+            else {
+                $(".page-tabs").css("left", "0px");
+            }
+        }
+    });
+}
+
+function getAllPrev($elem) {
+    var allWidth = getWidth($elem);
+    $elem.prevAll().each(function (index, data) {
+        allWidth += getWidth($(data));
+    });
+    return allWidth;
+}
+function getAvailWidth() {
+    var visiWidth = getWidth($(".content-tabs")) - getWidth($(".roll-btn-left")) - getWidth($(".roll-link-right")) - getWidth($(".roll-btn-right"));
+    if (!$(".roll-group-right").is(":hidden")) {
+        visiWidth -= getWidth($(".roll-group-right"));
+    }
+    return visiWidth;
+}
