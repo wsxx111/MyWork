@@ -1,0 +1,14 @@
+﻿body {
+    padding: 3px;
+    padding-bottom: 20px;
+    background: rgb(224,253,254);
+}
+
+.detail li,a {
+    background-color: #f19855 !important;
+}
+
+img {
+    width: 100% !important;
+    height: auto;
+}
