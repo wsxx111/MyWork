@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\library\bin\library.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\library\bin\library.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\library\obj\Debug\library.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\library\obj\Debug\library.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\library\obj\Debug\library.pdb

@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\bin\Debug\TestForm.dll
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\bin\Debug\TestForm.pdb
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\obj\Debug\TestForm.UserControl1.resources
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\obj\Debug\TestForm.dll
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\obj\Debug\TestForm.pdb
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\bin\Debug\FrameworkOfGoodMan.Tools.dll
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\bin\Debug\FrameworkOfGoodMan.Tools.pdb
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestForm\bin\Debug\FrameworkOfGoodMan.Tools.xml

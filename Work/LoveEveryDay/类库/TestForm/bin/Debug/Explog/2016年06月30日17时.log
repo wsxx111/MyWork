@@ -1,0 +1,6 @@
+Log Entry : 2016年06月30日 17:06:03
+方法:Void button1_Click(System.Object, System.EventArgs),异常信息:尝试除以零。
+------------------------------------
+Log Entry : 2016年06月30日 17:06:53
+方法:Void button1_Click(System.Object, System.EventArgs),异常信息:尝试除以零。
+------------------------------------

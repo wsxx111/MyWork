@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\bin\Debug\DesignMethod.dll
+C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\bin\Debug\DesignMethod.pdb
+C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\obj\Debug\DesignMethod.dll
+C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\obj\Debug\DesignMethod.pdb
+C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\obj\Debug\DesignMethod.csprojResolveAssemblyReference.cache

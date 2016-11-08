@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\bin\TestWeb.dll
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\bin\TestWeb.pdb
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\obj\Debug\TestWeb.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\obj\Debug\TestWeb.dll
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\obj\Debug\TestWeb.pdb
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\bin\FrameworkOfGoodMan.Tools.xml
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\bin\FrameworkOfGoodMan.Tools.dll
+C:\Users\user\Desktop\FrameworkOfGoodMan\TestWeb\bin\FrameworkOfGoodMan.Tools.pdb

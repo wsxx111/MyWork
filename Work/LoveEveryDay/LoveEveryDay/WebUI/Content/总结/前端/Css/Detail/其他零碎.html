@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <title></title>
+</head>
+<body>
+  <div>
+
+      <p>
+          <strong>calc()</strong> = calc(四则运算)
+      </p>
+      <p>
+          <strong>用于动态计算长度值。</strong>
+      </p>
+      <ul>
+          <li class="g-color-light">需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)； </li>
+          <li class="g-color-light">
+              <ul>
+                  <li>任何长度值都可以使用calc()函数进行计算； </li>
+                  <li>calc()函数支持 &quot;+&quot;, &quot;-&quot;, &quot;*&quot;, &quot;/&quot; 运算； </li>
+                  <li>calc()函数使用标准的数学运算优先级规则； </li>
+              </ul>
+              .test {<br />
+              &nbsp;&nbsp; &nbsp;width: calc(100% - 50px);<br />
+              &nbsp;&nbsp; &nbsp;background: #eee;<br />
+              } </li>
+      </ul>
+      <p>
+          <strong>toggle()&nbsp; 允许子孙元素使用取值序列中的值循环替换继承而来的值。</strong>
+      </p>
+      <p>
+          ul { list-style-type: toggle(disk, circle, square, box); }
+      </p>
+      <p>
+          em { font-style: toggle(italic, normal); }
+      </p>
+      <p>
+          在上述代码中，定义一个多级的ul，第一级使用disk markers，子孙级依次使用circle, square, box。 
+      </p>
+      <p>
+          但目前支持性还不好 没有支持的 
+      </p>
+      CSS Counters其实就是一计数器，早期在CSS中计数器仅存在于<code>ul</code>和<code>ol</code>元素。如果要使用在<code>div</code>这样的元素上，只能通过<code>list-style-image</code>或者是元素的<code>backgroud-image</code>来实现,在<a href="http://www.w3.org/TR/CSS2/" target="_blank">CSS2.1的规范</a>中介绍了一种新技术，允许开发人员使用伪类<code>:after</code>、<code>:before</code>或者伪元素<code>::after</code>、<code>::before</code>给任何元素创建自动递增计数器——类似于列表中的项目符号(<code>list-style-type</code>)。<code>counter-reset</code>主要功能用来标识计数器作用域，而且此值必须用在选择器上，必且是不能缺少的。共包括两个部分，第一个部分是自定义计数器名称，这一部分是必需的。第二部分是计数器起始值，此值是可选的。默认值为<code>0</code>。此值告诉标识组起始值是什么，所以说这个值非常有价值。因为，如果你设置的值为<code>0</code>，那么计数从<code>1</code>开始；如果你设置的值是<code>-5</code>，那么计数从<code>-4</code>开始。依此类推。</p>
+      <p>
+          <code>counter-reset</code>自定义计数器名称时可以随意取名，但此名不能是CSS的关键词，比如<code>none</code>、<code>inherit</code>之类。</p>
+      <p>
+          <code>counter-reset</code>属性可以包含一个或者多个计数器标识符，每个后面都可以跟一个整数值，如<code>section 0 heading 0</code>。如果元素都重置，并且增加一个计数器，计数器是第一次重置，后面值就会递增。如果不止一次指定同一个计算器，则将按指定的计数器做递增。</p>
+      <p>
+          <code>counter-increment</code>属性是用来标识计数器与实际相关联元素范围。其第一个值是必需的，获取<code>counter-reset</code>定义的标识符。</p>
+      <p>
+          <code>counter-ncrement</code>第二个值是一个可选值，是一个整数值，可以是正整数，也可以是负整数。主要用来预设递增的值，如果取值为负值时，表示递减。默认值为<code>1</code></p>
+      <p>
+          <code>content</code>是和伪类<code>:before</code>、<code>:after</code>或者伪元素<code>::before</code>、<code>::after</code>配合在一起使用，主要功能用来生成内容</p>
+      <p>
+          <code>counter()</code>是一个函数，其主要配合<code>content</code>一起使用。使用<code>counter()</code>来调用定义好的计数器标识符。</p>
+      <p>
+          <code>counter()</code>函数接受两个参数，而且两参数之间使用逗号(<code>,</code>)来分隔。第一个参数是<code>counter-increment</code>定义的属性值<code>&lt;identifier&gt;</code>,用来告诉该文档插入的计数器标识符名称是什么。第二个是用来设置计数器的风格，有点类似于<code>list-style-type</code>。默认情况之下取值为十制，但你也可以重置这个样式风格，比如<code>upper-roman</code>或者<code>upper-alpha.</code></p>
+      <p>
+          <code>counter()</code>函数第二个值与列表中的<code>list-style-type</code>值相等：</p>
+      <ul>
+          <li>disc</li>
+          <li>circle</li>
+          <li>square</li>
+          <li>decimal</li>
+          <li>decimal-leading-zero</li>
+          <li>lower-roman</li>
+          <li>upper-roman</li>
+          <li>lower-greek</li>
+          <li>lower-latin</li>
+          <li>upper-latin</li>
+          <li>armenian</li>
+          <li>georgian</li>
+          <li>lower-alpha</li>
+          <li>upper-alpha</li>
+          <li>none</li>
+          <li>inherit</li>
+      </ul>
+      <p>
+          同样的，可以使用多个<code>counter()</code>，如：<code>content: counter(Chapter,upper-roman) &quot;-&quot; counter(section,upper-roman);</code>。</p>
+      <h3>第一步：设置计数器</h3>
+      <p>
+          要使用CSS Counters生成自动计数器，首要条件就是通过<code>counter-reset</code>属性先声明一个计数器名称，这个名称是什么名字并不重要，重要的是你声明了这样的一个名。如:</p>
+      <pre class="css"><code class="css"><span class="tag">dl</span> <span class="rules">{
+  <span class="rule"><span class="attribute">counter-reset</span>:<span class="value"> term;</span></span>
+<span class="rule">}</span></span></code></pre>
+      <h3>第二步：声明计数器</h3>
+      <p>
+          <code>counter-reset</code>只是定义了一个计数器标识符，在实际使用中，需要通过<code>counter-increment</code>属性来指定计数器作用域。针对这个示例来说,<code>counter-reset</code>只是定义了一个计数器标识符，但没有指定用到哪。换句话说，这个计数器标识符，可以用到任何标签元素上。</p>
+      <p>
+          在这个示例中，如果要使用<code>dt</code>标签上使用<code>counter-reset</code>声明好的计数器，需要使用<code>counter-increment</code>来显式设置：</p>
+      <pre class="perl"><code class="perl">dl {
+  counter-<span class="keyword">reset</span>: term;
+
+  dt{
+    counter-increment: term;
+  }
+}</code></pre>
+      <h3>第三步：显示计数器</h3>
+      <p>
+          上面两步下来，不见任何成效。如果要让<code>dt</code>标签前面生成自己需要看到的计数器，还需要通过<code>:before</code>、<code>content</code>和<code>counter()</code>：</p>
+      <pre class="ruby"><code class="ruby">dl {
+  counter-<span class="symbol">reset:</span> term;
+
+  dt{
+    counter-<span class="symbol">increment:</span> term;
+
+    &amp;<span class="symbol">:before</span>{
+      <span class="symbol">content:</span> counter(term) <span class="string">&quot;:&quot;</span>;
+      margin-<span class="symbol">right:</span><span class="number">5</span>px;
+    }
+  }
+}
+</code></pre>
+      <strong>attr()<br />
+      插入元素的属性值。在CSS2.1中attr()总是返回一个字符串。在CSS3中attr()可以返回多种不同的类型。<br />
+      <br />
+      </strong><code>a:after {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; content: &quot;(&quot;attr(href)&quot;)&quot;;
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 12px;
+      <br />
+&nbsp;&nbsp;&nbsp;&nbsp; }
+      <br />
+      &lt;a href=&quot;http://css.doyoe.com/&quot;&gt;CSS参考手册&lt;/a&gt;</code>
+      <pre class="perl"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAAA9CAIAAACLNYNcAAAFbklEQVR4nO2dP3LiMBTG34modBcOoIo7UHAAU+QEDDegUO9uizTszDZmMsy6yuxMUmy2YCbLIm/hf7IsGwtsGTnfzK9IxMuzMPr4nh5KQvFF3snxr/z+W377Jb//lse/92YbnQ0n4mL0aYDpQfenePmUz29ysVg8v8mXz6Emulgshr4XYcCIiIhvxn5VwCTpQWwTczYABgJiA8AR3pSRAPgOnA0AR0Bsj4OYExHRLDiMPRMwCCgja0TrJ6IV0YroyeG6x0cOkwfOpnHYMYPG9gFbsfV+yOsuGc3F6E8fDAjEpiG2xHaRPg6xgfvxrIwMeVbgrYiHlYfElsikB/N4a56K2PYByyMLyoAyj3KJfcBWXMSC29SiENv08cnZ9gHb5ssx5JqELMRmzpNrQ6HUodHZQk6rfJelzifTZ/pttH4yWWUNMSe2vB4GPMYnsVUQvJ+6Ts/TvYysRiqi2gdMEarYEm3bLCttQuKM2PTxqoxU+oQrs4/dn6ez2LQkSnmZlZGWU5rB2aaOR84mtur+53Zna89jJTZzfXiL2LBn+wJ4Krb6Tqz7nu1qHpOEBF/p44cdI6OoIDZgxKcyUmkMsl1QdySLBklrHrNfKQ3MIuCwY4ZyFGIDRjxytmkDsU0fiO1RwHGtyeNTGTl1cBB54sDZAHAExAaAI1BGAuAIOBsAjoDYHos5JQ91aMvxfOaUWJ0RtY0fF5SRDhEJUTIXyhfVgCVLZoFF/NBo81myXucQJTNKiBKi8iphkFBdP833wTZ+XL6os70GLGHrV8d5omSmLALNMcIgIZaEneONGJK0jlul6lds+juLMk7c4r7Zxo8IxOYwT5TM0te++KL+UMf4BnoTm+mK/YqtsUBtuTntd+mO++YG38rIaH2mvPgoV/nhg+WDxN+VwZMQp2ycfUQyTuVRZKg+FF/kOzcnt82TfULN1h3Xt60YNry87KbIQDrLqHE8+xGevf2rtVzTfFKxLVklSXuecp61bC27wSbTa8Im3u516RevnE3whOikv7kePhgl+UGn14DleksVmAngnav6MTvSOy/zKPHWeW54UTfcYnmFQekwG15Zx1bOlukwHa+agHE+qczSS6vXbcqz4WWBV8YLg/g39Ylx/ertN6RzPMTWDVUMJdH6XLqZjC/ilAkydaR8XPBrIhEn1Zqi9Tn71jbPLdi+l5eIe8VWLPS50kswzqdSRgpdbPU8Fe+qVXQtzmbr8zfsSEfBozKyuugLBE8qYivCLEWiFqiVsvDxxKb08bQKzVpsDYZgLbZ6Hm2S1cozhthuw5WzHT4YneuHdHWx3epspZUZrvtQYpur+6I7nW1gsbU0J66Ibagyckw8Elu6H6vrQZyoca/VJJJY8Fqqyt5PG7fJk81quAaJKra51ntoanY3fdjQsEZbGiRlwnaxGZvy1WcxWoNkpD+v5FEZKWOtB1gu+qJVWO8i5j+riURtPJZqUbua3URrziOtN+LFR0MdgtUG47KmCrVRqa7m+nibIZjmYyu2+FK2LusNSYvWf4db1zn+sGRENM7v6frkbNNG6yuOzljzGdLWZHyRseAQG7hSd32F+QzfGjksmc+tf5yN7BEcRB7wILLgNN6HbDGcDQBnQGwAOAJlJACOgLMB4AifxBYGjPAPX4C3+FdG4o+ZAk/xydkyBB+xewvAzUBsADjCvzISYgOe4qGz4Z90Aj/xUGwXmZ/dRlsS+ISHZSScDfiJh86GPRvwE4gNAEd4WEZCbMBP4GwAOMI/seG4FvAUn8pIHEQGXtOHs53ljz/y+U3++COP5/GfEgCPSQ9i+/lPHs/y5VMez/Lnv/GfEgCPSQ9iAwB0AWIDwBEQGwCO+A+lysB9SLN7FAAAAABJRU5ErkJggg==" />
+</pre>
+      <p>
+          &nbsp;</p>
+      <p>
+          &nbsp;</p>
+
+  </div>
+</body>
+</html>
