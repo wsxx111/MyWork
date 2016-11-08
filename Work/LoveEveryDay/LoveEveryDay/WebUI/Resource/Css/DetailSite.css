@@ -1,11 +1,13 @@
 ﻿body {
     padding: 3px;
+    font-family: 'Microsoft YaHei';
     padding-bottom: 20px;
     background: rgb(224,253,254);
 }
 
 .detail li,a {
     background-color: #f19855 !important;
+    font-family: 'Microsoft YaHei';
 }
 
 img {

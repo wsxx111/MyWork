@@ -72,7 +72,7 @@
                                 <i class="glyphicon glyphicon-forward"></i>
                             </button>
                             <div class="btn-group roll-group-right">
-                                <button type="button" class="btn btn-default " data-toggle="dropdown">
+                                <button type="button" class="btn btn-new-black2" data-toggle="dropdown">
                                     关闭操作&nbsp;<span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">                                   
@@ -112,13 +112,14 @@
     var win = document.getElementById('frameRight').contentWindow;
     var targetElem = document.getElementById('frameRight').contentWindow.document
     var docum = document.getElementById('frameRight').contentWindow.document;
-    $(win).scroll(function () {
+    $(win).scroll(function () {       
         var scrollTo = $(win).scrollTop(),
         docHeight = $(docum).height(),
         windowHeight = $(win).height();
         scrollPercent = (scrollTo / (docHeight - windowHeight)) * 100;
+        console.log(scrollPercent);
         if (scrollPercent > 0) {
-            scrollPercent = scrollPercent.toFixed(1);
+            scrollPercent = scrollPercent.toFixed(1);           
             $('#parcentNum').text(scrollPercent + "%");
         }
     }).trigger('scroll');

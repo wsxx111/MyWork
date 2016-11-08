@@ -81,7 +81,9 @@
     <Content Include="WebUI\Content\总结\前端\Css\Detail\其他零碎.html" />
     <Content Include="WebUI\Content\总结\前端\Css\Detail\媒体查询详解.html" />
     <Content Include="WebUI\Content\总结\前端\Css\Less\less.html" />
-    <None Include="WebUI\Content\总结\前端\Css\Less\test.less" />
+    <None Include="WebUI\Content\总结\前端\Css\Less\site.less" />
+    <Content Include="WebUI\Content\总结\前端\Css\Less\less.js" />
+    <Content Include="WebUI\Content\总结\前端\Css\Less\site.css" />
     <Content Include="WebUI\Content\总结\前端\Html\Detail\html头部.html" />
     <Content Include="WebUI\Content\总结\前端\Html\Detail\单位.html" />
     <Content Include="WebUI\Content\总结\前端\jQuery\Detail\jQuery工具.html" />
