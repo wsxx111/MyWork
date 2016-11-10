@@ -42,6 +42,12 @@ var menuList = [{
                                 "iconClass": "",
                                 "url": "/WebUI/Content/总结/前端/Css/Css基础列表.html"
                             },
+                            {
+                                "title": "Css动画",
+                                "iconClass": "",
+                                "url": "/WebUI/Content/总结/前端/Css/Css动画/Css动画.html"
+                            },
+
                              {
                                  "title": "Less",
                                  "iconClass": "",
@@ -160,7 +166,7 @@ var menuList = [{
                            {
                                "title": "sql平时总结",
                                "iconClass": "",
-                               "url": "sql平时总结.html"
+                               "url": "WebUI/Content/总结/数据库/SQL数据库/Sql Server/sqlserver.html"
                            },
                        {
                            "title": "mysql平时总结",
