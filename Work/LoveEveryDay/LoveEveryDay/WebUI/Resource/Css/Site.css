@@ -283,9 +283,13 @@
     color: #b9b6b6;
 }
 
-    .content-tabs .roll-group-right li {
-        cursor: pointer;
-    }
+.content-tabs .roll-btn-right:hover,.content-tabs .roll-btn-left:hover {
+    color:#fff;
+}
+
+.content-tabs .roll-group-right li {
+    cursor: pointer;
+}
 
 .btn-new-black {
     background-color: #343434;
@@ -357,12 +361,33 @@ nav.page-tabs {
     padding-bottom: 44px;
 }
 
-.page-tabs a.active {
-    background: #1f1f1f;
+.page-tabs a {
+    background-color: #343434;
     border-left: 1px solid white;
     color: #a7b1c2;
 }
-
-    .page-tabs a.active i:hover, .page-tabs a.active:hover {
-        color: #fff;
+    .page-tabs a:hover {
+    background-color: #222;
+    color:#fff;
     }
+
+    .page-tabs a.active {
+        background: black;
+        border-left: 1px solid white;
+        color: red;
+    }
+
+.btn-new-black2 {
+    background-color: #343434;
+    color: #a7b1c2;
+    padding: 10px 12px;    
+    line-height: 1.3333333;
+    border: none;
+}
+    .btn-new-black2:hover {
+    color:#fff;
+    }
+
+.page-tabs a.active i:hover, .page-tabs a.active:hover {
+    color: #fff;
+}

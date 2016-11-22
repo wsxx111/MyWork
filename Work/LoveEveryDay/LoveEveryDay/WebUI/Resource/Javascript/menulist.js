@@ -1,4 +1,4 @@
-var menuList = [{
+﻿var menuList = [{
     "title": "主页",
     "iconClass": "glyphicon glyphicon-home",
     "url": "WebUI/Content/MainPage.html"
@@ -45,7 +45,7 @@ var menuList = [{
                             {
                                 "title": "Css动画",
                                 "iconClass": "",
-                                "url": "/WebUI/Content/总结/前端/Css/Css动画/Css动画.html"
+                                "url": "/WebUI/Content/总结/前端/Css/Css动画/页面核心切换/test.html"
                             },
 
                              {
@@ -123,7 +123,12 @@ var menuList = [{
                                 "title": "C#类库",
                                 "iconClass": "",
                                 "url": "C#类库.html"
-                            }
+                            },
+                       {
+                           "title": "C#正则.html",
+                           "iconClass": "",
+                           "url": "/WebUI/Content/总结/后端/CSharp/CSharp正则表达式.html"
+                       }
                        ]
                    },
                     {

@@ -135,6 +135,82 @@
                     </p>
                 </li>
                 <li>
+                    <h4>窗口函数</h4>
+                    <p>
+                        SQL Server提供了4个排名函数:ROW_NUMBER(), RANK(), DENSE_RANK()和 NTILE()。下面通过示例重点谈谈这四个函数的使用。
+                    </p>
+                    <div>
+                        <i>1、ROW_NUMBER()</i>
+                        返回结果集分区内行的序列号，每个分区的第一行从 1 开始。ORDER BY 子句可确定在特定分区中为行分配唯一 ROW_NUMBER 的顺序。
+                        <br />
+                        ROW_NUMBER() OVER(ORDER BY Score DESC) AS '序号',
+                        <br />
+                        with cv as(select Winner,Phone,WinTime,ROW_NUMBER() OVER(ORDER BY WinTime desc) as cc
+                        <br />
+                        from [Glht_Activity_test].[dbo].[HDDZPWinner])
+                        <br />
+                        select *
+                        <br />
+                        from cv
+                        <br />
+                        where cc between 2 and 6     
+                        <br />
+                        <i>1   2   3   4    5    6    7    8 </i>
+                    </div>
+                    <div>
+                        <i>2、RANK()函数 </i>
+                        返回结果集的分区内每行的排名。行的排名是相关行之前的排名数加一。如果两个或多个行与一个排名关联，则每个关联行将得到相同的排名。
+                        <br />
+                        RANK() OVER(ORDER BY Score DESC) AS '序号'
+                        <br />
+                        RANK函数和ROW_NUMBER函数类似，它们都是用来对结果进行排序。<br />
+                        不同的是，ROW_NUMBER函数为每一个值生成唯一的序号，而RANK函数为相同的值生成相同的序号。 
+                        <i>1   2   3   4   4   6   7 </i>
+                    </div>
+                    <div>
+                        <i>DENSE_RANK()函数</i>
+                        RANK() OVER(ORDER BY Score DESC) AS '序号'
+                        <br />
+                        返回结果集分区中行的排名，在排名中没有任何间断。行的排名等于所讨论行之前的所有排名数加一。如果有两个或多个行受同一个分区中排名的约束，则每个约束行将接收相同的排名。 
+                        <br />
+                        <i>1   2   3   4    4   5   6</i>
+                    </div>
+                    <div>
+                        <i>NTILE()</i>
+                        NTILE函数把结果中的行关联到组，并为每一行分配一个所属的组的编号，编号从一开始。对于每一个行，NTILE 将返回此行所属的组的编号。
+如果分区的行数不能被 integer_expression 整除，则将导致一个成员有两种大小不同的组。按照 OVER 子句指定的顺序，较大的组排在较小的组前面。<br />
+                        NTILE(6) OVER(ORDER BY ClassId DESC) AS '组编号' <br />
+                        <i>1  2  3  3  3  4  5  5   6  6  6  6  6  7   8  9 </i>
+                        <i>
+                        1  2  3  （组编号：1） &nbsp;&nbsp;    3  3  4   （组编号：2） <br />  
+                        5  5  6  （组编号：3） &nbsp;&nbsp;    6  6  6   （组编号：4）<br />  
+                        6  7  8  （组编号：5） &nbsp;&nbsp;    9     （组编号：6）</i>  
+
+                    </div>
+                </li>
+                <li>
+                    <h4>分区函数</h4>
+                    <p>partition  by关键字是分析性函数的一部分，它和聚合函数不同的地方在于它能返回一个分组中的多条记录，而聚合函数一般只有一条反映统计值的记录，partition  by用于给结果集分组，如果没有指定那么它把整个结果集作为一个分组</p>
+                    <div>
+                        学号 班级 成绩<br/>
+                        不按照班进行成绩排名：select *,row_number() over(order by Score desc) as Sequence from Student<br/>
+                        分班后进行成绩排名：select *,row_number() over(partition by Grade order by Score desc) as Sequence from Student<br/><br/>
+                        语法形式：row_number() over (partition by COL1 order by COL2)<br/>
+解释：根据COL1分组，在分组内部根据 COL2排序，而此函数计算的值就表示每组内部排序后的顺序编号（组内连续的唯一的) <br/>
+                    </div>
+                </li>
+                <li>
+                    <h4>数据库中含有完全重复的行</h4>
+                    <p>
+                        删除数据库中完全重复的行,其他重复数据只剩下一条
+                    </p>
+                    <div>
+                        with ss as( select * ,row_number() over(partition by id order by id desc) as no<br />  
+                         from [cc].[dbo].[sametable]) <br />  
+                        delete  from ss  where ss.no!=1
+                    </div>                 
+                </li>
+                <li>
                     <h4>多行变一行的问题</h4>
                     <p>
                         <img src="images/t3.png" alt="" />变成<img src="images/t4.png" alt="" />
@@ -171,7 +247,8 @@
                     <p>非递归公用表表达式（CTE）是查询结果仅仅一次性返回一个结果集用于外部查询调用。并不在其定义的语句中调用其自身的CTE</p>
 
                     <div>
-                        WITH expression_name [ ( column_name [,...n] ) ] <br />
+                        WITH expression_name [ ( column_name [,...n] ) ]
+                        <br />
                         AS ( CTE_query_definition )<br />
                         <br />
                         with exp as( select * from t1)
@@ -179,7 +256,7 @@
                         select id,name from exp
                     </div>
                     <p>一个with可以定义多个CTE</p>
-                     <div>
+                    <div>
                         with v1 as ( select * from t1),v2 as ( select * from t2)
                         <br />
                         select id,name from v1 join v2 on v1.id=v2.id
@@ -518,7 +595,7 @@
             if ($(".forMore").is(":hidden")) {
                 $(".forMore").slideDown();
                 setTimeout(function () { $(".forMore").slideUp(); }, 4000);
-            }          
+            }
         })
         $(".list-tip ul li h4").on("click", function () {
             $(this).nextAll().slideToggle();

@@ -1,1 +1,104 @@
-body{font-family:'Microsoft YaHei'}.forMore{padding:10px;border-bottom:1px solid black}.forMore a{display:inline-block;background:#ff6a00;margin:5px;line-height:25px;padding:6px;color:white;text-decoration:none}pre{padding:5px;border-radius:4px;background-color:#e8e6e6;margin-bottom:10px;font-size:14px;font-family:'Microsoft YaHei'}h3{padding:5px;color:white;background-color:#20860c}h4{padding:5px;color:white;background-color:#936a2a}.fun-list{border:1px solid #e8e6e6;padding:5px;border-radius:4px;background-color:#eee}.fun-list>a{text-decoration:none;display:inline-block;line-height:20px;padding:6px;background-color:#936a2a;color:white;margin:5px}.fun-list ~ h5{font-weight:bold}.nav-right{position:fixed;right:0;top:100px;height:auto;width:60px;background-color:#808080;opacity:.8;padding:5px}.nav-right .txtbar{width:50px;cursor:pointer;margin:2px;line-height:20px;font-weight:bold;display:inline-block;font-size:14px;color:#ff6a00}.nav-right ul{margin:0;list-style:none;padding:0}.nav-right ul li{margin-bottom:3px;padding:4px;background-color:#ff6a00}.nav-right ul li:hover{background-color:#936a2a}.nav-right ul li a{color:white;font-weight:bold;text-decoration:none}
+body {
+    font-family: 'Microsoft YaHei';
+}
+
+.forMore {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+    .forMore a {
+        display: inline-block;
+        background: #ff6a00;
+        margin: 5px;
+        line-height: 25px;
+        padding: 6px;
+        color: white;
+        text-decoration: none;
+    }
+
+pre {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #e8e6e6;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+}
+
+h3 {
+    padding: 5px;
+    color: white;
+    background-color: #20860c;
+}
+
+h4 {
+    padding: 5px;
+    color: white;
+    background-color: #936a2a;
+}
+
+.fun-list {
+    border: 1px solid #e8e6e6;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+    .fun-list > a {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 20px;
+        padding: 6px;
+        background-color: #936a2a;
+        color: white;
+        margin: 5px;
+    }
+
+    .fun-list ~ h5 {
+        font-weight: bold;
+    }
+
+.nav-right {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    height: auto;
+    width: 60px;
+    background-color: #808080;
+    opacity: .8;
+    padding: 5px;
+}
+
+    .nav-right .txtbar {
+        width: 50px;
+        cursor: pointer;
+        margin: 2px;
+        line-height: 20px;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 14px;
+        color: #ff6a00;
+    }
+
+    .nav-right ul {
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+        .nav-right ul li {
+            margin-bottom: 3px;
+            padding: 4px;
+            background-color: #ff6a00;
+        }
+
+            .nav-right ul li:hover {
+                background-color: #936a2a;
+            }
+
+            .nav-right ul li a {
+                color: white;
+                font-weight: bold;
+                text-decoration: none;
+            }
