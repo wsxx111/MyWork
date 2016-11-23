@@ -82,6 +82,11 @@
                                  "iconClass": "",
                                  "url": "WebUI/Content/总结/前端/jQuery/jquery基础.html"
                              },
+                             {
+                                 "title": "jQuery插件",
+                                 "iconClass": "",
+                                 "url": "WebUI/Content/总结/前端/jQuery/jQuery插件学习/jQuery插件.html"
+                             },
                               {
                                   "title": "jQuery框架",
                                   "iconClass": "",

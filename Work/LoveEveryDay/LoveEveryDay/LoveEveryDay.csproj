@@ -169,6 +169,9 @@
     <Content Include="WebUI\Content\总结\前端\jQuery\jquery基础.html" />
     <Content Include="WebUI\Content\总结\前端\Html\Html基础列表.html" />
     <Content Include="WebUI\Content\总结\前端\Html\Detail\meta讲解.html" />
+    <Content Include="WebUI\Content\总结\前端\jQuery\jQuery插件学习\jQuery插件.html" />
+    <Content Include="WebUI\Content\总结\前端\jQuery\jQuery插件学习\myplu.js" />
+    <Content Include="WebUI\Content\总结\前端\jQuery\jQuery插件学习\test.html" />
     <Content Include="WebUI\Content\总结\后端\CSharp\CSharp正则表达式.html" />
     <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t1.png" />
     <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t2.png" />
@@ -202,6 +205,9 @@
     <Content Include="WebUI\Resource\Css\siteCss\icons.css" />
     <Content Include="WebUI\Resource\Css\siteCss\normalize.css" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\codelight.js" />
+    <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\highlight.js" />
+    <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\highlightstyle.css" />
+    <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\newtest.html" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\scripts\clipboard.swf" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\scripts\shBrushAS3.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\scripts\shBrushBash.js" />
@@ -244,6 +250,9 @@
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\styles\shThemeMidnight.css" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\styles\shThemeRDark.css" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\test.html" />
+    <Content Include="WebUI\Resource\Javascript\plugins\tuodong\index.html" />
+    <Content Include="WebUI\Resource\Javascript\plugins\tuodong\js\ddsort.js" />
+    <Content Include="WebUI\Resource\Javascript\plugins\tuodong\js\jquery-1.11.0.min.js" />
     <Content Include="WebUI\Resource\Javascript\site-menu.js" />
     <Content Include="WebUI\Resource\Javascript\sitejs\classie.js" />
     <Content Include="WebUI\Resource\Javascript\sitejs\mlpushmenu.js" />

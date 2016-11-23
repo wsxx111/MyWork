@@ -1,16 +1,43 @@
-﻿body {
-    padding: 3px;
-    font-family: 'Microsoft YaHei';
-    padding-bottom: 20px;
-    background: rgb(224,253,254);
+﻿
+.detail li, a {
+    background-color: #f19855 !important; 
 }
 
-.detail li,a {
-    background-color: #f19855 !important;
+
+body {
+    width: 100%;
     font-family: 'Microsoft YaHei';
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin: 10px auto;
+    padding: 5px;
+    max-width: 900px;
+}
+
+pre,code {
+    max-width: 900px;   
+    word-break: break-all !important;
+}
+
+
+h3 {
+    color: #851c11;
+}
+
+p {  
+    text-indent: 20px;
 }
 
 img {
-    width: 100% !important;
-    height: auto;
+    padding: 3px;
+    width: 100%;
+    max-width: 800px;
+    margin: 2px auto;
+}
+
+ul {
+    list-style: decimal;
 }
