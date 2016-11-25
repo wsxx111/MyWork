@@ -158,14 +158,48 @@ $('a').myPlugin({
             注意到上面代码调用extend时会将defaults的值改变，这样不好，因为它作为插件因有的一些东西应该维持原样，另外就是如果你在后续代码中还要使用这些默认值的话，当你再次访问它时它已经被用户传进来的参数更改了。
         </p>
         <h4>保护好默认参数</h4>
-        <p>一个好的做法是将一个新的空对象做为$.extend的第一个参数，defaults和用户传递的参数对象紧随其后，这样做的好处是所有值被合并到这个空对象上，保护了插件里面的默认值。</p>
+        <p>一个好的做法是将一个新的空对象做为$.extend的第一个参数，defaults和用户传递的参数对象紧随其后，这样做的好处是所有值被合并到这个空对象上，保护了插件里面的默认值。建议在写JQuery插件时，定义默认属性时，都用defaults变量来代表默认属性，这样的代码更具有可读性。</p>
         <pre>
             <code>
 var settings = $.extend({},defaults, options);//将一个空对象做为第一个参数
             </code>
         </pre>
         <p>到此，插件可以接收和处理参数后，就可以编写出更健壮而灵活的插件了。若要编写一个复杂的插件，代码量会很大，如何组织代码就成了一个需要面临的问题，没有一个好的方式来组织这些代码，整体感觉会杂乱无章，同时也不好维护，所以将插件的所有方法属性包装到一个对象上，用面向对象的思维来进行开发，无疑会使工作轻松很多</p>
-        <h3>面向对象的插件开发</h3>
+      <h4>jQuery.fn.extend()和jQuery.extend()</h4>
+         <p>jQuery.extend(object) ,一个参数的用于扩展jQuery类本身，也就是用来在jQuery类/命名空间上增加新函数，或者叫静态方法，例如jQuery内置的 ajax方法都是用jQuery.ajax()这样调用的，有点像 “类名.方法名” 静态方法的调用方式。下面我们也来写个jQuery.extend(object)的例子：</p>
+        <pre>
+            <code>
+        //扩展jQuery对象本身
+        jQuery.extend({
+            "minValue": function (a, b) {
+                ///<summary>
+                /// 比较两个值，返回最小值
+                ///</summary>
+                return a < b ? a : b;
+            },
+            "maxValue": function (a, b) {
+                ///<summary>
+                /// 比较两个值，返回最大值
+                ///</summary>
+                return a > b ? a : b;
+            }
+        });
+        //调用
+        var i = 100; j = 101;
+        var min_v = $.minValue(i, j); // min_v 等于 100
+        var max_v = $.maxValue(i, j); // max_v 等于 101
+            </code>
+        </pre>
+        <p>jQuery.fn.extend(object)扩展 jQuery 元素集来提供新的方法（通常用来制作插件）。首先我们来看fn 是什么东西呢。查看jQuery代码，就不难发现。</p>
+        <pre>
+            <code>
+      jQuery.fn = jQuery.prototype = {
+　　　init: function( selector, context ) {.....};
+};
+            </code>
+        </pre>
+        <p>原来 jQuery.fn = jQuery.prototype，也就是jQuery对象的原型。那jQuery.fn.extend()方法就是扩展jQuery对象的原型方法。我们知道扩展原型上的方法，就相当于为对象添加”成员方法“，类的”成员方法“要类的对象才能调用，所以使用jQuery.fn.extend(object)扩展的方法， jQuery类的实例可以使用这个“成员函数”。</p>
+         <h3>面向对象的插件开发</h3>
         <p>为什么要有面向对象的思维，因为如果不这样，你可能需要一个方法的时候就去定义一个function，当需要另外一个方法的时候，再去随便定义一个function，同样，需要一个变量的时候，毫无规则地定义一些散落在代码各处的变量。</p>
         <p>如果将需要的重要变量定义到对象的属性上，函数变成对象的方法，当我们需要的时候通过对象来获取，一来方便管理，二来不会影响外部命名空间，因为所有这些变量名还有方法名都是在对象内部。</p>
         <pre>
@@ -327,6 +361,62 @@ var foo=function(){
         return beautifier.beautify();
     }
 })(jQuery, window, document);
+            </code>
+        </pre>
+        <p>
+            有些时候，我们的插件需要一些私有方法，不能被外界访问。例如 我们插件里面需要有个方法 来检测用户调用插件时传入的参数是否符合规范。
+        </p>
+        <pre>
+            <code>
+  //闭包限定命名空间
+;(function ($) {
+    $.fn.extend({
+        "highLight": function (options) {
+            //检测用户传进来的参数是否合法
+            if (!isValid(options))
+                return this;
+            var opts = $.extend({}, defaluts, options); //使用jQuery.extend 覆盖插件默认参数
+            return this.each(function () {  //这里的this 就是 jQuery对象。这里return 为了支持链式调用
+                //遍历所有的要高亮的dom,当调用 highLight()插件的是一个集合的时候。
+                var $this = $(this); //获取当前dom 的 jQuery对象，这里的this是当前循环的dom
+                //根据参数来设置 dom的样式
+                $this.css({
+                    backgroundColor: opts.background,
+                    color: opts.foreground
+                });
+                //格式化高亮文本
+                var markup = $this.html();
+                markup = $.fn.highLight.format(markup);
+                $this.html(markup);
+            });
+
+        }
+    });
+    //默认参数
+    var defaluts = {
+        foreground: 'red',
+        background: 'yellow'
+    };
+    //公共的格式化 方法. 默认是加粗，用户可以通过覆盖该方法达到不同的格式化效果。
+    $.fn.highLight.format = function (str) {
+        return "<strong>" + str + "</strong>";
+    }
+    //私有方法，检测参数是否合法
+    function isValid(options) {
+        return !options || (options && typeof options === "object") ? true : false;
+    }
+})(window.jQuery);
+     
+
+
+            //调用
+        //调用者覆盖 插件暴露的共公方法
+        $.fn.highLight.format = function (txt) {
+            return "<em>" + txt + "</em>"
+        }
+        $(function () {
+            $("p").highLight({ foreground: 'orange', background: '#ccc' }); //调用自定义 高亮插件
+        });
             </code>
         </pre>
         <h3>关于变量定义及命名</h3>

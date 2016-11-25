@@ -64,8 +64,10 @@
   <ItemGroup>
     <Content Include="default.html" />
     <Content Include="N级纯css展示菜单%28原型版%29.html" />
+    <Content Include="test.html" />
     <Content Include="Web.config" />
     <Content Include="WebUI\Content\MainPage.html" />
+    <Content Include="WebUI\Content\总结\前端\Bootstrap\index.html" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\3d切换\css\custom.css" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\3d切换\css\demo.css" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\3d切换\css\slicebox.css" />
@@ -124,10 +126,8 @@
     <Content Include="WebUI\Content\总结\前端\Css\Detail\Css选择符.html" />
     <Content Include="WebUI\Content\总结\前端\Css\Detail\其他零碎.html" />
     <Content Include="WebUI\Content\总结\前端\Css\Detail\媒体查询详解.html" />
-    <Content Include="WebUI\Content\总结\前端\Css\Less\less.html" />
     <None Include="WebUI\Content\总结\前端\Css\Less\site.less" />
     <Content Include="WebUI\Content\总结\前端\Css\Less\less.js" />
-    <Content Include="WebUI\Content\总结\前端\Css\Less\site.css" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\显示左侧\css\component.css" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\显示左侧\css\demo.css" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\显示左侧\css\icons.css" />
@@ -161,6 +161,7 @@
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\页面切换参考\js\jquery.dlmenu.js" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\页面切换参考\js\modernizr.custom.js" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\页面切换参考\js\pagetransitions.js" />
+    <Content Include="WebUI\Content\总结\前端\Css\Less\less.html" />
     <Content Include="WebUI\Content\总结\前端\Html\Detail\html头部.html" />
     <Content Include="WebUI\Content\总结\前端\Html\Detail\单位.html" />
     <Content Include="WebUI\Content\总结\前端\jQuery\Detail\jQuery工具.html" />
@@ -172,6 +173,11 @@
     <Content Include="WebUI\Content\总结\前端\jQuery\jQuery插件学习\jQuery插件.html" />
     <Content Include="WebUI\Content\总结\前端\jQuery\jQuery插件学习\myplu.js" />
     <Content Include="WebUI\Content\总结\前端\jQuery\jQuery插件学习\test.html" />
+    <Content Include="WebUI\Content\总结\前端\Other\clipboard.html" />
+    <Content Include="WebUI\Content\总结\前端\Zepto\t1.png" />
+    <Content Include="WebUI\Content\总结\前端\Zepto\test.html" />
+    <Content Include="WebUI\Content\总结\前端\Zepto\Zepto.html" />
+    <Content Include="WebUI\Content\总结\前端\Zepto\zepto.js" />
     <Content Include="WebUI\Content\总结\后端\CSharp\CSharp正则表达式.html" />
     <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t1.png" />
     <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t2.png" />
@@ -204,6 +210,9 @@
     <Content Include="WebUI\Resource\Css\siteCss\font-css.css" />
     <Content Include="WebUI\Resource\Css\siteCss\icons.css" />
     <Content Include="WebUI\Resource\Css\siteCss\normalize.css" />
+    <Content Include="WebUI\Resource\Javascript\DetailSite.js" />
+    <Content Include="WebUI\Resource\Javascript\plugins\clipboard\clipboard.js" />
+    <Content Include="WebUI\Resource\Javascript\plugins\clipboard\clipboard.min.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\codelight.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\highlight.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\syntaxhighlighter\highlightstyle.css" />
@@ -288,6 +297,10 @@
     <Content Include="WebUI\Resource\Css\fonts\linecons\linecons.eot" />
     <Content Include="WebUI\Resource\Css\fonts\linecons\linecons.ttf" />
     <Content Include="WebUI\Resource\Css\fonts\linecons\linecons.woff" />
+    <Content Include="WebUI\Content\总结\前端\Zepto\zepto.min.js" />
+    <Content Include="WebUI\Content\总结\前端\Zepto\zepto.min.js.map">
+      <DependentUpon>zepto.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
