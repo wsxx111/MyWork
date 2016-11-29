@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="/WebUI/Resource/Javascript/plugins/syntaxhighlighter/highlightstyle.css" rel="stylesheet" />
+    <link href="/WebUI/Resource/Css/DetailSite.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="sideMenu">
+        <input type='checkbox' id='sideToggle' />
+        <div class="cover-white"></div>
+        <label id="sideMenuControl" for="sideToggle">=</label>
+        <div class="menuTxt">导航</div>
+        <div class="nav-list">
+            <div class="tickbar"></div>
+            <ul>
+                <li><a href="#">顶部</a></li>
+                <li><a href="#introduce">vue.js介绍</a></li>
+                <li><a href="#detail">vue.js实例</a></li>
+                <li><a href="#mbyf">模板语法</a></li>
+                <li><a href="#jssx">计算属性</a></li>
+                <li><a href="#csbd">class与style绑定</a></li>
+                <li><a href="#tjxr">条件渲染</a></li>
+                <li><a href="#lbxr">列表渲染</a></li>
+                <li><a href="#sjclq">事件处理器</a></li>
+            </ul>
+        </div>
+        <div class="nav-leftlist">
+            <div class="tickbar"></div>
+            <ul>
+                <li><a href="#">顶部</a></li>
+                <li><a href="#introduce">vue.js介绍</a></li>
+                <li><a href="#detail">vue.js实例</a></li>
+                <li><a href="#mbyf">模板语法</a></li>
+                <li><a href="#jssx">计算属性</a></li>
+                <li><a href="#csbd">class与style绑定</a></li>
+                <li><a href="#tjxr">条件渲染</a></li>
+                <li><a href="#lbxr">列表渲染</a></li>
+                <li><a href="#sjclq">事件处理器</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <img src="http://www.runoob.com/wp-content/uploads/2015/12/vue_js_4-650x270.png" alt="http://www.runoob.com/w3cnote/vue-js-quickstart.html" />
+        <div class="forMore">
+            <a href="http://cn.vuejs.org/v2/guide/" target="_blank">教程</a>
+        </div>
+        <h3 id="introduce">vue.js介绍</h3>
+        <p>Vue.js 是用于构建交互式的 Web 界面的库。Vue.js 提供了 MVVM 数据绑定和一个可组合的组件系统，具有简单、灵活的 API。从技术角度讲，Vue.js 专注于 MVVM 模型的 ViewModel 层。它通过双向数据绑定把 View 层和 Model 层连接了起来。Vue.js 的 API 设计深受 AngularJS、KnockoutJS、Ractive.js 和 Rivets.js 的影响。</p>
+        <h4>vue.js特点</h4>
+        <ul>
+            <li>简洁： HTML 模板 + JSON 数据，再创建一个 Vue 实例，就这么简单。</li>
+            <li>快速： 精确有效的异步批量 DOM 更新。</li>
+            <li>轻量： ~24kb min+gzip，无依赖。 </li>
+            <li>组件化： 用解耦、可复用的组件来构造界面</li>
+        </ul>
+        <pre><code>
+            &lt;div id="app"&gt;
+             {{ message }}
+            &lt;/&lt;div&gt;
+
+            new Vue({
+             el:'#app',
+             data: {
+             message:'Hello World!'
+             }
+            });
+            </code></pre>
+        <p>或者也可以这样：</p>
+        <pre><code>
+            &lt;div id="app-2"&gt;
+               &lt;span v-bind:title="message"&gt;
+                 啦啦啦
+               &lt;/span&gt;
+            &lt;/div&gt;
+             </code></pre>
+        <p>
+            v-bind 属性被称为指令。指令带有前缀 v-，以表示它们是 Vue.js 提供的特殊属性。这个指令的简单含义是说：将这个元素节点的 title 属性和 Vue 实例的 message 属性绑定到一起
+        </p>
+        <p>又如：</p>
+        <pre><code>
+            &lt;div id="app-4"&gt;
+              &lt;ol&gt;
+                &lt;li v-for="todo in todos"&gt;
+                  {{ todo.text }}
+                &lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/div&gt;
+
+            var app4 = new Vue({
+             el: '#app-4',
+             data: {
+             todos: [
+               { text: 'Learn JavaScript' },
+               { text: 'Learn Vue' },
+               { text: 'Build something awesome' }
+              ]
+             }
+            })
+             </code></pre>
+        <img src="http://www.runoob.com/wp-content/uploads/2015/12/7248453.png" />
+        <h4>ViewModel
+        </h4>
+        <p>一个同步 Model 和 View 的对象。在 Vue.js 中，每个 Vue 实例都是一个 ViewModel。它们是通过构造函数 Vue 或其子类被创建出来的。</p>
+        <h4>视图</h4>
+        <p>
+            Vue.js 使用基于 DOM 的模板。每个 Vue 实例都关联着一个相应的 DOM 元素,当一个 Vue 实例被创建时，它会递归遍历根元素的所有子结点，同时完成必要的数据绑定。当这个视图被编译之后，它就会自动响应数据的变化。在使用 Vue.js 时，除了自定义指令 (稍后会有解释)，您几乎不必直接接触 DOM。当数据发生变化时，视图将会自动触发更新。这些更新的粒度精确到一个文字节点。同时为了更好的性能，这些更新是批量异步执行的。
+        </p>
+
+        <h4>模型
+        </h4>
+        <p>一个轻微改动过的原生 JavaScript 对象。Vue.js 中的模型就是普通的 JavaScript 对象——也可以称为数据对象.一旦某对象被作为 Vue 实例中的数据，它就成为一个 “反应式” 的对象了。你可以操作它们的属性，同时正在观察它的 Vue 实例也会收到提示.Vue.js 把数据对象的属性都转换成了 ES5 中的 getter/setters，以此达到无缝的数据观察效果：无需脏值检查，也不需要刻意给 Vue 任何更新视图的信号。每当数据变化时，视图都会在下一帧自动更新。多个 Vue 实例可以观察同一份数据。在较大型的应用程序中，我们也推荐将 Vue 实例作为纯粹的视图看待，同时把数据处理逻辑放在更独立的外部数据层。</p>
+        <h4>指令</h4>
+        <p>
+            带特殊前缀的 HTML 特性，可以让 Vue.js 对一个 DOM 元素做各种处理。v-text 指令，其值为 message。Vue.js 会让该 div 的文本内容与 Vue 实例中的 message 属性值保持一致。指令可以封装任何 DOM 操作。比如 v-attr 会操作一个元素的特性；v-repeat(v-for) 会基于数组来复制一个元素；v-on会绑定事件, v-model 指令，它使得在表单输入和应用状态中做双向数据绑定变得非常轻巧。等
+        </p>
+        <h4>过滤器</h4>
+        <p>
+            过滤器是用于在更新视图之前处理原始值的函数。它们通过一个 “管道” 在指令或绑定中进行处理.这样在 div 的文本内容被更新之前，message 的值会先传给 capitalizie 函数处理.
+        </p>
+        <h4>组件
+        </h4>
+        <p>
+            在 Vue.js，每个组件都是一个简单的 Vue 实例。一个树形嵌套的各种组件就代表了你的应用程序的各种接口。。通过 Vue.extend 返回的自定义构造函数可以把这些组件实例化，不过更推荐的声明式的用法是通过 Vue.component(id, constructor) 注册这些组件。一旦组件被注册，它们就可以在 Vue 实例的模板中以自定义元素形式使用了。在一个大型应用中，为了使得开发过程可控，有必要将应用整体分割成一个个的组件。看看使用了组件的应用模板是什么样的：
+        </p>
+        <pre><code>
+            &lt;div id="app"&gt;
+               &lt;app-nav>&lt;/app-nav&gt;
+               &lt;app-view&gt;
+                 &lt;app-sidebar&gt;&lt;/app-sidebar&gt;
+                 &lt;app-content&gt;&lt;/app-content&gt;
+               &lt;/app-view&gt;
+             &lt;/div&gt;
+        </code></pre>
+        <h3 id="detail">vue实例</h3>
+        <div class="fun-list">
+            <a href="#gzq">构造器</a>
+            <a href="#sxhff">属性与方法</a>
+        </div>
+        <h4 id="gzq">构造器
+        </h4>
+        <p>每个 Vue.js 应用都是通过构造函数 Vue 创建一个 Vue 的根实例,在文档中经常会使用 vm 这个变量名表示 Vue 实例,在实例化 Vue 时，需要传入一个选项对象，它可以包含数据、模板、挂载元素、方法、生命周期钩子等选项.可以扩展构造器，从而用预定义选项创建可复用的组件构造器.尽管可以命令式地创建扩展实例，不过在多数情况下建议将组件构造器注册为一个自定义元素，然后声明式地用在模板中。Vue.js 组件其实都是被扩展的 Vue 实例</p>
+        <pre><code>
+        var vm = new Vue({
+            // 选项
+        })
+             </code></pre>
+        <pre><code>
+        var MyComponent = Vue.extend({
+         // 扩展选项
+        })
+
+        // 所有的 `MyComponent` 实例都将以预定义的扩展选项被创建
+        var myComponentInstance = new MyComponent()
+             </code></pre>
+        <h4 id="sxhff">属性与方法
+        </h4>
+        <p>每个 Vue 实例都会代理其 data 对象里所有的属性,如vm.属性 和 message里面的属性</p>
+        <pre><code>
+        var data = { a: 1 }
+        var vm = new Vue({
+          data: data
+        })
+        vm.a === data.a // -> true
+        // 设置属性也会影响到原始数据
+        vm.a = 2
+        data.a // -> 2
+        // ... 反之亦然
+        data.a = 3
+        vm.a // -> 3
+        </code></pre>
+        <p>
+            除了 data 属性， Vue 实例暴露了一些有用的实例属性与方法。如vm.$data ; vm.$el
+        </p>
+        <pre><code>
+            var data = { a: 1 }
+            var vm = new Vue({
+              el: '#example',
+              data: data
+            })
+            vm.$data === data // -> true
+            vm.$el === document.getElementById('example') // -> true
+            // $watch 是一个实例方法
+            vm.$watch('a', function (newVal, oldVal) {
+              // 这个回调将在 `vm.a`  改变后调用
+            })
+             </code></pre>
+        <h3 id="mbyf">模板语法</h3>
+        <p>插值：数据绑定最常见的形式就是使用 “Mustache” 语法（双大括号）的文本插值，无论何时，绑定的数据对象上 msg 属性发生了改变，插值处的内容都会更新。通过使用 v-once 指令，你也能执行一次性地插值，当数据改变时，插值处的内容不会更新。但请留心这会影响到该节点上所有的数据绑定</p>
+        <p>纯HTML:双大括号会将数据解释为纯文本，而非 HTML 。为了输出真正的 HTML ，你需要使用 v-html 指令</p>
+        <p>
+            Mustache 不能在 HTML 属性中使用，应使用 v-bind 指令
+        </p>
+        <p>js表达式：表达式会在所属 Vue 实例的数据作用域下作为 JavaScript 被解析。有个限制就是，每个绑定都只能包含单个表达式</p>
+        <p>
+            过滤器:Vue.js 允许你自定义过滤器，被用作一些常见的文本格式化。过滤器应该被添加在 mustache 插值的尾部，由“管道符”指示.Vue 2.x 中，过滤器只能在 mustache 绑定中使用。为了在指令绑定中实现同样的行为，你应该使用计算属性.
+        </p>
+
+
+        <pre><code>
+            &lt;span>Message: {{ msg }}&lt;/&lt;span&gt;
+
+            &lt;span v-once>This will never change: {{ msg }}&lt;/span&gt;
+
+            &lt;div v-html="rawHtml">&lt;/div&gt;
+
+            &lt;div v-bind:id="'list-' + id">&lt;/div&gt;
+            &lt;button v-bind:disabled="someDynamicCondition">Button&lt;/button&gt;
+
+            {{ number + 1 }}
+            {{ ok ? 'YES' : 'NO' }}
+            {{ message.split('').reverse().join('') }}
+            new Vue({
+            filter:{ capitalize:function(value){
+               if(!vaule) return '';
+               value=value.tostring();
+               return value.chartAt(0).toUpperCase()+value.slice(1);
+              }
+              }
+            })
+
+            //下面不会生效
+            <!-- 这是语句，不是表达式 -->
+            {{ var a = 1 }}
+            <!-- 流控制也不会生效，请使用三元表达式 -->
+            {{ if (ok) { return message } }}
+
+            {{ message | capitalize }}
+
+
+             </code></pre>
+        <h4>指令</h4>
+        <p>一些指令能接受一个“参数”，在指令后以冒号指明。例如， v-bind 指令被用来响应地更新 HTML 属性</p>
+        <pre><code>
+            &lt;a v-bind:href="url"&gt;&lt;/&lt;a&gt;
+            &lt;a v-on:click="doSomething"&gt;
+             </code></pre>
+        <h4>缩小</h4>
+        <p>
+            v- 前缀在模板中是作为一个标示 Vue 特殊属性的明显标识。当你使用 Vue.js 为现有的标记添加动态行为时，它会很有用，但对于一些经常使用的指令来说有点繁琐。同时，当搭建 Vue.js 管理所有模板的 SPA 时，v- 前缀也变得没那么重要了。因此，Vue.js 为两个最为常用的指令提供了特别的缩写。
+        </p>
+        <pre><code>
+           // 完整语法
+            &lt;a v-bind:href="url"&gt;&lt;/a&gt;
+            //缩写
+            &lt;a :href="url"&gt;&lt;/a&gt;
+            //完整语法
+            &lt;a v-on:click="doSomething"&gt;&lt;/&lt;a&gt;
+            //缩写
+            &lt;a @click="doSomething"&gt;&lt;/&lt;a&gt;
+             </code></pre>
+        <h3 id="jssx">计算属性</h3>
+        <pre><code>
+            &lt;div id="example"&gt;
+              &lt;p>Original message: "{{ message }}"&lt;/p&gt;
+              &lt;p&gt;Computed reversed message: "{{ reversedMessage }}"&lt;/&lt;p&gt;
+            &lt;/div&gt;
+
+            var vm = new Vue({
+            el: '#example',
+            data: {
+              message: 'Hello'
+            },
+            computed: {
+             // a computed getter
+              reversedMessage: function () {
+             // `this` points to the vm instance
+               return this.message.split('').reverse().join('')
+              }
+             }
+            })
+             </code></pre>
+        <p>Vue 知道 vm.reversedMessage 依赖于 vm.message ，因此当 vm.message 发生改变时，依赖于 vm.reversedMessage 的绑定也会更新</p>
+        <h4>计算缓存</h4>
+        <p>
+            不经过计算属性，我们可以在 method 中定义一个相同的函数来替代它。对于最终的结果，两种方式确实是相同的。然而，不同的是计算属性是基于它的依赖缓存。计算属性只有在它的相关依赖发生改变时才会重新取值。这就意味着只要 message 没有发生改变，多次访问 reversedMessage 计算属性会立即返回之前的计算结果，而不必再次执行函数。
+        </p>
+        <pre><code>
+            &lt;p&gt;Reversed message: "{{ reverseMessage() }}"&lt;/&lt;p&gt;
+
+            methods: {
+             reverseMessage: function () {
+              return this.message.split('').reverse().join('')
+             }
+            }
+
+            //该计算属性将不会更新，因为 Date.now() 不是响应式依赖
+            computed: {
+            now: function () {
+               return Date.now()
+             }
+            }
+             </code></pre>
+        <h4>和watch属性比较</h4>
+        <p>
+            Vue.js 提供了一个方法 $watch ，它用于观察 Vue 实例上的数据变动。当一些数据需要根据其它数据变化时， $watch 很诱人 —— 特别是如果你来自 AngularJS 。不过，通常更好的办法是使用计算属性而不是一个命令式的 $watch 回调
+        </p>
+        <pre><code>
+            var vm = new Vue({
+             el: '#demo',
+             data: {
+               firstName: 'Foo',
+               lastName: 'Bar',
+               fullName: 'Foo Bar'
+             },
+             watch: {
+               firstName: function (val) {
+                 this.fullName = val + ' ' + this.lastName
+               },
+               lastName: function (val) {
+                 this.fullName = this.firstName + ' ' + val
+               }
+             }
+           })
+
+
+            //下个更好
+            var vm = new Vue({
+            el: '#demo',
+            data: {
+              firstName: 'Foo',
+              lastName: 'Bar'
+            },
+            computed: {
+              fullName: function () {
+                return this.firstName + ' ' + this.lastName
+              }
+            }
+          })
+             </code></pre>
+        <h4>计算setter</h4>
+        <p>计算属性默认只有 getter ，不过在需要时你也可以提供一个 setter </p>
+        <pre><code>
+            computed: {
+            fullName: {
+              // getter
+              get: function () {
+                return this.firstName + ' ' + this.lastName
+              },
+              // setter
+              set: function (newValue) {
+                var names = newValue.split(' ')
+                this.firstName = names[0]
+                this.lastName = names[names.length - 1]
+              }
+            }
+          }
+             </code></pre>
+        <h3 id="csbd">class与style绑定</h3>
+        <p>我们可以传给 v-bind:class 一个对象，以动态地切换 class,也可以在对象中传入更多属性用来动态切换多个 class 。此外， v-bind:class 指令可以与普通的 class 属性共存</p>
+        <pre><code>
+            &lt;div v-bind:class="{ active: isActive }">&lt;/&lt;div&gt;
+            &lt;div class="static"
+            v-bind:class="{ active: isActive, 'text-danger': hasError }"&gt;
+            &lt;/&lt;div&gt;
+
+              data: {
+                isActive: true,
+                hasError: false
+            }
+
+            //或者
+            &lt;div v-bind:class="classObject"&gt;&lt;/&lt;div&gt;          
+            data: {
+              classObject: {
+              active: true,
+              'text-danger': false
+              }
+            }
+            </code></pre>
+        <p>我们可以把一个数组传给 v-bind:class ，以应用一个 class 列表</p>
+        <pre><code>
+            &lt;div v-bind:class="[activeClass,errorClass]"&gt;&lt;/div&gt;
+            &lt;div v-bind:style="[baseStyles, overridingStyles]"&gt;
+
+            data: {
+             activeClass: 'active',
+             errorClass: 'text-danger'
+            }
+            &lt;div class="active text-danger"&gt;&lt;/div&gt;
+
+            //还可以
+            &lt;div v-bind:class="[isActive ? activeClass : '', errorClass]"&gt;
+             </code></pre>
+        <h4>绑定内联样式</h4>
+        <p>
+            v-bind:style 的对象语法十分直观——看着非常像 CSS ，其实它是一个 JavaScript 对象。 CSS 属性名可以用驼峰式（camelCase）或短横分隔命名（kebab-case）
+        </p>
+        <pre><code>
+            &lt;div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"&gt;&lt;/&lt;div&gt;
+
+            data: {
+                activeColor: 'red',
+                fontSize: 30
+            }
+
+             &lt;div v-bind:style="styleObject"&gt;&lt;/&lt;div&gt;
+            data: {
+              styleObject: {
+                    color: 'red',
+                    fontSize: '13px'
+                }
+            }
+             </code></pre>
+        <h4>自动添加前缀</h4>
+        <p>
+            当 v-bind:style 使用需要特定前缀的 CSS 属性时，如 transform ，Vue.js 会自动侦测并添加相应的前缀。
+        </p>
+        <h3 id="tjxr">条件渲染</h3>
+        <p>
+            v-if 是一个指令，需要将它添加到一个元素上.把一个 &lt;template&gt;元素当做包装元素，并在上面使用 v-if，最终的渲染结果不会包含它
+
+
+        </p>
+        <pre><code>
+            &lt;h1 v-if="ok"&gt;Yes&lt;/&lt;h1&gt;
+
+            &lt;h1 v-if="ok"&gt;Yes&lt;/&lt;h1&gt;
+            &lt;h1 v-lese&gt;No&lt;/&lt;h1&gt;
+
+            &lt;template v-if="ok">
+            &lt;h1&gt;Title&lt;/h1&gt;
+            &lt;p&gt;Paragraph 1&lt;/p&gt;
+            &lt;p&gt;Paragraph 2&lt;/p&gt;
+            &lt;/&lt;template&gt;
+             </code></pre>
+
+        <p>以用 v-else 指令给 v-if 或 v-show 添加一个 “else” 块，v-else 元素必须紧跟在 v-if 或 v-show 元素的后面——否则它不能被识别</p>
+        <pre><code>
+            &lt;div v-if="Math.random() > 0.5"&gt;
+                Sorry
+            &lt;/&lt;div&gt;
+            &lt;div v-else&gt;
+                 Not sorry
+            &lt;/&lt;div&gt;
+             </code></pre>
+        <p>
+            v-show 的元素会始终渲染并保持在 DOM 中。v-show 是简单的切换元素的 CSS 属性 display,-show 不支持 &lt;template&gt; 语法
+        </p>
+        <pre><code>
+            &lt;h1 v-show="ok"&gt;Hello!&lt;/&lt;h1&gt;
+             </code></pre>
+        <p>
+            v-if 是真实的条件渲染，因为它会确保条件块在切换当中适当地销毁与重建条件块内的事件监听器和子组件。v-if 是真实的条件渲染，因为它会确保条件块在切换当中适当地销毁与重建条件块内的事件监听器和子组件。相比之下， v-show 简单得多——元素始终被编译并保留，只是简单地基于 CSS 切换。一般来说， v-if 有更高的切换消耗而 v-show 有更高的初始渲染消耗。因此，如果需要频繁切换使用 v-show 较好，如果在运行时条件不大可能改变则使用 v-if 较好。
+        </p>
+        <h3 id="lbxr">列表渲染</h3>
+        <p>
+            v-for 指令根据一组数组的选项列表进行渲染。 v-for 指令需要以 item in items 形式的特殊语法， items 是源数据数组并且 item 是数组元素迭代的别名。在 v-for 块中，我们拥有对父作用域属性的完全访问权限。 v-for 还支持一个可选的第二个参数为当前项的索引。如同 v-if 模板,以用带有 v-for 的 &lt;template&gt; 标签来渲染多个元素块
+        </p>
+        <pre><code>
+            &lt;ul id="example-1"&gt;
+            &lt;li v-for="item in items"&gt;
+                {{ item.message }}
+             &lt;/li&gt;
+            &lt;/ul&gt;
+
+
+             &lt;ul id="example-2"&gt;
+             &lt;li v-for="(item, index) in items"&gt;
+                  {{ parentMessage }} - {{ index }} - {{ item.message }}
+             &lt;/&lt;li&gt;
+             &lt;/&lt;ul&gt;
+
+            var example2 = new Vue({
+              el: '#example-2',
+              data: {
+                parentMessage: 'Parent',
+                items: [
+                  { message: 'Foo' },
+                  { message: 'Bar' }
+                ]
+              }
+            })
+
+
+            &lt;ul&gt;
+            &lt;template v-for="item in items"&gt;
+                &lt;li&gt;{{ item.msg }}&lt;/li&gt;
+                &lt;li class="divider"&lt;/li&gt;
+              &lt;/template&gt;
+            &lt;/ul&gt;
+          
+             </code></pre>
+        <h4>对象迭代 v-for
+        </h4>
+        <p>可以用 v-for 通过一个对象的属性来迭代,在遍历对象时，是按 Object.keys() 的结果遍历，但是不能保证它的结果在不同的 JavaScript 引擎下是一致的</p>
+        <pre><code>
+             &lt;div v-for="(value, key) in object"&gt;
+                {{ key }} : {{ value }}
+            &lt;/div&gt;
+
+            &lt;ul id="repeat-object" class="demo"&gt;
+              &lt;li v-for="value in object"&gt;
+                {{ value }}
+              &lt;/li&gt;
+            &lt;/ul&gt;
+
+            new Vue({
+              el: '#repeat-object',
+              data: {
+                object: {
+                  FirstName: 'John',
+                  LastName: 'Doe',
+                  Age: 30
+                }
+              }
+            })
+             </code></pre>
+        <p>v-for 也可以取整数。在这种情况下，它将重复多次模板。</p>
+        <pre><code>
+            &lt;div&gt;
+              &lt;span v-for="n in 10">{{ n }}&lt;/span&gt;
+            &lt;/div&gt;
+             </code></pre>
+        <p>Vue 包含一组观察数组的变异方法，所以它们也将会触发视图更新</p>
+        <ul>
+            <li>push()</li>
+            <li>pop()</li>
+            <li>shift()</li>
+            <li>unshift()</li>
+            <li>splice()</li>
+            <li>sort()</li>
+             <li>reverse()</li>
+        </ul>
+        <h4>过滤</h4>
+        <pre><code>
+            &lt;li v-for="n in evenNumbers"&gt;{{ n }}&lt;/li&gt;
+
+            data: {
+              numbers: [ 1, 2, 3, 4, 5 ]
+            },
+            computed: {
+              evenNumbers: function () {
+                return this.numbers.filter(function (number) {
+                  return number % 2 === 0
+                })
+              }
+            }
+
+            //或者换methods
+            methods: {
+            even: function (numbers) {
+              return numbers.filter(function (number) {
+                return number % 2 === 0
+              })
+            }
+             </code></pre>
+       <h3 id="sjclq">事件处理器</h3>
+       <p>
+           可以用 v-on 指令监听 DOM 事件来触发一些 JavaScript 代码。
+       </p>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+<script src="/WebUI/Resource/Javascript/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+
+        $("#sideToggle").change(function () {
+            if ($(document).width() < 1300) {
+                var show_left = $(".container").css("left") == '0px';
+                var go_left = $(".sideMenu .nav-leftlist a").width() + 30;
+                if (show_left && $(this).is(":checked")) {
+                    $(".container").animate({ "left": go_left + "px" }, 400);
+                    $(".sideMenu .nav-leftlist").animate({ "left": "0px" }, 200);
+                }
+                else {
+                    $(".container").animate({ "left": "0px" }, 400);
+                    $(".sideMenu .nav-leftlist").animate({ "left": "-200px" }, 200);
+                }
+            }
+
+        });
+        $(".sideMenu .nav-leftlist a").click(function () {
+            if ($(document).width() < 1300) {
+                var show_left = $(".container").css("left") == '0px';
+                if (!show_left) {
+                    $(".container").animate({ "left": "0px" }, 400);
+                    $("#sideToggle").attr("checked", false);
+                    $(".sideMenu .nav-leftlist").animate({ "left": "-200px" }, 200);
+                }
+            }
+        })
+    })
+</script>

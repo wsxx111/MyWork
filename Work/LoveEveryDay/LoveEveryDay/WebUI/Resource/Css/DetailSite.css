@@ -50,7 +50,7 @@ body {
     .container pre code {
         overflow-x: auto;
         overflow-y: hidden;
-        width: auto;       
+        width: auto;            
         word-break: break-all !important;
     }
 
