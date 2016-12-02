@@ -121,6 +121,7 @@ body {
         }
 
     .container p {
+        text-align:justify;
         text-indent: 20px;
         word-break: break-all !important;
     }
@@ -280,8 +281,7 @@ body {
     transition: 0.2s ease-out;
     -webkit-transition: 0.2s ease-out;
     margin-top: -2px;
-    display: none;
-    z-index: 999;
+    display: none;   
 }
 
     .sideMenu .nav-list ul {

@@ -95,16 +95,9 @@
                          ]
                      },
                      {
-                         "title": "AngularJs",
+                         "title": "VueJs",
                          "iconClass": "",
-                         "url": "",
-                         "subMenuList": [
-                             {
-                                 "title": "AngularJs基础",
-                                 "iconClass": "",
-                                 "url": "AngularJs基础.html"
-                             }
-                         ]
+                         "url": "WebUI/Content/总结/前端/VueJs/vuejs.html"                         
                      },
                 ]
         },
@@ -230,9 +223,9 @@
     "iconClass": "glyphicon glyphicon-hdd",
     "subMenuList": [
         {
-            "title": "作品1",
+            "title": "生活杂作",
             "iconClass": "",
-            "url": "作品1.html"
+            "url": "/WebUI/Content/作品/生活杂作/list.html"
         },
         {
             "title": "作品2",
