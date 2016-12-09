@@ -50,7 +50,7 @@ body {
     .container pre code {
         overflow-x: auto;
         overflow-y: hidden;
-        width: auto;            
+        width: auto;
         word-break: break-all !important;
     }
 
@@ -73,6 +73,9 @@ body {
         color: white;
         background-color: #20860c;
         border-radius: 3px;
+        -moz-box-shadow: 1px 1px 1px #000000;
+        -webkit-box-shadow: 1px 1px 1px #000000;
+        box-shadow: 1px 1px 1px #000000;
     }
 
     .container h4 {
@@ -81,6 +84,9 @@ body {
         background-color: #936a2a;
         margin-right: 60px;
         border-radius: 3px;
+        -moz-box-shadow: 1px 1px 1px #000000;
+        -webkit-box-shadow: 1px 1px 1px #000000;
+        box-shadow: 1px 1px 1px #000000;
     }
 
     .container .fun-list {
@@ -121,20 +127,41 @@ body {
         }
 
     .container p {
-        text-align:justify;
+        text-align: justify;
         text-indent: 20px;
         word-break: break-all !important;
     }
 
-    .container img {
-        padding: 3px;
+    .container img { 
+        display:block;      
+        padding: 5px;
         width: 100%;
         max-width: 800px;
-        margin: 2px auto;
+        margin: 10px auto;
     }
+
+        .container img.little {
+            display: inline-block;
+            padding: 3px;
+            width: 40%;
+            max-width: 340px;
+            margin: 10px;
+        }
 
     .container ul {
         list-style: decimal;
+    }
+
+    .container em {
+        font-style: normal;
+        background-color: #fef2d2;
+        color: red;
+        padding: 0px 6px;
+        border-radius: 3px;
+        margin: 0px 2px;
+        -moz-box-shadow: 0px 0px 2px #000000;
+        -webkit-box-shadow: 0px 0px 2px #000000;
+        box-shadow: 0px 0px 2px #000000;
     }
 
 /*导航开始*/
@@ -281,7 +308,7 @@ body {
     transition: 0.2s ease-out;
     -webkit-transition: 0.2s ease-out;
     margin-top: -2px;
-    display: none;   
+    display: none;
 }
 
     .sideMenu .nav-list ul {

@@ -1,135 +1,293 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="/WebUI/Resource/Javascript/plugins/syntaxhighlighter/highlightstyle.css" rel="stylesheet" />
+    <link href="/WebUI/Resource/Css/DetailSite.css" rel="stylesheet" />
 </head>
 <body>
-  <div>
+    <div class="container">
+        <h3>calc()</h3>
+        <p>calc() = calc(å››åˆ™è¿ç®—) </p>
+        <p>éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œè¿ç®—ç¬¦å‰åéƒ½éœ€è¦ä¿ç•™ä¸€ä¸ªç©ºæ ¼ï¼Œä¾‹å¦‚ï¼šwidth: calc(100% - 10px)ï¼›</p>
+        <ul>
+            <li>ä»»ä½•é•¿åº¦å€¼éƒ½å¯ä»¥ä½¿ç”¨calc()å‡½æ•°è¿›è¡Œè®¡ç®—
+            </li>
+            <li>calc()å‡½æ•°æ”¯æŒ "+", "-", "*", "/" è¿ç®—ï¼›
+            </li>
+            <li>calc()å‡½æ•°æ”¯æŒ "+", "-", "*", "/" è¿ç®—ï¼›
+            </li>
+        </ul>
+        <pre><code>
+            .test {
+            Â Â  Â width: calc(100% - 50px);
+            Â Â  Â background: #eee;
+            } 
+             </code></pre>
+        <h3>toggle()</h3>
+        <p>
+            toggle()  å…è®¸å­å­™å…ƒç´ ä½¿ç”¨å–å€¼åºåˆ—ä¸­çš„å€¼å¾ªç¯æ›¿æ¢ç»§æ‰¿è€Œæ¥çš„å€¼ã€‚åœ¨ä¸‹è¿°ä»£ç ä¸­ï¼Œå®šä¹‰ä¸€ä¸ªå¤šçº§çš„ulï¼Œç¬¬ä¸€çº§ä½¿ç”¨disk markersï¼Œå­å­™çº§ä¾æ¬¡ä½¿circle, square, boxã€‚ ä½†ç›®å‰æ”¯æŒæ€§è¿˜ä¸å¥½ æ²¡æœ‰æ”¯æŒçš„ 
+        </p>
+        <pre><code>
+            ul { list-style-type: toggle(disk, circle, square, box); } 
+            em { font-style: toggle(italic, normal); } 
+             </code></pre>
+        <h3>counter</h3>
+        <p>CSS Counterså…¶å®å°±æ˜¯ä¸€è®¡æ•°å™¨ï¼Œæ—©æœŸåœ¨CSSä¸­è®¡æ•°å™¨ä»…å­˜åœ¨äºulå’Œolå…ƒç´ ã€‚å¦‚æœè¦ä½¿ç”¨åœ¨divè¿™æ ·çš„å…ƒç´ ä¸Šï¼Œåªèƒ½é€šè¿‡list-style-imageæˆ–è€…æ˜¯å…ƒç´ çš„backgroud-imageæ¥å®ç°,åœ¨CSS2.1çš„è§„èŒƒä¸­ä»‹ç»äº†ä¸€ç§æ–°æŠ€æœ¯ï¼Œå…è®¸å¼€å‘äººå‘˜ä½¿ç”¨ä¼ªç±»:afterã€:beforeæˆ–è€…ä¼ªå…ƒç´ ::afterã€::beforeç»™ä»»ä½•å…ƒç´ åˆ›å»ºè‡ªåŠ¨é€’å¢è®¡æ•°å™¨â€”â€”ç±»ä¼¼äºåˆ—è¡¨ä¸­çš„é¡¹ç›®ç¬¦å·(list-style-type)ã€‚counter-resetä¸»è¦åŠŸèƒ½ç”¨æ¥æ ‡è¯†è®¡æ•°å™¨ä½œç”¨åŸŸï¼Œè€Œä¸”æ­¤å€¼å¿…é¡»ç”¨åœ¨é€‰æ‹©å™¨ä¸Šï¼Œå¿…ä¸”æ˜¯ä¸èƒ½ç¼ºå°‘çš„ã€‚å…±åŒ…æ‹¬ä¸¤ä¸ªéƒ¨åˆ†ï¼Œç¬¬ä¸€ä¸ªéƒ¨åˆ†æ˜¯è‡ªå®šä¹‰è®¡æ•°å™¨åç§°ï¼Œè¿™ä¸€éƒ¨åˆ†æ˜¯å¿…éœ€çš„ã€‚ç¬¬äºŒéƒ¨åˆ†æ˜¯è®¡æ•°å™¨èµ·å§‹å€¼ï¼Œæ­¤å€¼æ˜¯å¯é€‰çš„ã€‚é»˜è®¤å€¼ä¸º0ã€‚æ­¤å€¼å‘Šè¯‰æ ‡è¯†ç»„èµ·å§‹å€¼æ˜¯ä»€ä¹ˆï¼Œæ‰€ä»¥è¯´è¿™ä¸ªå€¼éå¸¸æœ‰ä»·å€¼ã€‚å› ä¸ºï¼Œå¦‚æœä½ è®¾ç½®çš„å€¼ä¸º0ï¼Œé‚£ä¹ˆè®¡æ•°ä»1å¼€å§‹ï¼›å¦‚æœä½ è®¾ç½®çš„å€¼æ˜¯-5ï¼Œé‚£ä¹ˆè®¡æ•°ä»-4å¼€å§‹ã€‚ä¾æ­¤ç±»æ¨ã€‚</p>
+        <p>counter-resetè‡ªå®šä¹‰è®¡æ•°å™¨åç§°æ—¶å¯ä»¥éšæ„å–åï¼Œä½†æ­¤åä¸èƒ½æ˜¯CSSçš„å…³é”®è¯ï¼Œæ¯”å¦‚noneã€inheritä¹‹ç±»ã€‚</p>
+        <p>
+            counter-resetå±æ€§å¯ä»¥åŒ…å«ä¸€ä¸ªæˆ–è€…å¤šä¸ªè®¡æ•°å™¨æ ‡è¯†ç¬¦ï¼Œæ¯ä¸ªåé¢éƒ½å¯ä»¥è·Ÿä¸€ä¸ªæ•´æ•°å€¼ï¼Œå¦‚section 0 heading 0ã€‚å¦‚æœå…ƒç´ éƒ½é‡ç½®ï¼Œå¹¶ä¸”å¢åŠ ä¸€ä¸ªè®¡æ•°å™¨ï¼Œè®¡æ•°å™¨æ˜¯ç¬¬ä¸€æ¬¡é‡ç½®ï¼Œåé¢å€¼å°±ä¼šé€’å¢ã€‚å¦‚æœä¸æ­¢ä¸€æ¬¡æŒ‡å®šåŒä¸€ä¸ªè®¡ç®—å™¨ï¼Œåˆ™å°†æŒ‰æŒ‡å®šçš„è®¡æ•°å™¨åšé€’å¢ã€‚
+        </p>
+        <p>
+            counter-incrementå±æ€§æ˜¯ç”¨æ¥æ ‡è¯†è®¡æ•°å™¨ä¸å®é™…ç›¸å…³è”å…ƒç´ èŒƒå›´ã€‚å…¶ç¬¬ä¸€ä¸ªå€¼æ˜¯å¿…éœ€çš„ï¼Œè·å–counter-resetå®šä¹‰çš„æ ‡è¯†ç¬¦ã€‚
+        </p>
+        <p>
+            counter-ncrementç¬¬äºŒä¸ªå€¼æ˜¯ä¸€ä¸ªå¯é€‰å€¼ï¼Œæ˜¯ä¸€ä¸ªæ•´æ•°å€¼ï¼Œå¯ä»¥æ˜¯æ­£æ•´æ•°ï¼Œä¹Ÿå¯ä»¥æ˜¯è´Ÿæ•´æ•°ã€‚ä¸»è¦ç”¨æ¥é¢„è®¾é€’å¢çš„å€¼ï¼Œå¦‚æœå–å€¼ä¸ºè´Ÿå€¼æ—¶ï¼Œè¡¨ç¤ºé€’å‡ã€‚é»˜è®¤å€¼ä¸º1
+        </p>
+        <p>
+            contentæ˜¯å’Œä¼ªç±»:beforeã€:afteræˆ–è€…ä¼ªå…ƒç´ ::beforeã€::afteré…åˆåœ¨ä¸€èµ·ä½¿ç”¨ï¼Œä¸»è¦åŠŸèƒ½ç”¨æ¥ç”Ÿæˆå†…å®¹
+        </p>
+        <p>
+            counter()æ˜¯ä¸€ä¸ªå‡½æ•°ï¼Œå…¶ä¸»è¦é…åˆcontentä¸€èµ·ä½¿ç”¨ã€‚ä½¿ç”¨counter()æ¥è°ƒç”¨å®šä¹‰å¥½çš„è®¡æ•°å™¨æ ‡è¯†ç¬¦ã€‚counter()å‡½æ•°æ¥å—ä¸¤ä¸ªå‚æ•°ï¼Œè€Œä¸”ä¸¤å‚æ•°ä¹‹é—´ä½¿ç”¨é€—å·(,)æ¥åˆ†éš”ã€‚ç¬¬ä¸€ä¸ªå‚æ•°æ˜¯counter-incrementå®šä¹‰çš„å±æ€§å€¼<identifier>,ç”¨æ¥å‘Šè¯‰è¯¥æ–‡æ¡£æ’å…¥çš„è®¡æ•°å™¨æ ‡è¯†ç¬¦åç§°æ˜¯ä»€ä¹ˆã€‚ç¬¬äºŒä¸ªæ˜¯ç”¨æ¥è®¾ç½®è®¡æ•°å™¨çš„é£æ ¼ï¼Œæœ‰ç‚¹ç±»ä¼¼äºlist-style-typeã€‚é»˜è®¤æƒ…å†µä¹‹ä¸‹å–å€¼ä¸ºååˆ¶ï¼Œä½†ä½ ä¹Ÿå¯ä»¥é‡ç½®è¿™ä¸ªæ ·å¼é£æ ¼ï¼Œæ¯”å¦‚upper-romanæˆ–è€…upper-alpha.
+        </p>
+        <p>
+            counter()å‡½æ•°ç¬¬äºŒä¸ªå€¼ä¸åˆ—è¡¨ä¸­çš„list-style-typeå€¼ç›¸ç­‰ï¼š
+        </p>
+        <ul>
+            <li>disc</li>
+            <li>circle</li>
+            <li>square</li>
+            <li>decimal</li>
+            <li>decimal-leading-zero</li>
+            <li>lower-romanupper-roman</li>
+            <li>lower-greek</li>
+            <li>lower-latin</li>
+            <li>upper-latin</li>
+            <li>armenian</li>
+            <li>georgian</li>
+            <li>lower-alpha</li>
+            <li>upper-alphanoneinherit</li>
+        </ul>
+        <p>
+            åŒæ ·çš„ï¼Œå¯ä»¥ä½¿ç”¨å¤šä¸ªcounter()ï¼Œå¦‚ï¼šcontent: counter(Chapter,upper-roman) "-" counter(section,upper-roman);ã€‚
+        </p>
+        <h5>ç¬¬ä¸€æ­¥ï¼šè®¾ç½®è®¡æ•°å™¨</h5>
+        <p>
+            è¦ä½¿ç”¨CSS Countersç”Ÿæˆè‡ªåŠ¨è®¡æ•°å™¨ï¼Œé¦–è¦æ¡ä»¶å°±æ˜¯é€šè¿‡counter-resetå±æ€§å…ˆå£°æ˜ä¸€ä¸ªè®¡æ•°å™¨åç§°ï¼Œè¿™ä¸ªåç§°æ˜¯ä»€ä¹ˆåå­—å¹¶ä¸é‡è¦ï¼Œé‡è¦çš„æ˜¯ä½ å£°æ˜äº†è¿™æ ·çš„ä¸€ä¸ªåã€‚å¦‚:
+        </p>
+        <pre><code>
+             dl {
+              counter-reset: term;
+            }
+             </code></pre>
+        <h5>ç¬¬äºŒæ­¥ï¼šå£°æ˜è®¡æ•°å™¨</h5>
+        <p>
+            counter-resetåªæ˜¯å®šä¹‰äº†ä¸€ä¸ªè®¡æ•°å™¨æ ‡è¯†ç¬¦ï¼Œåœ¨å®é™…ä½¿ç”¨ä¸­ï¼Œéœ€è¦é€šè¿‡counter-incrementå±æ€§æ¥æŒ‡å®šè®¡æ•°å™¨ä½œç”¨åŸŸã€‚é’ˆå¯¹è¿™ä¸ªç¤ºä¾‹æ¥è¯´,counter-resetåªæ˜¯å®šä¹‰äº†ä¸€ä¸ªè®¡æ•°å™¨æ ‡è¯†ç¬¦ï¼Œä½†æ²¡æœ‰æŒ‡å®šç”¨åˆ°å“ªã€‚æ¢å¥è¯è¯´ï¼Œè¿™ä¸ªè®¡æ•°å™¨æ ‡è¯†ç¬¦ï¼Œå¯ä»¥ç”¨åˆ°ä»»ä½•æ ‡ç­¾å…ƒç´ ä¸Šã€‚åœ¨è¿™ä¸ªç¤ºä¾‹ä¸­ï¼Œå¦‚æœè¦ä½¿ç”¨dtæ ‡ç­¾ä¸Šä½¿ç”¨counter-resetå£°æ˜å¥½çš„è®¡æ•°å™¨ï¼Œéœ€è¦ä½¿ç”¨counter-incrementæ¥æ˜¾å¼è®¾ç½®ï¼š
+        </p>
+        <pre><code>
+            dl {
+              counter-reset: term;
+            
+              dt{
+                counter-increment: term;
+              }
+            }
+             </code></pre>
+        <h5>ç¬¬ä¸‰æ­¥ï¼šæ˜¾ç¤ºè®¡æ•°å™¨</h5>
+        <p>
+            ä¸Šé¢ä¸¤æ­¥ä¸‹æ¥ï¼Œä¸è§ä»»ä½•æˆæ•ˆã€‚å¦‚æœè¦è®©dtæ ‡ç­¾å‰é¢ç”Ÿæˆè‡ªå·±éœ€è¦çœ‹åˆ°çš„è®¡æ•°å™¨ï¼Œè¿˜éœ€è¦é€šè¿‡:beforeã€contentå’Œcounter()ï¼š
+        </p>
+        <pre><code>
+             dl {
+              counter-reset: term;
+            
+              dt{
+                counter-increment: term;
+            
+                &:before{
+                  content: counter(term) ":";
+                  margin-right:5px;
+                }
+              }
+            }
+             </code></pre>
+        <p>å…¶ä»–åº”ç”¨</p>
+        <img src="http://image.zhangxinxu.com/image/blog/201412/2014-12-07_212342.png" />
+        <pre><code>
+            body {
+              counter-reset: icecream;
+            }
+            input:checked {
+              counter-increment: icecream;
+            }
+            .total::after {
+              content: counter(icecream);
+            }
+             </code></pre>
+        <img src="http://image.zhangxinxu.com/image/blog/201412/2014-12-07_220132.png" />
+        <pre><code>
+            body {
+              counter-reset: sum;
+            }
+            
+            input {
+              position: absolute;
+              clip: rect(0 0 0 0);	
+            }
+            
+            #number1:checked { counter-increment: sum 64; }
+            #number2:checked { counter-increment: sum 16; }
+            #number3:checked { counter-increment: sum -32; }
+            #number4:checked { counter-increment: sum 128; }
+            #number5:checked { counter-increment: sum 4; }
+            #number6:checked { counter-increment: sum -8; }
+            
+            .sum::before {
+              content: '= ' counter(sum);
+            }
+            
+            #number1:checked ~ 
+            #number2:checked ~ 
+            #number3:not(:checked) ~ 
+            #number4:not(:checked) ~ 
+            #number5:not(:checked) ~ 
+            #number6:checked ~ 
+            .sum::after {
+              content: ' (ä¸‡å²ï¼)';
+            }
+             </code></pre>
+        <h3>
+            attr()
+        </h3>
+        <p>æ’å…¥å…ƒç´ çš„å±æ€§å€¼ã€‚åœ¨CSS2.1ä¸­attr()æ€»æ˜¯è¿”å›ä¸€ä¸ªå­—ç¬¦ä¸²ã€‚åœ¨CSS3ä¸­attr()å¯ä»¥è¿”å›å¤šç§ä¸åŒçš„ç±»å‹ã€‚</p>
+        <pre><code>
+              a:after {
+Â Â Â          Â Â Â  content: "("attr(href)")"; 
+Â Â Â          Â Â Â  font-size: 12px; 
+Â Â Â          Â  } 
+             </code></pre>
+        <h3>contentå±æ€§</h3>
+        <p>CSSä¸­ä¸»è¦çš„ä¼ªå…ƒç´ æœ‰å››ä¸ªï¼šbefore/after/first-letter/first-lineï¼Œåœ¨before/afterä¼ªå…ƒç´ é€‰æ‹©å™¨ä¸­ï¼Œæœ‰ä¸€ä¸ªcontentå±æ€§ï¼Œèƒ½å¤Ÿå®ç°é¡µé¢ä¸­çš„å†…å®¹æ’å…¥ã€‚</p>
+        <h5>æ’å…¥çº¯æ–‡å­—ï¼š</h5>
+        <pre><code>
+        &lt;h1&gt;è¿™æ˜¯h1&lt;/h1&gt;
+        &lt;h2&gt;è¿™æ˜¯h2&lt;/h2&gt;
 
-      <p>
-          <strong>calc()</strong> = calc(ËÄÔòÔËËã)
-      </p>
-      <p>
-          <strong>ÓÃÓÚ¶¯Ì¬¼ÆËã³¤¶ÈÖµ¡£</strong>
-      </p>
-      <ul>
-          <li class="g-color-light">ĞèÒª×¢ÒâµÄÊÇ£¬ÔËËã·ûÇ°ºó¶¼ĞèÒª±£ÁôÒ»¸ö¿Õ¸ñ£¬ÀıÈç£ºwidth: calc(100% - 10px)£» </li>
-          <li class="g-color-light">
-              <ul>
-                  <li>ÈÎºÎ³¤¶ÈÖµ¶¼¿ÉÒÔÊ¹ÓÃcalc()º¯Êı½øĞĞ¼ÆËã£» </li>
-                  <li>calc()º¯ÊıÖ§³Ö &quot;+&quot;, &quot;-&quot;, &quot;*&quot;, &quot;/&quot; ÔËËã£» </li>
-                  <li>calc()º¯ÊıÊ¹ÓÃ±ê×¼µÄÊıÑ§ÔËËãÓÅÏÈ¼¶¹æÔò£» </li>
-              </ul>
-              .test {<br />
-              &nbsp;&nbsp; &nbsp;width: calc(100% - 50px);<br />
-              &nbsp;&nbsp; &nbsp;background: #eee;<br />
-              } </li>
-      </ul>
-      <p>
-          <strong>toggle()&nbsp; ÔÊĞí×ÓËïÔªËØÊ¹ÓÃÈ¡ÖµĞòÁĞÖĞµÄÖµÑ­»·Ìæ»»¼Ì³Ğ¶øÀ´µÄÖµ¡£</strong>
-      </p>
-      <p>
-          ul { list-style-type: toggle(disk, circle, square, box); }
-      </p>
-      <p>
-          em { font-style: toggle(italic, normal); }
-      </p>
-      <p>
-          ÔÚÉÏÊö´úÂëÖĞ£¬¶¨ÒåÒ»¸ö¶à¼¶µÄul£¬µÚÒ»¼¶Ê¹ÓÃdisk markers£¬×ÓËï¼¶ÒÀ´ÎÊ¹ÓÃcircle, square, box¡£ 
-      </p>
-      <p>
-          µ«Ä¿Ç°Ö§³ÖĞÔ»¹²»ºÃ Ã»ÓĞÖ§³ÖµÄ 
-      </p>
-      CSS CountersÆäÊµ¾ÍÊÇÒ»¼ÆÊıÆ÷£¬ÔçÆÚÔÚCSSÖĞ¼ÆÊıÆ÷½ö´æÔÚÓÚ<code>ul</code>ºÍ<code>ol</code>ÔªËØ¡£Èç¹ûÒªÊ¹ÓÃÔÚ<code>div</code>ÕâÑùµÄÔªËØÉÏ£¬Ö»ÄÜÍ¨¹ı<code>list-style-image</code>»òÕßÊÇÔªËØµÄ<code>backgroud-image</code>À´ÊµÏÖ,ÔÚ<a href="http://www.w3.org/TR/CSS2/" target="_blank">CSS2.1µÄ¹æ·¶</a>ÖĞ½éÉÜÁËÒ»ÖÖĞÂ¼¼Êõ£¬ÔÊĞí¿ª·¢ÈËÔ±Ê¹ÓÃÎ±Àà<code>:after</code>¡¢<code>:before</code>»òÕßÎ±ÔªËØ<code>::after</code>¡¢<code>::before</code>¸øÈÎºÎÔªËØ´´½¨×Ô¶¯µİÔö¼ÆÊıÆ÷¡ª¡ªÀàËÆÓÚÁĞ±íÖĞµÄÏîÄ¿·ûºÅ(<code>list-style-type</code>)¡£<code>counter-reset</code>Ö÷Òª¹¦ÄÜÓÃÀ´±êÊ¶¼ÆÊıÆ÷×÷ÓÃÓò£¬¶øÇÒ´ËÖµ±ØĞëÓÃÔÚÑ¡ÔñÆ÷ÉÏ£¬±ØÇÒÊÇ²»ÄÜÈ±ÉÙµÄ¡£¹²°üÀ¨Á½¸ö²¿·Ö£¬µÚÒ»¸ö²¿·ÖÊÇ×Ô¶¨Òå¼ÆÊıÆ÷Ãû³Æ£¬ÕâÒ»²¿·ÖÊÇ±ØĞèµÄ¡£µÚ¶ş²¿·ÖÊÇ¼ÆÊıÆ÷ÆğÊ¼Öµ£¬´ËÖµÊÇ¿ÉÑ¡µÄ¡£Ä¬ÈÏÖµÎª<code>0</code>¡£´ËÖµ¸æËß±êÊ¶×éÆğÊ¼ÖµÊÇÊ²Ã´£¬ËùÒÔËµÕâ¸öÖµ·Ç³£ÓĞ¼ÛÖµ¡£ÒòÎª£¬Èç¹ûÄãÉèÖÃµÄÖµÎª<code>0</code>£¬ÄÇÃ´¼ÆÊı´Ó<code>1</code>¿ªÊ¼£»Èç¹ûÄãÉèÖÃµÄÖµÊÇ<code>-5</code>£¬ÄÇÃ´¼ÆÊı´Ó<code>-4</code>¿ªÊ¼¡£ÒÀ´ËÀàÍÆ¡£</p>
-      <p>
-          <code>counter-reset</code>×Ô¶¨Òå¼ÆÊıÆ÷Ãû³ÆÊ±¿ÉÒÔËæÒâÈ¡Ãû£¬µ«´ËÃû²»ÄÜÊÇCSSµÄ¹Ø¼ü´Ê£¬±ÈÈç<code>none</code>¡¢<code>inherit</code>Ö®Àà¡£</p>
-      <p>
-          <code>counter-reset</code>ÊôĞÔ¿ÉÒÔ°üº¬Ò»¸ö»òÕß¶à¸ö¼ÆÊıÆ÷±êÊ¶·û£¬Ã¿¸öºóÃæ¶¼¿ÉÒÔ¸úÒ»¸öÕûÊıÖµ£¬Èç<code>section 0 heading 0</code>¡£Èç¹ûÔªËØ¶¼ÖØÖÃ£¬²¢ÇÒÔö¼ÓÒ»¸ö¼ÆÊıÆ÷£¬¼ÆÊıÆ÷ÊÇµÚÒ»´ÎÖØÖÃ£¬ºóÃæÖµ¾Í»áµİÔö¡£Èç¹û²»Ö¹Ò»´ÎÖ¸¶¨Í¬Ò»¸ö¼ÆËãÆ÷£¬Ôò½«°´Ö¸¶¨µÄ¼ÆÊıÆ÷×öµİÔö¡£</p>
-      <p>
-          <code>counter-increment</code>ÊôĞÔÊÇÓÃÀ´±êÊ¶¼ÆÊıÆ÷ÓëÊµ¼ÊÏà¹ØÁªÔªËØ·¶Î§¡£ÆäµÚÒ»¸öÖµÊÇ±ØĞèµÄ£¬»ñÈ¡<code>counter-reset</code>¶¨ÒåµÄ±êÊ¶·û¡£</p>
-      <p>
-          <code>counter-ncrement</code>µÚ¶ş¸öÖµÊÇÒ»¸ö¿ÉÑ¡Öµ£¬ÊÇÒ»¸öÕûÊıÖµ£¬¿ÉÒÔÊÇÕıÕûÊı£¬Ò²¿ÉÒÔÊÇ¸ºÕûÊı¡£Ö÷ÒªÓÃÀ´Ô¤ÉèµİÔöµÄÖµ£¬Èç¹ûÈ¡ÖµÎª¸ºÖµÊ±£¬±íÊ¾µİ¼õ¡£Ä¬ÈÏÖµÎª<code>1</code></p>
-      <p>
-          <code>content</code>ÊÇºÍÎ±Àà<code>:before</code>¡¢<code>:after</code>»òÕßÎ±ÔªËØ<code>::before</code>¡¢<code>::after</code>ÅäºÏÔÚÒ»ÆğÊ¹ÓÃ£¬Ö÷Òª¹¦ÄÜÓÃÀ´Éú³ÉÄÚÈİ</p>
-      <p>
-          <code>counter()</code>ÊÇÒ»¸öº¯Êı£¬ÆäÖ÷ÒªÅäºÏ<code>content</code>Ò»ÆğÊ¹ÓÃ¡£Ê¹ÓÃ<code>counter()</code>À´µ÷ÓÃ¶¨ÒåºÃµÄ¼ÆÊıÆ÷±êÊ¶·û¡£</p>
-      <p>
-          <code>counter()</code>º¯Êı½ÓÊÜÁ½¸ö²ÎÊı£¬¶øÇÒÁ½²ÎÊıÖ®¼äÊ¹ÓÃ¶ººÅ(<code>,</code>)À´·Ö¸ô¡£µÚÒ»¸ö²ÎÊıÊÇ<code>counter-increment</code>¶¨ÒåµÄÊôĞÔÖµ<code>&lt;identifier&gt;</code>,ÓÃÀ´¸æËß¸ÃÎÄµµ²åÈëµÄ¼ÆÊıÆ÷±êÊ¶·ûÃû³ÆÊÇÊ²Ã´¡£µÚ¶ş¸öÊÇÓÃÀ´ÉèÖÃ¼ÆÊıÆ÷µÄ·ç¸ñ£¬ÓĞµãÀàËÆÓÚ<code>list-style-type</code>¡£Ä¬ÈÏÇé¿öÖ®ÏÂÈ¡ÖµÎªÊ®ÖÆ£¬µ«ÄãÒ²¿ÉÒÔÖØÖÃÕâ¸öÑùÊ½·ç¸ñ£¬±ÈÈç<code>upper-roman</code>»òÕß<code>upper-alpha.</code></p>
-      <p>
-          <code>counter()</code>º¯ÊıµÚ¶ş¸öÖµÓëÁĞ±íÖĞµÄ<code>list-style-type</code>ÖµÏàµÈ£º</p>
-      <ul>
-          <li>disc</li>
-          <li>circle</li>
-          <li>square</li>
-          <li>decimal</li>
-          <li>decimal-leading-zero</li>
-          <li>lower-roman</li>
-          <li>upper-roman</li>
-          <li>lower-greek</li>
-          <li>lower-latin</li>
-          <li>upper-latin</li>
-          <li>armenian</li>
-          <li>georgian</li>
-          <li>lower-alpha</li>
-          <li>upper-alpha</li>
-          <li>none</li>
-          <li>inherit</li>
-      </ul>
-      <p>
-          Í¬ÑùµÄ£¬¿ÉÒÔÊ¹ÓÃ¶à¸ö<code>counter()</code>£¬Èç£º<code>content: counter(Chapter,upper-roman) &quot;-&quot; counter(section,upper-roman);</code>¡£</p>
-      <h3>µÚÒ»²½£ºÉèÖÃ¼ÆÊıÆ÷</h3>
-      <p>
-          ÒªÊ¹ÓÃCSS CountersÉú³É×Ô¶¯¼ÆÊıÆ÷£¬Ê×ÒªÌõ¼ş¾ÍÊÇÍ¨¹ı<code>counter-reset</code>ÊôĞÔÏÈÉùÃ÷Ò»¸ö¼ÆÊıÆ÷Ãû³Æ£¬Õâ¸öÃû³ÆÊÇÊ²Ã´Ãû×Ö²¢²»ÖØÒª£¬ÖØÒªµÄÊÇÄãÉùÃ÷ÁËÕâÑùµÄÒ»¸öÃû¡£Èç:</p>
-      <pre class="css"><code class="css"><span class="tag">dl</span> <span class="rules">{
-  <span class="rule"><span class="attribute">counter-reset</span>:<span class="value"> term;</span></span>
-<span class="rule">}</span></span></code></pre>
-      <h3>µÚ¶ş²½£ºÉùÃ÷¼ÆÊıÆ÷</h3>
-      <p>
-          <code>counter-reset</code>Ö»ÊÇ¶¨ÒåÁËÒ»¸ö¼ÆÊıÆ÷±êÊ¶·û£¬ÔÚÊµ¼ÊÊ¹ÓÃÖĞ£¬ĞèÒªÍ¨¹ı<code>counter-increment</code>ÊôĞÔÀ´Ö¸¶¨¼ÆÊıÆ÷×÷ÓÃÓò¡£Õë¶ÔÕâ¸öÊ¾ÀıÀ´Ëµ,<code>counter-reset</code>Ö»ÊÇ¶¨ÒåÁËÒ»¸ö¼ÆÊıÆ÷±êÊ¶·û£¬µ«Ã»ÓĞÖ¸¶¨ÓÃµ½ÄÄ¡£»»¾ä»°Ëµ£¬Õâ¸ö¼ÆÊıÆ÷±êÊ¶·û£¬¿ÉÒÔÓÃµ½ÈÎºÎ±êÇ©ÔªËØÉÏ¡£</p>
-      <p>
-          ÔÚÕâ¸öÊ¾ÀıÖĞ£¬Èç¹ûÒªÊ¹ÓÃ<code>dt</code>±êÇ©ÉÏÊ¹ÓÃ<code>counter-reset</code>ÉùÃ÷ºÃµÄ¼ÆÊıÆ÷£¬ĞèÒªÊ¹ÓÃ<code>counter-increment</code>À´ÏÔÊ½ÉèÖÃ£º</p>
-      <pre class="perl"><code class="perl">dl {
-  counter-<span class="keyword">reset</span>: term;
+        h1::after{
+            content:"h1åæ’å…¥å†…å®¹"
+        }
+        h2::after{
+            content:none
+        }
+             </code></pre>
+        <h5>æ’å…¥æ–‡å­—ç¬¦å·</h5>
+        <pre><code>
+            h1{
+                quotes:"(" ")";  /*åˆ©ç”¨å…ƒç´ çš„quoteså±æ€§æŒ‡å®šæ–‡å­—ç¬¦å·*/
+            }
+            h1::before{
+                content:open-quote;
+            }
+            h1::after{
+                content:close-quote;
+            }
 
-  dt{
-    counter-increment: term;
-  }
-}</code></pre>
-      <h3>µÚÈı²½£ºÏÔÊ¾¼ÆÊıÆ÷</h3>
-      <p>
-          ÉÏÃæÁ½²½ÏÂÀ´£¬²»¼ûÈÎºÎ³ÉĞ§¡£Èç¹ûÒªÈÃ<code>dt</code>±êÇ©Ç°ÃæÉú³É×Ô¼ºĞèÒª¿´µ½µÄ¼ÆÊıÆ÷£¬»¹ĞèÒªÍ¨¹ı<code>:before</code>¡¢<code>content</code>ºÍ<code>counter()</code>£º</p>
-      <pre class="ruby"><code class="ruby">dl {
-  counter-<span class="symbol">reset:</span> term;
+            h2{
+                quotes:"\"" "\"";  /*æ·»åŠ åŒå¼•å·è¦è½¬ä¹‰*/
+            }
+            h2::before{
+                content:open-quote;
+            }
+            h2::after{
+                content:close-quote;
+            }
+             </code></pre>
+        <h5>æ’å…¥å›¾ç‰‡</h5>
+        <pre><code>
+            &lt;h3&gt;è¿™æ˜¯h3&lt;/h3&gt;
 
-  dt{
-    counter-<span class="symbol">increment:</span> term;
+            h3::after{
+                content:url(http://ido321.qiniudn.com/wp-content/themes/yusi1.0/img/new.gif)
+            }
+             </code></pre>
+        <h5>
+        æ’å…¥å…ƒç´ çš„å±æ€§å€¼
+        </h5>
+        <p>
+            contentå±æ€§å¯ä»¥ç›´æ¥åˆ©ç”¨attrè·å–å…ƒç´ çš„å±æ€§ï¼Œå°†å…¶æ’å…¥åˆ°å¯¹åº”ä½ç½®ã€‚
+        </p>
+        <pre><code>
+        &lt;a href="http:///www.ido321.com"&gt;è¿™æ˜¯é“¾æ¥&lt;/a&gt;
 
-    &amp;<span class="symbol">:before</span>{
-      <span class="symbol">content:</span> counter(term) <span class="string">&quot;:&quot;</span>;
-      margin-<span class="symbol">right:</span><span class="number">5</span>px;
-    }
-  }
-}
-</code></pre>
-      <strong>attr()<br />
-      ²åÈëÔªËØµÄÊôĞÔÖµ¡£ÔÚCSS2.1ÖĞattr()×ÜÊÇ·µ»ØÒ»¸ö×Ö·û´®¡£ÔÚCSS3ÖĞattr()¿ÉÒÔ·µ»Ø¶àÖÖ²»Í¬µÄÀàĞÍ¡£<br />
-      <br />
-      </strong><code>a:after {<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; content: &quot;(&quot;attr(href)&quot;)&quot;;
-      <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; font-size: 12px;
-      <br />
-&nbsp;&nbsp;&nbsp;&nbsp; }
-      <br />
-      &lt;a href=&quot;http://css.doyoe.com/&quot;&gt;CSS²Î¿¼ÊÖ²á&lt;/a&gt;</code>
-      <pre class="perl"><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASQAAAA9CAIAAACLNYNcAAAFbklEQVR4nO2dP3LiMBTG34modBcOoIo7UHAAU+QEDDegUO9uizTszDZmMsy6yuxMUmy2YCbLIm/hf7IsGwtsGTnfzK9IxMuzMPr4nh5KQvFF3snxr/z+W377Jb//lse/92YbnQ0n4mL0aYDpQfenePmUz29ysVg8v8mXz6Emulgshr4XYcCIiIhvxn5VwCTpQWwTczYABgJiA8AR3pSRAPgOnA0AR0Bsj4OYExHRLDiMPRMwCCgja0TrJ6IV0YroyeG6x0cOkwfOpnHYMYPG9gFbsfV+yOsuGc3F6E8fDAjEpiG2xHaRPg6xgfvxrIwMeVbgrYiHlYfElsikB/N4a56K2PYByyMLyoAyj3KJfcBWXMSC29SiENv08cnZ9gHb5ssx5JqELMRmzpNrQ6HUodHZQk6rfJelzifTZ/pttH4yWWUNMSe2vB4GPMYnsVUQvJ+6Ts/TvYysRiqi2gdMEarYEm3bLCttQuKM2PTxqoxU+oQrs4/dn6ez2LQkSnmZlZGWU5rB2aaOR84mtur+53Zna89jJTZzfXiL2LBn+wJ4Krb6Tqz7nu1qHpOEBF/p44cdI6OoIDZgxKcyUmkMsl1QdySLBklrHrNfKQ3MIuCwY4ZyFGIDRjxytmkDsU0fiO1RwHGtyeNTGTl1cBB54sDZAHAExAaAI1BGAuAIOBsAjoDYHos5JQ91aMvxfOaUWJ0RtY0fF5SRDhEJUTIXyhfVgCVLZoFF/NBo81myXucQJTNKiBKi8iphkFBdP833wTZ+XL6os70GLGHrV8d5omSmLALNMcIgIZaEneONGJK0jlul6lds+juLMk7c4r7Zxo8IxOYwT5TM0te++KL+UMf4BnoTm+mK/YqtsUBtuTntd+mO++YG38rIaH2mvPgoV/nhg+WDxN+VwZMQp2ycfUQyTuVRZKg+FF/kOzcnt82TfULN1h3Xt60YNry87KbIQDrLqHE8+xGevf2rtVzTfFKxLVklSXuecp61bC27wSbTa8Im3u516RevnE3whOikv7kePhgl+UGn14DleksVmAngnav6MTvSOy/zKPHWeW54UTfcYnmFQekwG15Zx1bOlukwHa+agHE+qczSS6vXbcqz4WWBV8YLg/g39Ylx/ertN6RzPMTWDVUMJdH6XLqZjC/ilAkydaR8XPBrIhEn1Zqi9Tn71jbPLdi+l5eIe8VWLPS50kswzqdSRgpdbPU8Fe+qVXQtzmbr8zfsSEfBozKyuugLBE8qYivCLEWiFqiVsvDxxKb08bQKzVpsDYZgLbZ6Hm2S1cozhthuw5WzHT4YneuHdHWx3epspZUZrvtQYpur+6I7nW1gsbU0J66Ibagyckw8Elu6H6vrQZyoca/VJJJY8Fqqyt5PG7fJk81quAaJKra51ntoanY3fdjQsEZbGiRlwnaxGZvy1WcxWoNkpD+v5FEZKWOtB1gu+qJVWO8i5j+riURtPJZqUbua3URrziOtN+LFR0MdgtUG47KmCrVRqa7m+nibIZjmYyu2+FK2LusNSYvWf4db1zn+sGRENM7v6frkbNNG6yuOzljzGdLWZHyRseAQG7hSd32F+QzfGjksmc+tf5yN7BEcRB7wILLgNN6HbDGcDQBnQGwAOAJlJACOgLMB4AifxBYGjPAPX4C3+FdG4o+ZAk/xydkyBB+xewvAzUBsADjCvzISYgOe4qGz4Z90Aj/xUGwXmZ/dRlsS+ISHZSScDfiJh86GPRvwE4gNAEd4WEZCbMBP4GwAOMI/seG4FvAUn8pIHEQGXtOHs53ljz/y+U3++COP5/GfEgCPSQ9i+/lPHs/y5VMez/Lnv/GfEgCPSQ9iAwB0AWIDwBEQGwCO+A+lysB9SLN7FAAAAABJRU5ErkJggg==" />
-</pre>
-      <p>
-          &nbsp;</p>
-      <p>
-          &nbsp;</p>
+        a:after{
+            content:attr(href);
+        }
+             </code></pre>
+        <h5>æ’å…¥é¡¹ç›®ç¼–å·</h5>
+        <p>åˆ©ç”¨contentçš„counterå±æ€§é’ˆå¯¹å¤šä¸ªé¡¹ç›®è¿½åŠ è¿ç»­ç¼–å·.</p>
+        <pre><code>
+        h1:before{
+             content:'ç¬¬'counter(my)'ç« ';    
+        }
+        h1{
+            counter-increment:my;
+        }
+             </code></pre>
+        <h5>
+            æŒ‡å®šç¼–å·ç§ç±»
+        </h5>
+        <pre><code>
+            //åˆ©ç”¨content(è®¡æ•°å™¨åï¼Œç¼–å·ç§ç±»)æ ¼å¼çš„è¯­æ³•æŒ‡å®šç¼–å·ç§ç±»ï¼Œç¼–å·ç§ç±»çš„å‚è€ƒå¯ä»¥ä¾æ®ulçš„list-style-typeå±æ€§å€¼
+        h1:before{
+            content:counter(my,upper-alpha);  // A  B  C
+            color:red;
+            font-size:42px;
+        }
+        h1{
+            counter-increment:my;
+        }
+             </code></pre>
+        <h5>åµŒå¥—ç¼–å·</h5>
+        <pre><code>
+            &lt;h1&gt;å¤§æ ‡é¢˜&lt;/h1&gt;
+            &lt;p&gt;æ–‡å­—1&lt;/p&gt;
+            &lt;p&gt;æ–‡å­—2&lt;/p&gt;
+            &lt;p&gt;æ–‡å­—3&lt;/p&gt;
+            &lt;h1&gt;å¤§æ ‡é¢˜&lt;/h1&gt;
+            &lt;p&gt;æ–‡å­—1&lt;/p&gt;
+            &lt;p&gt;æ–‡å­—2&lt;/p&gt;
 
-  </div>
+            h1::before{
+                content:counter(h)'.';
+                counter-reset:p;
+            }
+            h1{
+                counter-increment:h;
+            }
+            p::before{
+                content:counter(p)'.';
+                margin-left:40px;
+            }
+            p{
+                counter-increment:p;
+            }
+             </code></pre>
+        <h3>quoteså±æ€§</h3>
+        <p>é€‚ç”¨äºæ‰€æœ‰å…ƒç´ ï¼Œ::before, ::after, ::alternate, ::marker, ::line-marker, margin areas, @footnote areas, and @page contextï¼Œcontentå±æ€§çš„open-quoteå’Œclose-quoteå€¼å°†ä¸ä¼šç”Ÿæˆä»»ä½•æ ‡è®°ã€‚æœ‰å€¼çš„å®šä¹‰contentå±æ€§çš„open-quoteå’Œclose-quoteå€¼çš„æ ‡è®°ï¼Œ2ä¸ªä¸ºä¸€ç»„</p>
+        <pre><code>
+q:lang(en){quotes:'[' ']' "<" ">";}
+q:lang(zh-cmn-Hans){quotes:"Â«" "Â»" '"' '"';}
+
+&lt;p lang="en"&gt;&lt;q&gt;Quote me &lt;q&gt;Quote me&lt;/q&gt; Quote me!&lt;/q&gt;&lt;/p&gt;
+&lt;p lang="zh-cmn-Hans"&gt;&lt;q&gt;Quote me &lt;q&gt;Quote me&lt;/q&gt; Quote me!&lt;/q&gt;&lt;/p&gt;
+
+            [Quote me &lt;Quote me&gt; Quote me!]
+            Â«Quote me "Quote me" Quote me!Â»
+             </code></pre>
+    </div>
 </body>
 </html>
+<script type="text/javascript" src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+<script src="/WebUI/Resource/Javascript/jquery.min.js"></script>
