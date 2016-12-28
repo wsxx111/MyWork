@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\obj\Debug\WK.Code.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\WK.Code.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\WK.Code.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\obj\Debug\WK.Code.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\obj\Debug\WK.Code.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\NPOI_New.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\log4net.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\log4net.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\System.Net.Http.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\System.Net.Http.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\ServiceStack.Common.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\ServiceStack.Redis.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\ServiceStack.Text.dll

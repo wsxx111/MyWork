@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\WK.Data.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\WK.Data.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Debug\WK.Data.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Debug\WK.Data.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Debug\WK.Data.csprojResolveAssemblyReference.cache
