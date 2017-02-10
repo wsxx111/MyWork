@@ -3,3 +3,15 @@ C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\De
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Debug\WK.Data.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Debug\WK.Data.pdb
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Debug\WK.Data.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\WK.Code.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\log4net.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\System.Net.Http.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\ServiceStack.Redis.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\ServiceStack.Text.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\WK.Code.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\log4net.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\System.Net.Http.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\Memcached.ClientLibrary.dll

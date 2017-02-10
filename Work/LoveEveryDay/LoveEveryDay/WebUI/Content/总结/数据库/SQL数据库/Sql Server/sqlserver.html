@@ -572,6 +572,45 @@
                         <img src="images/t9.jpg" alt="" />
                     </div>
                 </li>
+                <li>
+                    <h4 id="sqlyh">sql优化</h4>
+                    <div>
+                        <i>避免使用count(*)获得表的记录数</i>
+                        (1)为了获得表中的记录数，我们通常使用下面的SQL语句：<br />
+　                     SELECT COUNT(*) FROM dbo.orders<br />
+　　                   这条语句会执行全表扫描才能获得行数。<br />
+　　                  (2)但下面的SQL语句不会执行全表扫描一样可以获得行数：<br />
+                      SELECT rows FROM sysindexes<br />
+　               　   WHERE id =OBJECT_ID('dbo.Orders') AND indid <2<br />
+                        <i>动态sql语句</i>
+                        <i>使用全文搜索搜索文本数据，取代like搜索</i>
+                        全文搜索让你可以实现like不能完成的复杂搜索，如搜索一个单词或一个短语，搜索一个与另一个单词或短语相近的单词或短语，或者是搜索同义词;<br />
+                        实现全文搜索比实现like搜索更容易(特别是复杂的搜索);
+
+                    </div>
+                    <div>
+                        <i>全文搜索</i>
+                        是在建立了全文索引的基础上的<br />
+                        1.CONTAINS搜索方式<br />
+                        　①--搜索文章内容含有张三或者李四的记录<br />
+　                       　SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"张三" OR "李四"')<br />
+                        　②--搜索文章内容中含有以'认'开始的词的记录<br />
+　　                      SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"认*"')    --认为，认识
+                        ③--加权词搜索的方式 - 给多个搜索条件加上权值，加权值越高的记录排在越前面，当以多个字符串作为搜索条件搜索记录时，可以为不同的字符串加上一个加权值，这个加权值是介于0和1之间的数值，加权值越高的记录排在越前面。事实上在该SELECT语句的返回结果集里，并没有按加权值的大小来排序，因为WEIGHT不影响CONTAINS查询的结果，只会影响CONTAINSTABLE查询中的排序:<br />
+                        --在CONTAINS搜索中，权重并不影响排序<br />
+　　                  SELECT * FROM Article<br />
+　　                  WHERE CONTAINS(ArticleContent,'ISABOUT ("北京" weight(0.9),"上海"  weight(0.6),"广州"  weight(0.5))')<br />
+                        ④--邻近词搜索的方式 - 可以搜索与另一个词或短语相邻近的词或短语:<br />
+                        　--搜索文章内容中第二个词在第一个词附近的记录<br />
+　　SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"张三" NEAR "李四"')<br />
+                        2.　FREETEXT搜索方式<br/>  
+                        FREETEXT搜索方式与CONTAINS搜索方式相比，其搜索结果表现都十分不精确，因为FREETEXT的搜索方式是将一个句子中的每个单字拆分开进行搜索的。使用CONTAINS搜索方式搜索条件为“教育部”的记录，那么搜索出来的将是记录里包含“教育部”三个字符串的记录。<br />
+                        --搜索文章内容中包含'程'字和'社'字的记录<br />
+　　SELECT * FROM Article WHERE FREETEXT(ArticleContent,'程社')<br /> 
+                        3.CONTAINSTABLE搜索方式
+
+                    </div>                   
+                </li>
             </ul>
         </div>
     </div>

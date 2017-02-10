@@ -8,6 +8,7 @@ namespace WK.Code
 {
     public class Validate
     {
+        private static Regex _numericregex = new Regex(@"^[-]?[0-9]+(\.[0-9]+)?$");
         private static Regex RegNumber = new Regex("^[0-9]+$");
         private static Regex RegNumberSign = new Regex("^[+-]?[0-9]+$");
         private static Regex RegDecimal = new Regex("^[0-9]+[.]?[0-9]+$");
@@ -547,7 +548,7 @@ namespace WK.Code
         }
 
 
-          /// <summary>
+        /// <summary>
         /// 转换成 HTML code
         /// </summary>
         /// <param name="str">string</param>

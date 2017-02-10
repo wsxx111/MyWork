@@ -137,7 +137,7 @@
                             {
                                 "title": "Linq基础",
                                 "iconClass": "",
-                                "url": "Linq基础.html"
+                                "url": "/WebUI/Content/总结/后端/Linq/linq.html"
                             }
                         ]
                     },
@@ -149,7 +149,7 @@
                             {
                                 "title": "EF基础",
                                 "iconClass": "",
-                                "url": "EF基础.html"
+                                "url": "/WebUI/Content/总结/后端/实体框架EF/EF基础.html"
                             }
                         ]
                     }

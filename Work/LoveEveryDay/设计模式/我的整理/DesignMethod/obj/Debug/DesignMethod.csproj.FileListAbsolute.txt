@@ -3,3 +3,8 @@ C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\bin\Debug\DesignMet
 C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\obj\Debug\DesignMethod.dll
 C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\obj\Debug\DesignMethod.pdb
 C:\Users\user\Desktop\最新整合纯\Ce\Design\DesignMethod\obj\Debug\DesignMethod.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\bin\Debug\DesignMethod.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\bin\Debug\DesignMethod.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.pdb

@@ -42,10 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DBContext\WKDbContext.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="DBUniversalHelper.cs" />
     <Compile Include="Extensions\DbHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WK.Code\WK.Code.csproj">
+      <Project>{bb719759-977c-4ed6-a8e9-40a180df5a4a}</Project>
+      <Name>WK.Code</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -17,9 +17,9 @@ namespace FrameworkOfGoodMan.Tools.ResourceRead
         public static byte[] MobilePhone
         {
             get
-            {
+            {                
                 return null;
-                //object obj = ResourceManager.GetObject("MobilePhone", resourceCulture);
+                //object obj = r.GetObject("MobilePhone", resourceCulture);
                 //return ((byte[])(obj));
             }
         }

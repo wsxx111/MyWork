@@ -560,6 +560,33 @@
     <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t2.png" />
     <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t3.png" />
     <Content Include="WebUI\Content\总结\后端\CSharp\Net下的Cache.html" />
+    <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk1.png" />
+    <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk2.png" />
+    <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk3.png" />
+    <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk4.png" />
+    <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk5.png" />
+    <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk6.png" />
+    <Content Include="WebUI\Content\总结\后端\Linq\linq.html" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\EF基础.html" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img1.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img10.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img11.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img12.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img13.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img14.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img15.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img16.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img17.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img18.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img19.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img2.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img3.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img4.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img5.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img6.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img7.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img8.png" />
+    <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img9.png" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t0.jpg" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t1.png" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t10.jpg" />
@@ -717,7 +744,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>9083</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
