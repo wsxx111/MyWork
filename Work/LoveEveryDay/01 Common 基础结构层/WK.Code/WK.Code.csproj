@@ -33,6 +33,9 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\packages\NPOI.2.1.3.1\lib\net40\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\packages\PDF\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\packages\log4net\log4net.dll</HintPath>
     </Reference>
@@ -71,9 +74,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessBar\BarCodeToHTML.cs" />
     <Compile Include="Cache\Cache.cs" />
     <Compile Include="Cache\CacheFactory.cs" />
     <Compile Include="Cache\ICache.cs" />
+    <Compile Include="Calendar\CNDate.cs" />
+    <Compile Include="CheckCode\YZMHelper.cs" />
+    <Compile Include="Chinese2Spelling\EcanConvertToCh.cs" />
+    <Compile Include="Chinese2Spelling\PinYin.cs" />
+    <Compile Include="FTP\FTPClient.cs" />
+    <Compile Include="FTP\FTPHelper.cs" />
+    <Compile Include="FTP\FTPOperater.cs" />
+    <Compile Include="JS\JSHelper.cs" />
     <Compile Include="MemCache\MemCacheClient.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Configs\Configs.cs" />
@@ -89,7 +101,8 @@
     <Compile Include="Extend\ExtTable.cs" />
     <Compile Include="File\FileDownHelper.cs" />
     <Compile Include="File\FileHelper.cs" />
-    <Compile Include="GZip.cs" />
+    <Compile Include="RMB\RMB.cs" />
+    <Compile Include="Zip\GZip.cs" />
     <Compile Include="Json\Json.cs" />
     <Compile Include="Licence.cs" />
     <Compile Include="Log\Log.cs" />
@@ -97,8 +110,18 @@
     <Compile Include="Log\LogFactory.cs" />
     <Compile Include="MemCache\MemcachedTool.cs" />
     <Compile Include="MemCache\SlMemCached.cs" />
+    <Compile Include="Mime\MailMessageEx.cs" />
+    <Compile Include="Mime\MediaTypes.cs" />
+    <Compile Include="Mime\MimeEntity.cs" />
+    <Compile Include="Mime\MimeHeaders.cs" />
+    <Compile Include="Mime\MimeReader.cs" />
+    <Compile Include="Mime\QuotedPrintableEncoding.cs" />
     <Compile Include="Net\HttpMethods.cs" />
+    <Compile Include="PDF\PDFOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random\BaseRandom.cs" />
+    <Compile Include="Random\RandomHelper.cs" />
+    <Compile Include="Random\RandomOperate.cs" />
     <Compile Include="Redis\RedisHelper.cs" />
     <Compile Include="Redis\RedisNOSQLConfigInfo.cs" />
     <Compile Include="Security\AESEncrypt.cs" />
@@ -110,6 +133,9 @@
     <Compile Include="Validate\Validate.cs" />
     <Compile Include="VerifyCode.cs" />
     <Compile Include="Web\WebHelper.cs" />
+    <Compile Include="XML\XmlHelper.cs" />
+    <Compile Include="XML\XMLProcess.cs" />
+    <Compile Include="Zip\SharpZip.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Configs\RedisNOSQLConfigInfo.config" />
@@ -123,6 +149,7 @@
   <ItemGroup>
     <Compile Include="Extend\Ext.DateTime.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

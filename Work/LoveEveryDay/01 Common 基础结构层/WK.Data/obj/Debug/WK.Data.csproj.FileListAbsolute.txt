@@ -15,3 +15,5 @@ C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\De
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\System.Net.Http.xml
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\zh-Hans\System.Net.Http.resources.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\Memcached.ClientLibrary.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\itextsharp.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Debug\ICSharpCode.SharpZipLib.dll

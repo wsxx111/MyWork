@@ -47,7 +47,7 @@ namespace TestWeb
                 string[] sendpeople = { "wangkaibj@fang.com","893130389@qq.com" };
                 Mail.Send(false, "测试", "你好，我是你的测试邮件,发了凉粉", "13814432662","413761", "smtp.163.com", sendpeople);
 
-
+              
             }
             catch 
             {

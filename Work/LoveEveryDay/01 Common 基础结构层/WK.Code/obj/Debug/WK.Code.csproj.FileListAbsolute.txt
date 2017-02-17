@@ -16,3 +16,4 @@ C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\De
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\ServiceStack.Redis.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\ServiceStack.Text.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\Memcached.ClientLibrary.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Debug\itextsharp.dll

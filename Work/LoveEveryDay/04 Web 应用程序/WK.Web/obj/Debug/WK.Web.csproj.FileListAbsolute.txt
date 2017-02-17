@@ -15,3 +15,5 @@ C:\Users\user\Desktop\Work\LoveEveryDay\04 Web 应用程序\WK.Web\bin\log4net.x
 C:\Users\user\Desktop\Work\LoveEveryDay\04 Web 应用程序\WK.Web\bin\System.Net.Http.xml
 C:\Users\user\Desktop\Work\LoveEveryDay\04 Web 应用程序\WK.Web\bin\zh-Hans\System.Net.Http.resources.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\04 Web 应用程序\WK.Web\bin\Memcached.ClientLibrary.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\04 Web 应用程序\WK.Web\bin\itextsharp.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\04 Web 应用程序\WK.Web\bin\ICSharpCode.SharpZipLib.dll
