@@ -1,5 +1,0 @@
-C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\bin\LoveEveryDay.dll
-C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\bin\LoveEveryDay.pdb
-C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\obj\Release\LoveEveryDay.csprojResolveAssemblyReference.cache
-C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\obj\Release\LoveEveryDay.dll
-C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\obj\Release\LoveEveryDay.pdb
