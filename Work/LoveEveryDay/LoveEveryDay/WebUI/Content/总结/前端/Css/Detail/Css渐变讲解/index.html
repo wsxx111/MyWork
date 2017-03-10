@@ -44,21 +44,21 @@
         <p>
             Mozilla下:其共有三个参数，第一个参数表示线性渐变的方向，top是从上到下、left是从左到右，如果定义成left top，那就是从左上角到右下角。第二个和第三个参数分别是起点颜色和终点颜色。你还可以在它们之间插入更多的参数，表示多种颜色的渐变
         </p>
-        <img src="imgs/tt1.png" alt="" />
-        <img src="imgs/tt2.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/40/55/pic/003572551000.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/0/38/pic/003577330600.png" alt="" />
         <p>-webkit-gradient是webkit引擎对渐变的实现参数，一共有五个。第一个参数表示渐变类型（type），可以是linear（线性渐变）或者radial（径向渐变）。第二个参数和第三个参数，都是一对值，分别表示渐变起点和终点。这对值可以用坐标形式表示，也可以用关键值表示，比如 left top（左上角）和left bottom（左下角）。第四个和第五个参数，分别是两个color-stop函数。color-stop函数接受两个参数，第一个表示渐变的位置，0为起点，0.5为中点，1为结束点；第二个表示该点的颜色。</p>
         <p>一个老式的写法示例</p>
-        <img src="imgs/tt3.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/88/16/pic/003578829400.png" alt="" />
         <p>接着我们在来看一下新式的写法</p>
-        <img src="imgs/tt4.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/59/37/pic/003580120600.png" alt="" />
         <p>Opera下:：-o-linear-gradient有三个参数。第一个参数表示线性渐变的方向，top是从上到下、left是从左到右，如果定义成left top，那就是从左上角到右下角。第二个和第三个参数分别是起点颜色和终点颜色。你还可以在它们之间插入更多的参数，表示多种颜色的渐变。</p>
-        <img src="imgs/tt5.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/50/2/pic/003581348200.png" alt="" />
         <p>IE下：IE依靠滤镜实现渐变。startColorstr表示起点的颜色，endColorstr表示终点颜色。GradientType表示渐变类型，0为缺省值，表示垂直渐变，1表示水平渐变</p>
         <pre><code>
         filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB);/*IE<9>*/
         -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)";/*IE8+*/
              </code></pre>
-        <img src="imgs/tt6.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/87/37/pic/003584296600.png" alt="" />
         <p>起始点（Starting Point）的工作方式类似于background position。您可以设置水平和垂直位置为百分比，或以像素为单位，或在水平方向上可以使用left/center/right，在垂直方向上可以使用top/center/bottom。位置起始于左上角。如果你不指定水平或垂直位置，它将默认为center。其工作方式主要包含：Top → Bottom、Left → Right、bottom → top、right → left等</p>
         <pre><code>
         /* Firefox 3.6+ */
@@ -71,7 +71,7 @@
         /* Opera 11.10+ */
         background: -o-linear-gradient(top, #ace, #f96);
         </code></pre>
-        <img src="imgs/tt7.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/56/55/pic/003585568400.png" alt="" />
         <pre><code>
         background: -moz-linear-gradient(left top, #ace, #f96);
         background: -webkit-linear-gradient(left top, #ace, #f96);
@@ -107,7 +107,7 @@
         background: -webkit-gradient(linear, 0 0, 100% 100%, from(#ace),to(#f96));
         background: -o-linear-gradient(30deg, #ace, #f96);
              </code></pre>
-        <img src="imgs/tt8.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/17/91/pic/003586970500.png" alt="" />
         <pre><code>
         .deg0 {
           background: -moz-linear-gradient(0deg, #ace, #f96);
@@ -165,7 +165,7 @@
           background: -o-linear-gradient(360deg, #ace, #f96);
         }
              </code></pre>
-        <img src="imgs/tt9.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/57/0/pic/003588761900.png" alt="" />
         <h5>渐变上应用透明─透明度</h5>
         <p>
             透明度还支持透明渐变。这对于制作一些特殊的效果是相当有用的，例如，当堆叠多个背景时。这里是两个背景的结合：一张图片，一个白色到透明的线性渐变.
@@ -211,7 +211,7 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
              </code></pre>
         <h3 id="tmd">附：透明度</h3>
         <p>opacity和rgba的比较</p>
-        <img src="imgs/tt10.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/98/94/pic/003589991400.png" alt="" />
         <p>
             效果中我们可以看出，他们相同之处就是背景色完全是一样的，但区别就是一直让大家觉得头痛的问题，那就是opacity后代元素会随着一起具有透明性，所以我们Opacity中的字随着透明值下降越来越看不清楚，而RGBA不具有这样的问题，但是其支持的浏览器中有一个占在大市场份额的IE不支持，这也就是让我们需要去做兼容
         </p>
@@ -269,16 +269,16 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
         border:10px solid red;
         border-radius:10px;
              </code></pre>
-        <img src="imgs/tt14.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/37/18/pic/003601483800.png" alt="" />
         <pre><code>
         width:60px;
         height:60px;
         border:10px solid red;
         border-radius:14px;
              </code></pre>
-        <img src="imgs/tt15.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/30/4/pic/003602953400.png" alt="" />
         <p>可以看出，当半径大于宽度时，内半径将要受其弧度影响，当半径小于宽度，只有外半径受其弧度影响。是<em>产生不了</em>下面这种效果了，不过有其他应用</p>
-        <img src="imgs/t16.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/17/43/pic/003569317700.png" alt="" />
         <h4>大小转角效果</h4>
         <p>
             对于border-radius还有一个内半径和外半径的区别，它主要是元素 边框值较大时，效果就很明显，当我们border-radius半径值小于或等于border的厚度时，我们边框内部就不具有圆角效果
@@ -289,7 +289,7 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
        border-radius: 15px;
     }
          </code></pre>
-        <img src="imgs/tt11.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/70/99/pic/003591718600.png" alt="" />
         <p>我们接着上面这个例子，把 border-radius半径值改成比边框值大一点：</p>
         <pre><code>
     .border-big {
@@ -297,7 +297,7 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
        border-radius: 25px;
     }           
          </code></pre>
-        <img src="imgs/tt12.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/80/84/pic/003597653400.png" alt="" />
         <p>
             如果角的两个相邻边有不同的宽度，那么这个角将会从宽的边平滑过度到窄的边。其中一条边甚至可以是0。相邻转角是由大向小转。
         </p>
@@ -307,7 +307,7 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
        border-radius: 30px;
     }           
          </code></pre>
-        <img src="imgs/tt13.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/35/31/pic/003598888800.png" alt="" />
         <p>进一步</p>
         <pre><code>
         .jian-zui {  
@@ -323,11 +323,11 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
         height: 40px;              
         }
         </code></pre>
-        <img class="little" src="imgs/tt17.png" alt="" />
-        <img class="little" src="imgs/tt18.png" alt="" />
+        <img class="little" src="http://img.soufun.com/kanli/2017_03/02/48/15/pic/003604282900.png" alt="" />
+        <img class="little" src="http://img.soufun.com/kanli/2017_03/02/81/21/pic/003606172800.png" alt="" />
         <h3 id="yy">附：阴影</h3>
         <h4>text-shadow</h4>
-        <img src="imgs/tt19.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/35/39/pic/003607345900.png" alt="" />
         <p>可以给一个对象应用一组或多组阴影效果，方式如前面的语法显示一样，用逗号隔开。text-shadow: X-Offset Y-Offset Blur Color中X-Offset表示阴影的水平偏移距离，其值为正值时阴影向右偏移，如果其值为负值时，阴影向左偏移；Y-Offset是指阴影的垂直偏移距离，如果其值是正值时，阴影向下偏移反之其值是负值时阴影向顶部偏移；Blur是指阴影的模糊程度，其值不能是负值，如果值越大，阴影越模糊，反之阴影越清晰，如果不需要阴影模糊可以将Blur值设置为0；Color是指阴影的颜色，其可以使用rgba色。</p>
         <p>IE是不支持text-shadow效果，但为了在兼容这一问题，我们只好使用滤镜filter:shadow来处理</p>
         <pre><code>
@@ -344,7 +344,7 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
           text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de;
         }
              </code></pre>
-        <img src="imgs/tt20.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/51/26/pic/003608568100.png" alt="" />
         <pre><code>
         .demo11 {
           color: #eee;
@@ -352,7 +352,7 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
           text-shadow: 5px 5px 0 #666, 7px 7px 0 #eee;
         }
              </code></pre>
-        <img src="imgs/tt21.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/2/73/pic/003610095000.png" alt="" />
         <h4>box-shadow</h4>
         <p>box-shadow和text-shadow一样可以使用一个或多个投影，如果使用多个投影时必须需要用逗号“，”分开。</p>
         <pre><code>
@@ -399,9 +399,9 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
            box-shadow: 50px 50px green;
          }
              </code></pre>
-        <img src="imgs/tt22.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/78/24/pic/003611892000.png" alt="" />
         <p>从各大浏览中的效果我们可以看出，阴影多出来的阴影会撑破容器跑出来</p>
-        <img src="imgs/tt23.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/54/77/pic/003613582400.png" alt="" />
         <p>
             这张图可以告诉我们很多信息，比如说borer-radius圆角，阴影扩展、阴影模糊以及padding是如何影响对象阴影的：非零值的border-radius将会以相同的作用影响阴影的外形，但border-image不会影响对象阴影的任何外形；对象阴影同box模型的层次一样，外阴影会在对象背景之下，内阴影会在边框之下背景之上。所以整个层级就是：边框>内阴影>背景图片>背景颜色>外阴影。因为大家都知道，我们的背景图片是在背景颜色之上的。
         </p>
@@ -429,14 +429,14 @@ background: -webkit-repeating-radial-gradient(#ace, #ace 5px, #f96 5px, #f96 10p
            box-shadow: 0 0 0 20px red;
          }
              </code></pre>
-          <img src="imgs/tt24.png" alt="" />
-        <img src="imgs/tt25.png" alt="" />
+          <img src="http://img.soufun.com/kanli/2017_03/02/80/2/pic/003614784500.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/73/41/pic/003616141900.png" alt="" />
         <h5>inset</h5>
         <p>
             在div上可以添加内阴影的效果<em>box-shadow: inset 0 0 10px red;
 </em>，我们这里要提醒一点的是，img标签上直接应用box-shadow的inset是没有任何效果的.<br />我们可以把img放到一个div中，然后不直接在img上运用box-shadow属性，而是在img的父元素div上运用box-shadow，接着我们在给img进行相对定位，并让其在父元素下一层。也可以通过伪元素，进行定位也能成功
         </p>
-        <img src="imgs/tt26.png" alt="" />
+        <img src="http://img.soufun.com/kanli/2017_03/02/97/95/pic/003617283700.png" alt="" />
         <p>给body顶部增加一个阴影</p>
         <pre><code>
         body:before {

@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\bin\Release\TestForm.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\bin\Release\TestForm.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\bin\Release\FrameworkOfGoodMan.Tools.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\bin\Release\Memcached.ClientLibrary.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\bin\Release\FrameworkOfGoodMan.Tools.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestForm.UserControl1.resources
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestWinForm.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestForm.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestForm.pdb

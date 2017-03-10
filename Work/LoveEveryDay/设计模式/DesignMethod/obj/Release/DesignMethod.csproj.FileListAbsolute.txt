@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\bin\Release\DesignMethod.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\bin\Release\DesignMethod.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\obj\Release\DesignMethod.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\obj\Release\DesignMethod.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\obj\Release\DesignMethod.pdb

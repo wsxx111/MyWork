@@ -1,0 +1,4 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\library\bin\library.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\library\bin\library.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\library\obj\Release\library.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\library\obj\Release\library.pdb

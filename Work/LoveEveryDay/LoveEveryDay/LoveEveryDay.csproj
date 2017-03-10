@@ -62,8 +62,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default.html" />
-    <Content Include="N级纯css展示菜单%28原型版%29.html" />
+    <Content Include="Data\GetMenuList.aspx" />
+    <Content Include="index.html" />
+    <Content Include="WebUI\Content\总结\前端\菜单样式\menu_test.aspx" />
+    <Content Include="WebUI\Content\总结\前端\菜单样式\N级纯css展示菜单%28原型版%29.html" />
     <Content Include="test.html" />
     <Content Include="Web.config" />
     <Content Include="WebUI\Content\MainPage.html" />
@@ -555,12 +557,15 @@
     <Content Include="WebUI\Content\总结\前端\Zepto\test.html" />
     <Content Include="WebUI\Content\总结\前端\Zepto\Zepto.html" />
     <Content Include="WebUI\Content\总结\前端\Zepto\zepto.js" />
-    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp正则表达式.html" />
-    <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t1.png" />
-    <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t2.png" />
-    <Content Include="WebUI\Content\总结\后端\CSharp\imgs\t3.png" />
-    <Content Include="WebUI\Content\总结\后端\CSharp\Net下的Cache.html" />
-    <Content Include="WebUI\Content\总结\后端\CSharp\反射.html" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\CSharp正则表达式.html" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\imgs\t1.png" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\imgs\t2.png" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\imgs\t3.png" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\Net的Cache.html" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\Lambda表达式.html" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\异步.html" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp平时总结\反射.html" />
+    <Content Include="WebUI\Content\总结\后端\CSharp\CSharp类库\codeShow.html" />
     <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk1.png" />
     <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk2.png" />
     <Content Include="WebUI\Content\总结\后端\Linq\imgs\mmmk3.png" />
@@ -592,6 +597,9 @@
     <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img8.png" />
     <Content Include="WebUI\Content\总结\后端\实体框架EF\imgs\img9.png" />
     <Content Include="WebUI\Content\总结\后端\网络爬虫\爬虫.html" />
+    <Content Include="WebUI\Content\总结\后端\设计模式\codeShow.html" />
+    <Content Include="Data\FileTree.aspx" />
+    <Content Include="WebUI\Content\总结\数据库\No-SQL数据库\MongoDB\index.html" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t0.jpg" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t1.png" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t10.jpg" />
@@ -603,8 +611,9 @@
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t7.jpg" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t8.jpg" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t9.jpg" />
-    <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\sql-xml.html" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\sqlserver.html" />
+    <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\sql操作xml.html" />
+    <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\sql知识小总结.html" />
     <Content Include="WebUI\Resource\Css\DetailSite.css" />
     <Content Include="WebUI\Resource\Css\fonts\codropsicons\codropsicons.svg" />
     <Content Include="WebUI\Resource\Css\fonts\codropsicons\license.txt" />
@@ -621,6 +630,26 @@
     <Content Include="WebUI\Resource\Css\siteCss\icons.css" />
     <Content Include="WebUI\Resource\Css\siteCss\normalize.css" />
     <Content Include="WebUI\Resource\Javascript\DetailSite.js" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\ajax-loader.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\file.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\folder-closed.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\folder.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\minus.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\plus.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-black-line.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-black.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-default-line.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-default.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-famfamfam-line.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-famfamfam.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-gray-line.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-gray.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-red-line.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\images\treeview-red.gif" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\jquery.cookie.js" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\jquery.js" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\jquery.treeview.css" />
+    <Content Include="WebUI\Resource\Javascript\menuTree\jquery.treeview.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\artTemplate\doT.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\artTemplate\doT.min.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\artTemplate\template.js" />
@@ -679,7 +708,14 @@
     <Content Include="WebUI\Resource\Javascript\sitejs\classie.js" />
     <Content Include="WebUI\Resource\Javascript\sitejs\mlpushmenu.js" />
     <Content Include="WebUI\Resource\Javascript\sitejs\modernizr.custom.js" />
-    <Content Include="目录样式.html" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shBrushCSharp.js" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shBrushCss.js" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shBrushJScript.js" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shBrushSql.js" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shBrushXml.js" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shCore.css" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shCore.js" />
+    <Content Include="WebUI\Resource\Javascript\syntaxhighlighter\shThemeDefault.css" />
     <Content Include="WebUI\Resource\Css\bootstrap.css" />
     <Content Include="WebUI\Resource\Css\bootstrap_amend.css" />
     <Content Include="WebUI\Resource\Css\Site.css" />
@@ -691,9 +727,9 @@
     <Content Include="WebUI\Resource\Javascript\menulist.js" />
     <Content Include="WebUI\Resource\Javascript\plugins\jquery.slimscroll.min.js" />
     <Content Include="WebUI\Resource\Javascript\wk-tabs.js" />
-    <Content Include="N级纯css展示菜单%28优化版%29.html" />
+    <Content Include="WebUI\Content\总结\前端\菜单样式\N级纯css展示菜单%28优化版%29.html" />
     <Content Include="WebUI\Resource\Javascript\loadnavlist.js" />
-    <Content Include="index.html" />
+    <Content Include="default.html" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\页面切换参考\fonts\codropsicons\codropsicons.eot" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\页面切换参考\fonts\codropsicons\codropsicons.ttf" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\页面切换参考\fonts\codropsicons\codropsicons.woff" />
@@ -720,9 +756,31 @@
     <Content Include="WebUI\Content\总结\前端\Other\artTemplate\aui-artTemplate\doc\syntax-simple.md" />
     <Content Include="WebUI\Content\总结\前端\Other\artTemplate\aui-artTemplate\package.json" />
     <Content Include="WebUI\Content\总结\前端\Other\artTemplate\aui-artTemplate\README.md" />
+    <Content Include="Data\Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\GetMenuList.aspx.cs">
+      <DependentUpon>GetMenuList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\GetMenuList.aspx.designer.cs">
+      <DependentUpon>GetMenuList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebUI\Content\总结\前端\菜单样式\menu_test.aspx.cs">
+      <DependentUpon>menu_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUI\Content\总结\前端\菜单样式\menu_test.aspx.designer.cs">
+      <DependentUpon>menu_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FileTree.aspx.cs">
+      <DependentUpon>FileTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\FileTree.aspx.designer.cs">
+      <DependentUpon>FileTree.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -751,7 +809,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>9083</DevelopmentServerPort>
+          <DevelopmentServerPort>2972</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:34539/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

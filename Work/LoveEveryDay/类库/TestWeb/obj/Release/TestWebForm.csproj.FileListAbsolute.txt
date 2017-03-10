@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\bin\TestWeb.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\bin\TestWeb.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\bin\FrameworkOfGoodMan.Tools.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\bin\Memcached.ClientLibrary.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\bin\FrameworkOfGoodMan.Tools.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\obj\Release\TestWebForm.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\obj\Release\TestWeb.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\obj\Release\TestWeb.pdb

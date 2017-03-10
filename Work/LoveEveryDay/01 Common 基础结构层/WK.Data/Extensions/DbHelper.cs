@@ -11,7 +11,7 @@ namespace WK.Data.Extensions
 {
     public class DbHelper
     {
-        private static string connstring = ConfigurationManager.ConnectionStrings["WKDbContext"].ConnectionString;
+        private static string connstring ="";
         public static int ExecuteSqlCommand(string cmdText)
         {
             using (DbConnection conn = new SqlConnection(connstring))

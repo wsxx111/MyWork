@@ -1,4 +1,6 @@
-﻿var menuList = [{
+﻿/// <reference path="../../Content/总结/数据库/No-SQL数据库/MongoDb/index.html" />
+/// <reference path="../../Content/总结/数据库/No-SQL数据库/MongoDb/index.html" />
+var menuList = [{
     "title": "主页",
     "iconClass": "glyphicon glyphicon-home",
     "url": "WebUI/Content/MainPage.html"
@@ -97,7 +99,7 @@
                      {
                          "title": "VueJs",
                          "iconClass": "",
-                         "url": "WebUI/Content/总结/前端/VueJs/vuejs.html"                         
+                         "url": "WebUI/Content/总结/前端/VueJs/vuejs.html"
                      },
                 ]
         },
@@ -115,18 +117,48 @@
                            {
                                "title": "C#平时总结",
                                "iconClass": "",
-                               "url": "C#平时总结.html"
+                               "url": "",
+                               "subMenuList": [
+                                   {
+                                       "title": "C#正则",
+                                       "iconClass": "",
+                                       "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/CSharp正则表达式.html"
+                                   },
+                                   {
+                                       "title": "Lambda表达式",
+                                       "iconClass": "",
+                                       "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/Lambda表达式.html"
+                                   },
+                                    {
+                                        "title": "Net的Cache",
+                                        "iconClass": "",
+                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/Net的Cache.html"
+                                    },
+                                    {
+                                        "title": "反射",
+                                        "iconClass": "",
+                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/反射.html"
+                                    },
+                                    {
+                                        "title": "异步",
+                                        "iconClass": "",
+                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/异步.html"
+                                    }
+                               ]
                            },
                             {
                                 "title": "C#类库",
                                 "iconClass": "",
-                                "url": "C#类库.html"
-                            },
+                                "url": "",
+                                "subMenuList": [
                        {
-                           "title": "C#正则.html",
+                           "title": "C#类库",
                            "iconClass": "",
-                           "url": "/WebUI/Content/总结/后端/CSharp/CSharp正则表达式.html"
+                           "url": "/WebUI/Content/总结/后端/CSharp/CSharp类库/codeShow.html"
                        }
+                                ]
+                            },
+
                        ]
                    },
                     {
@@ -138,6 +170,18 @@
                                 "title": "Linq基础",
                                 "iconClass": "",
                                 "url": "/WebUI/Content/总结/后端/Linq/linq.html"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "设计模式",
+                        "iconClass": "",
+                        "url": "",
+                        "subMenuList": [
+                            {
+                                "title": "设计模式解析",
+                                "iconClass": "",
+                                "url": "/WebUI/Content/总结/后端/设计模式/codeShow.html"
                             }
                         ]
                     },
@@ -184,15 +228,20 @@
                        "url": "",
                        "subMenuList": [
                            {
-                               "title": "Memcache数据库",
+                               "title": "Memcache",
                                "iconClass": "",
                                "url": "Memcache数据库.html"
                            },
                        {
-                           "title": "Redis数据库",
+                           "title": "Redis",
                            "iconClass": "",
                            "url": "Redis数据库.html"
-                       }
+                       },
+                        {
+                            "title": "MongoDB",
+                            "iconClass": "",
+                            "url": "WebUI/Content/总结/数据库/No-SQL数据库/MongoDB/index.html"
+                        }
                        ]
                    },
                ]

@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Release\FrameworkOfGoodMan.Tools.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Release\FrameworkOfGoodMan.Tools.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Release\Memcached.ClientLibrary.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Release\FrameworkOfGoodMan.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Release\FrameworkOfGoodMan.Tools.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Release\FrameworkOfGoodMan.Tools.pdb

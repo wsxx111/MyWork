@@ -97,18 +97,42 @@ namespace WK.Code
             HttpContext.Current.Response.AppendCookie(cookie);
         }
         /// <summary>
-        /// 读cookie值
+        /// 获得指定名称的Cookie中特定键的值
         /// </summary>
-        /// <param name="strName">名称</param>
-        /// <returns>cookie值</returns>
-        public static string GetCookie(string strName)
+        /// <param name="name">Cookie名称</param>
+        /// <param name="key">键</param>
+        /// <returns></returns>
+        public static string GetCookie(string name, string key)
         {
-            if (HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies[strName] != null)
+            HttpCookie cookie = HttpContext.Current.Request.Cookies[name];
+            if (cookie != null && cookie.HasKeys)
             {
-                return HttpContext.Current.Request.Cookies[strName].Value.ToString();
+                string v = cookie[key];
+                if (v != null)
+                    return v;
             }
-            return "";
+
+            return string.Empty;
         }
+        /// <summary>
+        /// 设置指定名称的Cookie特定键的值
+        /// </summary>
+        /// <param name="name">Cookie名称</param>
+        /// <param name="key">键</param>
+        /// <param name="value">值</param>
+        /// <param name="expires">过期时间</param>
+        public static void SetCookie(string name, string key, string value, double expires)
+        {
+            HttpCookie cookie = HttpContext.Current.Request.Cookies[name];
+            if (cookie == null)
+            {
+                cookie = new HttpCookie(name);
+            }
+            cookie[key] = value;
+            cookie.Expires = DateTime.Now.AddMinutes(expires);
+            HttpContext.Current.Response.AppendCookie(cookie);
+        }
+
         /// <summary>
         /// 删除Cookie对象
         /// </summary>

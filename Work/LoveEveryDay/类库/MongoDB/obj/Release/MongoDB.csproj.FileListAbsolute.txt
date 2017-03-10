@@ -1,0 +1,3 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\02 其他类库\MongoDB\bin\Release\MongoDB.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\02 其他类库\MongoDB\bin\Release\MongoDB.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\02 其他类库\MongoDB\obj\Release\MongoDB.dll

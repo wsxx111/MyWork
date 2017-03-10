@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\bin\Debug\MongoDB.xml
+C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\bin\Debug\MongoDB.dll
+C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\bin\Debug\MongoDB.pdb
+C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\obj\Debug\MongoDB.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\obj\Debug\MongoDB.dll
+C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\obj\Debug\MongoDB.pdb
