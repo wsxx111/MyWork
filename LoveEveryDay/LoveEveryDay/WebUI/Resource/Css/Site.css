@@ -391,3 +391,23 @@ nav.page-tabs {
 .page-tabs a.active i:hover, .page-tabs a.active:hover {
     color: #fff;
 }
+
+/*底部*/
+#time {
+color:#bbb;
+font-size:12px;
+display:inline-block;
+position:absolute;
+right:20px;
+top:4px;
+line-height:40px;
+}
+#copy_desc {
+color:#aaa;
+font-size:11px;
+display:inline-block;
+position:absolute;
+top:4px;
+left:50%;
+line-height:40px;
+}

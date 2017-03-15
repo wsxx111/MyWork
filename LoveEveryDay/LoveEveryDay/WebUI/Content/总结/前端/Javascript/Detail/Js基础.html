@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="/WebUI/Resource/Javascript/plugins/syntaxhighlighter/highlightstyle.css" rel="stylesheet" />
+    <link href="/WebUI/Resource/Css/DetailSite.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+    <pre><code>
+    alert(NaN!=3); //true
+    alert(NaN == NaN);//false
+    alert(undefined == undefined);//true
+    alert(null == null);//true
+    alert(isNaN(undefined));//true
+    </code></pre>
+
+
+    <pre><code>
+    var firstObj = 9;
+    function firstObj() {
+        console.log('新');
+    }
+    console.log(firstObj);  //9
+
+
+    function secondObj() {
+        console.log('新');
+    }
+    var secondObj = 8;
+    console.log(secondObj);  //8
+     </code></pre>
+
+        <pre><code>
+    function foo(str, a) {
+        eval(str);
+        console.log(a, b);
+    }
+
+    var b = 2;
+    foo("var b = 3;", 1);    // 1, 3
+             </code></pre>
+        <pre><code>
+    //strict模式中，eval中的代码运行在新的作用域中，此作用域为当前作用域的子集。如下所示：
+    function foo(str) {
+        "use strict";
+        eval(str);
+        console.log(a); // ReferenceError: a is not defined
+    }
+
+    foo("var a = 2")
+             </code></pre>
+        <pre><code>
+    //  with关键字为对象创建一个独立的作用域，此作用域为当前作用域的子集。
+    function foo(obj) {
+        with (obj) {
+            a = 2;
+        }
+    }
+
+    var o1 = {
+        a: 3
+    };
+
+    var o2 = {
+        b: 3
+    };
+
+    foo(o1);
+    console.log(o1.a); // 2
+
+    foo(o2);
+    console.log(o2.a); // undefined
+    console.log(a); // 2 -- Oops, leaked global!
+
+    // foo(o1)在o1作用域中查找做操作数a并修改其值,因此console.log(o1.a)输出为2。
+    //foo(o2)在o2作用域中查找做操作数a, 查询失败。继续向上级作用域function foo()中查找，
+    //同样失败。全局作用域同样没有做操左数a的定义。
+    //跟据左操作数查询规则，JavaScript执行引擎在全局作用域中创建新的变量a，
+    //并赋值为2，出现了作用域泄漏的现象。
+             </code></pre>
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
+<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+<script src="/WebUI/Resource/Javascript/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+    })
+</script>

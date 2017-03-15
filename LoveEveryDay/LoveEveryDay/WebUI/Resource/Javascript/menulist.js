@@ -62,16 +62,16 @@ var menuList = [{
                          "iconClass": "",
                          "url": "",
                          "subMenuList": [
-                             {
-                                 "title": "Javascript基础",
-                                 "iconClass": "",
-                                 "url": "Javascript基础.html"
-                             },
                               {
-                                  "title": "Javascript面向对象",
+                                  "title": "Js面向对象",
                                   "iconClass": "",
-                                  "url": "Javascript面向对象.html"
-                              }
+                                  "url": "/WebUI/Content/总结/前端/Javascript/list.html",
+                              },
+                              {
+                                  "title": "Js基础",
+                                  "iconClass": "",
+                                  "url": "/WebUI/Content/总结/前端/Javascript/Detail/Js基础.html"
+                              },
                          ]
                      },
                      {
@@ -257,21 +257,95 @@ var menuList = [{
     "iconClass": "glyphicon glyphicon-adjust",
     "subMenuList": [
         {
-            "title": "前端",
+            "title": "各大教程",
             "iconClass": "",
-            "url": "/前端.html"
+            "url": "",
+            "subMenuList": [
+                            {
+                                "title": "菜鸟教程",
+                                "iconClass": "",
+                                "url": "http://www.runoob.com/"
+                            },                           
+                            {
+                                "title": "W3CSchool",
+                                "iconClass": "",
+                                "url": "http://123.w3cschool.cn/"
+                            },
+                             {
+                                 "title": "易百",
+                                 "iconClass": "",
+                                 "url": "http://www.yiibai.com/"
+                             },
+                             {
+                                 "title": "Tutorialspoint",
+                                 "iconClass": "",
+                                 "url": "http://www.tutorialspoint.com/index.htm"
+                             },
+                           ]
         },
+         {
+             "title": "导航",
+             "iconClass": "",
+             "url": "",
+             "subMenuList": [                                
+                                  {
+                                      "title": "360教程导航",
+                                      "iconClass": "",
+                                      "url": "http://www.qqhao123.com/web/runoob/"
+                                  },
+                                   {
+                                       "title": "极客导航",
+                                       "iconClass": "",
+                                       "url": "http://www.jikedaohang.com/"
+                                   },
+                                    {
+                                        "title": "程序员导航",
+                                        "iconClass": "",
+                                        "url": "http://nav.iterabc.com/"
+                                    },
+                                    {
+                                        "title": "程序猿导航",
+                                        "iconClass": "",
+                                        "url": "https://www.cg4d.com/"
+                                    },
+                                    {
+                                        "title": "Web领域导航",
+                                        "iconClass": "",
+                                        "url": "http://www.2itso.com/"
+                                    },
+                                    {
+                                        "title": "程序员之家",
+                                        "iconClass": "",
+                                        "url": "http://www.360cxy.com/"
+                                    },
+                                    {
+                                        "title": "寄思导航",
+                                        "iconClass": "",
+                                        "url": "http://www.jisikiss.cn/"
+                                    },
+                                    {
+                                        "title": "垂直导航",
+                                        "iconClass": "",
+                                        "url": "http://www.51index.cn/"
+                                    },
+
+             ]
+         },
         {
-            "title": "后端",
+            "title": "其他精选",
             "iconClass": "",
-            "url": "/后端.html"
-        },
-        {
-            "title": "数据库",
-            "iconClass": "",
-            "url": "/数据库.html"
+            "url": "",
+            "subMenuList": [                                
+                                {
+                                    "title": "在线工具",
+                                    "iconClass": "",
+                                    "url": "http://tool.lu/"
+                                },
+
+                           ]
         }]
 },
+
 {
     "title": "作品",
     "iconClass": "glyphicon glyphicon-hdd",

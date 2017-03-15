@@ -66,7 +66,21 @@
     <Content Include="index.html" />
     <Content Include="WebUI\Content\作品\生活杂作\old.html" />
     <Content Include="WebUI\Content\总结\前端\Bootstrap\BootStrap.jpg" />
+    <Content Include="WebUI\Content\总结\前端\Css\old.html" />
     <Content Include="WebUI\Content\总结\前端\Html\old.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\this解析.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\Function函数.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\Js继承.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\Js封装.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\Call_Apply_Bind.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\Json解析.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\面向对象.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\原型解析.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\Js闭包.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\Js基础.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\Detail\闭包0.html" />
+    <Content Include="WebUI\Content\总结\前端\Javascript\list.html" />
+    <Content Include="WebUI\Content\总结\前端\jQuery\jquery基础.html" />
     <Content Include="WebUI\Content\总结\前端\菜单样式\menu_test.aspx" />
     <Content Include="WebUI\Content\总结\前端\菜单样式\N级纯css展示菜单%28原型版%29.html" />
     <Content Include="test.html" />
@@ -465,7 +479,7 @@
     <Content Include="WebUI\Content\总结\前端\jQuery\Detail\jQuery工具.html" />
     <Content Include="WebUI\Content\总结\前端\jQuery\Detail\jQuery常用.html" />
     <Content Include="WebUI\Content\总结\前端\jQuery\Detail\jQuery基本.html" />
-    <Content Include="WebUI\Content\总结\前端\jQuery\jquery基础.html" />
+    <Content Include="WebUI\Content\总结\前端\jQuery\old.html" />
     <Content Include="WebUI\Content\总结\前端\Html\Html基础列表.html" />
     <Content Include="WebUI\Content\总结\前端\Html\Detail\meta讲解.html" />
     <Content Include="WebUI\Content\总结\前端\jQuery\jQuery插件学习\jQuery插件.html" />
@@ -1033,6 +1047,7 @@
     <Content Include="WebUI\Resource\fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="WebUI\Content\总结\前端\Javascript\imgs\" />
     <Folder Include="WebUI\Content\教程\" />
     <Folder Include="WebUI\Content\杂记\日常\" />
   </ItemGroup>
