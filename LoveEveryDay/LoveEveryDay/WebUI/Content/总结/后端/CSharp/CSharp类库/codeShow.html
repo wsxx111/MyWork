@@ -10,11 +10,13 @@
 
     <style type="text/css">
         .Tree_left {
-            display: inline-block;
+             display: inline-block;
+            position:fixed;
+            top:10px;
             width: 200px;
             height: 600px;
             overflow: auto;
-            border: 1px solid #808080;
+            border-top: 1px solid #808080;
         }
 
         .code_Name {
@@ -30,7 +32,8 @@
 
         .code_Txt {
             width: 100%;
-            height: 570px;
+            /*height: 570px;*/
+            height: 100%;
             overflow: auto;
             border: 1px solid #808080;
         }
@@ -38,7 +41,8 @@
         .code_Detail {
             display: inline-block;
             width: 100%;
-            height: 600px;
+            height: 100%;
+            /*height: 600px;*/
             overflow: hidden;
             /*border: 1px solid #808080;*/
         }
@@ -46,7 +50,7 @@
 </head>
 
 <body>
-    <table style="border-collapse: collapse; border: 1px solid #808080; width: 100%; height: 600px;">
+    <table style="border-collapse: collapse; border: 1px solid #808080; width: 100%; height: 100%;">
         <tr>
             <td style="width: 200px">
                 <div class="Tree_left">

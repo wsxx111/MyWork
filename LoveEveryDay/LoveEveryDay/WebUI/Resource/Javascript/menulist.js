@@ -159,7 +159,7 @@ var menuList = [{
                        {
                            "title": "C#类库",
                            "iconClass": "",
-                           "url": "/WebUI/Content/总结/后端/CSharp/CSharp类库/codeShow.html"
+                           "url": "/WebUI/Content/总结/后端/CSharp/CSharp类库/classCode.html"
                        }
                                 ]
                             },
@@ -186,7 +186,7 @@ var menuList = [{
                             {
                                 "title": "设计模式解析",
                                 "iconClass": "",
-                                "url": "/WebUI/Content/总结/后端/设计模式/codeShow.html"
+                                "url": "/WebUI/Content/总结/后端/设计模式/designCode.html"
                             }
                         ]
                     },
@@ -282,17 +282,17 @@ var menuList = [{
                                  "url": "http://www.tutorialspoint.com/index.htm"
                              },
                            ]
-        },
-         {
-             "title": "导航",
-             "iconClass": "",
-             "url": "",
-             "subMenuList": [                                
-                                  {
-                                      "title": "360教程导航",
-                                      "iconClass": "",
-                                      "url": "http://www.qqhao123.com/web/runoob/"
-                                  },
+        },         
+        {
+            "title": "其他精选",
+            "iconClass": "",
+            "url": "",
+            "subMenuList": [                                
+                               {
+                                   "title": "360教程导航",
+                                   "iconClass": "",
+                                   "url": "http://www.qqhao123.com/web/runoob/"
+                               },
                                    {
                                        "title": "极客导航",
                                        "iconClass": "",
@@ -328,19 +328,6 @@ var menuList = [{
                                         "iconClass": "",
                                         "url": "http://www.51index.cn/"
                                     },
-
-             ]
-         },
-        {
-            "title": "其他精选",
-            "iconClass": "",
-            "url": "",
-            "subMenuList": [                                
-                                {
-                                    "title": "在线工具",
-                                    "iconClass": "",
-                                    "url": "http://tool.lu/"
-                                },
 
                            ]
         }]
