@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/*
+ * 
+ * 组合模式，是讲对象组合成树形结构以表示部分和整体的层次结构，组合模式使得用户对单个对象和组合对象的使用具有一致性
+ * 
+ * 当需求中体现部分与整体层次的结构时，以及你希望用户可以忽略组合对象与单个对象的不同，同意的使用组合结构中的所有对象时，就可以考虑使用组合模式了。
+ * 
+ * */
+
 namespace DesignMethod.组合模式
 {
     public class Program : OpenDesign
