@@ -32,6 +32,10 @@
                     background: #394a82;
                     color: #fbf2f2;
                 }
+                 .wrap a.special:hover {
+                    background-color: #b9941d;
+                    color: #fbf2f2;
+                }    
     </style>
 </head>
 <body>
@@ -44,6 +48,7 @@
         <a href="/WebUI/Content/总结/前端/Css/Detail/Css渐变讲解/index.html">Css渐变讲解</a>
         <a href="/WebUI/Content/总结/前端/Css/Detail/Css图形/index.html">Css图标</a>
         <a href="/WebUI/Content/总结/前端/Css/Detail/其他零碎.html">其他零碎</a>
+        <a class="special" href="http://www.uisdc.com/best-css3-animation-library" target="_blank">Css效果库推荐</a>
     </div>
     <iframe width="100%" height="700px" src="http://www.zi-han.net/css3/"></iframe>
     <iframe width="100%" height="700px" src="http://csswarp.eleqtriq.com/"></iframe>
@@ -60,6 +65,9 @@
                 var obj = objs[i];
                 obj.onclick = function () {
                     var url = obj.getAttribute("data-url");
+                    if (!url) {
+                        return;
+                    }
                     var tit = obj.text;
                     var dg = $.dialog({
                         id: tit,

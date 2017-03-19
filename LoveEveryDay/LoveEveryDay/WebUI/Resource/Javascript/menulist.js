@@ -128,12 +128,7 @@ var menuList = [{
                                        "title": "Lambda表达式",
                                        "iconClass": "",
                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/Lambda表达式.html"
-                                   },
-                                    {
-                                        "title": "Net的Cache",
-                                        "iconClass": "",
-                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/Net的Cache.html"
-                                    },
+                                   },                                   
                                     {
                                         "title": "反射",
                                         "iconClass": "",
@@ -148,6 +143,16 @@ var menuList = [{
                                         "title": "并发编程",
                                         "iconClass": "",
                                         "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/并发编程.html"
+                                    },
+                                    {
+                                        "title": "开发模式架构",
+                                        "iconClass": "",
+                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/开发模式.html"
+                                    },
+                                    {
+                                        "title": "更多>>",
+                                        "iconClass": "",
+                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/list.html"
                                     }
                                ]
                            },
@@ -265,7 +270,7 @@ var menuList = [{
                                 "title": "菜鸟教程",
                                 "iconClass": "",
                                 "url": "http://www.runoob.com/"
-                            },                           
+                            },
                             {
                                 "title": "W3CSchool",
                                 "iconClass": "",
@@ -281,13 +286,13 @@ var menuList = [{
                                  "iconClass": "",
                                  "url": "http://www.tutorialspoint.com/index.htm"
                              },
-                           ]
-        },         
+            ]
+        },
         {
             "title": "其他精选",
             "iconClass": "",
             "url": "",
-            "subMenuList": [                                
+            "subMenuList": [
                                {
                                    "title": "360教程导航",
                                    "iconClass": "",
@@ -329,7 +334,7 @@ var menuList = [{
                                         "url": "http://www.51index.cn/"
                                     },
 
-                           ]
+            ]
         }]
 },
 
