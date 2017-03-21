@@ -57,7 +57,7 @@ namespace DesignMethod.桥接模式
 
     public abstract class 不同的人
     {
-        public 不同的道路 Road { get; set; }
+        public 不同的车 car { get; set; }      
 
         public abstract void 行驶();
     }
@@ -67,8 +67,9 @@ namespace DesignMethod.桥接模式
     {
         public override void 行驶()
         {
-            Console.WriteLine("男人开着");
-            Road.行驶();
+            Console.WriteLine("男人");
+            car.行驶();
+            Console.WriteLine("行驶");
         }
     }
 
@@ -77,42 +78,15 @@ namespace DesignMethod.桥接模式
     {
         public override void 行驶()
         {
-            Console.WriteLine("女人开着");
-            Road.行驶();
-        }
-    }
-
-
-  
-    public abstract class 不同的道路
-    {
-        public 不同的车 car { get; set; }
-        public abstract void 行驶();
-    }
-
-
-    public class 高速公路 : 不同的道路
-    {
-        public override void 行驶()
-        {
+            Console.WriteLine("女人");
             car.行驶();
-            Console.WriteLine("高速公路上行驶");
+            Console.WriteLine("行驶");
         }
     }
-
-
-    public class 市区街道 : 不同的道路
-    {
-        public override void 行驶()
-        {
-            car.行驶();
-            Console.WriteLine("市区街道上行驶");
-        }
-    }
-
 
     public abstract class 不同的车
     {
+        public 不同的道路 road { get; set; }
         public abstract void 行驶();
     }
 
@@ -121,7 +95,8 @@ namespace DesignMethod.桥接模式
     {
         public override void 行驶()
         {
-            Console.WriteLine("小汽车在"); 
+            Console.WriteLine("开着小汽车");
+            road.行驶();
         }
         
     }
@@ -131,7 +106,31 @@ namespace DesignMethod.桥接模式
     {
         public override void 行驶()
         {
-            Console.WriteLine("公共汽车在");
+            Console.WriteLine("开着公共汽车");
+            road.行驶();
+        }
+    }
+
+    public abstract class 不同的道路
+    {
+        public abstract void 行驶();
+    }
+
+
+    public class 高速公路 : 不同的道路
+    {
+        public override void 行驶()
+        {
+            Console.WriteLine("在高速公路上");
+        }
+    }
+
+
+    public class 市区街道 : 不同的道路
+    {
+        public override void 行驶()
+        {
+            Console.WriteLine("在市区街道上");
         }
     }
 

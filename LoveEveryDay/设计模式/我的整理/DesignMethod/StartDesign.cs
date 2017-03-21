@@ -70,10 +70,10 @@ namespace DesignMethod
 
             //#endregion 观察者模式          
 
-            //#region 原型模式
-            //OpenDesign design = new 原型模式.Program();
-            //design.Open();
-            //#endregion
+            #region 原型模式
+            OpenDesign design = new 原型模式.Program();
+            design.Open();
+            #endregion
 
 
             //#region 装饰者
@@ -86,9 +86,9 @@ namespace DesignMethod
             //design.Open();
             //#endregion
 
-            #region 状态模式
-            状态模式.测试类2.运行();
-            #endregion
+            //#region 状态模式
+            //状态模式.测试类2.运行();
+            //#endregion
 
             //#region 适配器模式
             //DesignMethod.ccc.测试类.运行();

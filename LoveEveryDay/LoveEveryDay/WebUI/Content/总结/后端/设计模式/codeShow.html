@@ -34,7 +34,7 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            border: 1px solid #808080;
+            border: 1px solid #f00;
         }
 
         .code_Detail {
@@ -44,18 +44,20 @@
             overflow: hidden;
             /*border: 1px solid #808080;*/
         }
+        .Tree_left a {
+        background-color:transparent !important;
+        }
     </style>
 </head>
 
 <body>
-    <table style="border-collapse: collapse; border: 1px solid #808080; width: 100%; height: 100%;">
+    <table style="border-collapse: collapse; width: 100%; height: 100%;">
         <tr>
             <td style="width: 200px">
                 <div class="Tree_left">
                 </div>
             </td>
-            <td>
-
+            <td style="border: 1px solid #808080;">
                 <div class="code_Detail">
                     <div class="code_Name">加载中...</div>
                     <div class="code_Txt">
@@ -105,6 +107,7 @@
             data: { path: paths},
             success: function (responseText) {
                 var pre = "";
+                var html = "";
                 switch (fileType) {
                     case ".cs":
                     case ".ashx":
@@ -116,6 +119,9 @@
                         pre = "<pre class='brush: js;' name='code'>"; break;
                     case ".sql":
                         pre = "<pre class='brush: sql;' name='code'>"; break;
+                    case ".html":
+                    case ".htm":
+                        pre = ""; break;
                     case ".aspx":
                     case ".ascx":
                     case ".master":
@@ -125,8 +131,12 @@
                     default:
                         pre = "<pre>";
                 }
-
-                var html = pre + responseText.replace(/</g, "&lt;") + "</pre>";
+                if (pre == "") {
+                    html = responseText;
+                }
+                else {
+                    html = pre + responseText.replace(/</g, "&lt;") + "</pre>";
+                }
                 $(".code_Txt").html(html).scrollTop(0).scrollLeft(0);              
 
                 SyntaxHighlighter.highlight();

@@ -95,8 +95,9 @@
     <Compile Include="适配器\中文版.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="创建性模式.html" />
     <Content Include="结构型模式.html" />
+    <Content Include="创建性模式.html" />
+    <Content Include="old.html" />
     <Content Include="行为型模式.html" />
     <Content Include="设计摘要.html" />
   </ItemGroup>

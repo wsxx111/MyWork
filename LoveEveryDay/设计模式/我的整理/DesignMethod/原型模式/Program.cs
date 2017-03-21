@@ -18,7 +18,7 @@ namespace DesignMethod.原型模式
             Console.Write(cloneMokeyKing.Id);
 
             //变两个
-            MonkeyKingPrototype cloneMokeyKing2 = prototypeKing.Clone() as ConcretePrototype;
+            MonkeyKingPrototype cloneMokeyKing2 = prototypeKing.Clone() as ConcretePrototype2;
             Console.Write(cloneMokeyKing2.Id);
             Console.Read();
         }

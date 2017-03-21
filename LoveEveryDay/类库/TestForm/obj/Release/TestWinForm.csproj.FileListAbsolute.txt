@@ -8,3 +8,4 @@ C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestForm.Use
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestWinForm.csproj.GenerateResource.Cache
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestForm.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestForm.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Release\TestWinForm.csprojResolveAssemblyReference.cache
