@@ -255,6 +255,18 @@ var menuList = [{
                        ]
                    },
                ]
+        },
+        {
+            "title": "算法",
+            "iconClass": "",
+            "url": "",
+            "subMenuList":
+               [
+                   {
+                       "title": "排序算法",
+                       "iconClass": "",
+                       "url": "WebUI/Content/总结/算法/排序算法.html",
+                   }]
         }]
 },
 {
