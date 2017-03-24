@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
     <style type="text/css">
-        .forMore {                                                        
+        .forMore {
             padding: 10px;
             border-bottom: 1px solid black;
         }
@@ -120,6 +120,100 @@
                         表示不知道，这些null值在利用上面where子句后的运算符时，有可能造成数据丢失，如addr字段
                 <span>where Gender="M"</span><span>where Gender!="M"</span>这两条语句返回的数据行加起来并不是整个表中的所有数据,还有一种<span>where Gender IS NULL</span>
                     </p>
+                </li>
+                <li>
+                    <h4>查看执行时间和cpu占用时间,对I/O的操作情况</h4>
+                    <div>
+                        set statistics time on
+                        <br />
+                        select * from dbo.Product
+                        <br />
+                        set statistics time off
+                    </div>
+                    <div>
+                        set statistics io on
+                        <br />
+                        select * from dbo.Product
+                        <br />
+                        set statistics io off
+                    </div>
+                    <img src="http://images.cnitblog.com/i/398358/201404/241120374355049.jpg" alt="" />
+                    <img src="http://images.cnitblog.com/i/398358/201404/241127530298040.jpg" alt="" />
+                    <p>
+                        扫描计数：索引或表扫描次数
+                        <br />
+                        逻辑读取：数据缓存中读取的页数
+                        <br />
+                        物理读取：从磁盘中读取的页数
+                        <br />
+                        预读：查询过程中，从磁盘放入缓存的页数
+                        <br />
+                        lob逻辑读取：从数据缓存中读取，image，text，ntext或大型数据的页数
+                        <br />
+                        lob物理读取：从磁盘中读取，image，text，ntext或大型数据的页数
+                        <br />
+                        lob预读：查询过程中，从磁盘放入缓存的image，text，ntext或大型数据的页数
+                    </p>
+                </li>               
+                <li>
+                    <h4>Select查询艺术</h4>
+                    <div>
+                        <i>保证不查询多余的列与行。</i>
+                        <p>
+                            尽量避免select * 的存在，使用具体的列代替*，避免多余的列<br />
+                            使用where限定具体要查询的数据，避免多余的行<br />
+                            使用top，distinct关键字减少多余重复的行<br />
+                        </p>
+                    </div>
+                    <div>
+                        <i>慎用distinct关键字</i>
+                        <p>
+                            distinct在查询一个字段或者很少字段的情况下使用，会避免重复数据的出现，给查询带来优化效果。<br />
+                            但是查询字段很多的情况下使用，则会大大降低查询效率,这个时候带distinct的语句cpu时间和占用时间都高于不带distinct的语句。原因是当查询很多字段时，如果使用distinct，数据库引擎就会对数据进行比较，过滤掉重复数据，然而这个比较，过滤的过程则会毫不客气的占用系统资源，cpu时间。
+                        </p>
+                    </div>
+                    <div>
+                        <i>慎用union关键字</i>
+                        <p>
+                            关键字主要功能是把各个查询语句的结果集合并到一个结果集中返回给你。<br />
+                            满足union的语句必须满足：1.列数相同。 2.对应列数的数据类型要保持兼容。<br />
+                            执行过程：依次执行select语句-->>合并结果集--->>对结果集进行排序，过滤重复记录。<br />
+                            对结果集排序过滤占用了点时间，union all相对于union是不过滤的，使用union all能对union进行一定的优化。
+                        </p>
+                    </div>
+                    <div>
+                        <i>判断表中是否存在数据</i>
+                        <p>
+                            select count(*) from product
+                            <br />
+                            select top(1) id from product   //完胜
+                        </p>
+                    </div>
+                    <div>
+                        <i>连接查询的优化</i>
+                        <p>首先你要弄明白你想要的数据是什么样子的，然后再做出决定使用哪一种连接，这很重要。</p>
+                        <p>各种连接的取值大小为：</p>
+                        <p>内连接结果集大小取决于左右表满足条件的数量</p>
+                        <p>左连接取决与左表大小，右相反。</p>
+                        <p>完全连接和交叉连接取决与左右两个表的数据总数量</p>
+                        select * from
+                            <br />
+                        ( (select * from orde where OrderId>10000) o  left join orderproduct op on o.orderNum=op.orderNum )<br />
+                        <br />
+                        <br />
+                        select * from
+                            <br />
+                        ( orde o left join orderproduct op on o.orderNum=op.orderNum )<br />
+                        where o.OrderId>10000<br />
+                        <p>上面比下面节省时间</p>
+
+                    </div>
+                    <div>
+                        <i>如果你同时修改或删除过多数据，会造成cpu利用率过高从而影响别人对数据库的访问。可以采取分批操作数据。</i>
+                        <p>delete product where id<1000</p>
+                        <p>delete product where id>=1000 and id<2000</p>
+                        <p>delete product where id>=2000 and id<3000</p>
+                    </div>
                 </li>
                 <li>
                     <h4>窗口函数</h4>
@@ -601,6 +695,18 @@
                         3.CONTAINSTABLE搜索方式
 
                     </div>
+                </li>
+                <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/p/3714417.html" target="_blank">事务和锁</a>
+                </li>               
+                 <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/p/3696912.html" target="_blank">表分区</a>
+                </li>               
+                 <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/p/3667395.html" target="_blank">三大范式</a>
+                </li>
+                <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/archive/2013/01/02/2841588.html" target="_blank">存储过程</a>
                 </li>
             </ul>
         </div>

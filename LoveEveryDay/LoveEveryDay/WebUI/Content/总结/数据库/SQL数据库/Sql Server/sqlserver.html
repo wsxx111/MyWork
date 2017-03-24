@@ -135,6 +135,100 @@
                     </p>
                 </li>
                 <li>
+                    <h4>查看执行时间和cpu占用时间,对I/O的操作情况</h4>
+                    <div>
+                        set statistics time on
+                        <br />
+                        select * from dbo.Product
+                        <br />
+                        set statistics time off
+                    </div>
+                    <div>
+                        set statistics io on
+                        <br />
+                        select * from dbo.Product
+                        <br />
+                        set statistics io off
+                    </div>
+                    <img src="http://images.cnitblog.com/i/398358/201404/241120374355049.jpg" alt="" />
+                    <img src="http://images.cnitblog.com/i/398358/201404/241127530298040.jpg" alt="" />
+                    <p>
+                        扫描计数：索引或表扫描次数
+                        <br />
+                        逻辑读取：数据缓存中读取的页数
+                        <br />
+                        物理读取：从磁盘中读取的页数
+                        <br />
+                        预读：查询过程中，从磁盘放入缓存的页数
+                        <br />
+                        lob逻辑读取：从数据缓存中读取，image，text，ntext或大型数据的页数
+                        <br />
+                        lob物理读取：从磁盘中读取，image，text，ntext或大型数据的页数
+                        <br />
+                        lob预读：查询过程中，从磁盘放入缓存的image，text，ntext或大型数据的页数
+                    </p>
+                </li>
+                <li>
+                    <h4>Select查询艺术</h4>
+                    <div>
+                        <i>保证不查询多余的列与行。</i>
+                        <p>
+                            尽量避免select * 的存在，使用具体的列代替*，避免多余的列<br />
+                            使用where限定具体要查询的数据，避免多余的行<br />
+                            使用top，distinct关键字减少多余重复的行<br />
+                        </p>
+                    </div>
+                    <div>
+                        <i>慎用distinct关键字</i>
+                        <p>
+                            distinct在查询一个字段或者很少字段的情况下使用，会避免重复数据的出现，给查询带来优化效果。<br />
+                            但是查询字段很多的情况下使用，则会大大降低查询效率,这个时候带distinct的语句cpu时间和占用时间都高于不带distinct的语句。原因是当查询很多字段时，如果使用distinct，数据库引擎就会对数据进行比较，过滤掉重复数据，然而这个比较，过滤的过程则会毫不客气的占用系统资源，cpu时间。
+                        </p>
+                    </div>
+                    <div>
+                        <i>慎用union关键字</i>
+                        <p>
+                            关键字主要功能是把各个查询语句的结果集合并到一个结果集中返回给你。<br />
+                            满足union的语句必须满足：1.列数相同。 2.对应列数的数据类型要保持兼容。<br />
+                            执行过程：依次执行select语句-->>合并结果集--->>对结果集进行排序，过滤重复记录。<br />
+                            对结果集排序过滤占用了点时间，union all相对于union是不过滤的，使用union all能对union进行一定的优化。
+                        </p>
+                    </div>
+                    <div>
+                        <i>判断表中是否存在数据</i>
+                        <p>
+                            select count(*) from product
+                            <br />
+                            select top(1) id from product   //完胜
+                        </p>
+                    </div>
+                    <div>
+                        <i>连接查询的优化</i>
+                        <p>首先你要弄明白你想要的数据是什么样子的，然后再做出决定使用哪一种连接，这很重要。</p>
+                        <p>各种连接的取值大小为：</p>
+                        <p>内连接结果集大小取决于左右表满足条件的数量</p>
+                        <p>左连接取决与左表大小，右相反。</p>
+                        <p>完全连接和交叉连接取决与左右两个表的数据总数量</p>
+                        select * from
+                            <br />
+                        ( (select * from orde where OrderId>10000) o  left join orderproduct op on o.orderNum=op.orderNum )<br />
+                        <br />
+                        <br />
+                        select * from
+                            <br />
+                        ( orde o left join orderproduct op on o.orderNum=op.orderNum )<br />
+                        where o.OrderId>10000<br />
+                        <p>上面比下面节省时间</p>
+
+                    </div>
+                    <div>
+                        <i>如果你同时修改或删除过多数据，会造成cpu利用率过高从而影响别人对数据库的访问。可以采取分批操作数据。</i>
+                        <p>delete product where id<1000</p>
+                        <p>delete product where id>=1000 and id<2000</p>
+                        <p>delete product where id>=2000 and id<3000</p>
+                    </div>
+                </li>
+                <li>
                     <h4>窗口函数</h4>
                     <p>
                         SQL Server提供了4个排名函数:ROW_NUMBER(), RANK(), DENSE_RANK()和 NTILE()。下面通过示例重点谈谈这四个函数的使用。
@@ -179,12 +273,13 @@
                         <i>NTILE()</i>
                         NTILE函数把结果中的行关联到组，并为每一行分配一个所属的组的编号，编号从一开始。对于每一个行，NTILE 将返回此行所属的组的编号。
 如果分区的行数不能被 integer_expression 整除，则将导致一个成员有两种大小不同的组。按照 OVER 子句指定的顺序，较大的组排在较小的组前面。<br />
-                        NTILE(6) OVER(ORDER BY ClassId DESC) AS '组编号' <br />
+                        NTILE(6) OVER(ORDER BY ClassId DESC) AS '组编号'
+                        <br />
                         <i>1  2  3  3  3  4  5  5   6  6  6  6  6  7   8  9 </i>
-                        <i>
-                        1  2  3  （组编号：1） &nbsp;&nbsp;    3  3  4   （组编号：2） <br />  
-                        5  5  6  （组编号：3） &nbsp;&nbsp;    6  6  6   （组编号：4）<br />  
-                        6  7  8  （组编号：5） &nbsp;&nbsp;    9     （组编号：6）</i>  
+                        <i>1  2  3  （组编号：1） &nbsp;&nbsp;    3  3  4   （组编号：2）
+                            <br />
+                            5  5  6  （组编号：3） &nbsp;&nbsp;    6  6  6   （组编号：4）<br />
+                            6  7  8  （组编号：5） &nbsp;&nbsp;    9     （组编号：6）</i>
 
                     </div>
                 </li>
@@ -192,11 +287,13 @@
                     <h4>分区函数</h4>
                     <p>partition  by关键字是分析性函数的一部分，它和聚合函数不同的地方在于它能返回一个分组中的多条记录，而聚合函数一般只有一条反映统计值的记录，partition  by用于给结果集分组，如果没有指定那么它把整个结果集作为一个分组</p>
                     <div>
-                        学号 班级 成绩<br/>
-                        不按照班进行成绩排名：select *,row_number() over(order by Score desc) as Sequence from Student<br/>
-                        分班后进行成绩排名：select *,row_number() over(partition by Grade order by Score desc) as Sequence from Student<br/><br/>
-                        语法形式：row_number() over (partition by COL1 order by COL2)<br/>
-解释：根据COL1分组，在分组内部根据 COL2排序，而此函数计算的值就表示每组内部排序后的顺序编号（组内连续的唯一的) <br/>
+                        学号 班级 成绩<br />
+                        不按照班进行成绩排名：select *,row_number() over(order by Score desc) as Sequence from Student<br />
+                        分班后进行成绩排名：select *,row_number() over(partition by Grade order by Score desc) as Sequence from Student<br />
+                        <br />
+                        语法形式：row_number() over (partition by COL1 order by COL2)<br />
+                        解释：根据COL1分组，在分组内部根据 COL2排序，而此函数计算的值就表示每组内部排序后的顺序编号（组内连续的唯一的)
+                        <br />
                     </div>
                 </li>
                 <li>
@@ -205,10 +302,11 @@
                         删除数据库中完全重复的行,其他重复数据只剩下一条
                     </p>
                     <div>
-                        with ss as( select * ,row_number() over(partition by id order by id desc) as no<br />  
-                         from [cc].[dbo].[sametable]) <br />  
+                        with ss as( select * ,row_number() over(partition by id order by id desc) as no<br />
+                        from [cc].[dbo].[sametable])
+                        <br />
                         delete  from ss  where ss.no!=1
-                    </div>                 
+                    </div>
                 </li>
                 <li>
                     <h4>多行变一行的问题</h4>
@@ -577,11 +675,11 @@
                     <div>
                         <i>避免使用count(*)获得表的记录数</i>
                         (1)为了获得表中的记录数，我们通常使用下面的SQL语句：<br />
-　                     SELECT COUNT(*) FROM dbo.orders<br />
-　　                   这条语句会执行全表扫描才能获得行数。<br />
-　　                  (2)但下面的SQL语句不会执行全表扫描一样可以获得行数：<br />
-                      SELECT rows FROM sysindexes<br />
-　               　   WHERE id =OBJECT_ID('dbo.Orders') AND indid <2<br />
+                        SELECT COUNT(*) FROM dbo.orders<br />
+                        这条语句会执行全表扫描才能获得行数。<br />
+                        (2)但下面的SQL语句不会执行全表扫描一样可以获得行数：<br />
+                        SELECT rows FROM sysindexes<br />
+                        WHERE id =OBJECT_ID('dbo.Orders') AND indid <2<br />
                         <i>动态sql语句</i>
                         <i>使用全文搜索搜索文本数据，取代like搜索</i>
                         全文搜索让你可以实现like不能完成的复杂搜索，如搜索一个单词或一个短语，搜索一个与另一个单词或短语相近的单词或短语，或者是搜索同义词;<br />
@@ -592,25 +690,37 @@
                         <i>全文搜索</i>
                         是在建立了全文索引的基础上的<br />
                         1.CONTAINS搜索方式<br />
-                        　①--搜索文章内容含有张三或者李四的记录<br />
-　                       　SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"张三" OR "李四"')<br />
-                        　②--搜索文章内容中含有以'认'开始的词的记录<br />
-　　                      SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"认*"')    --认为，认识
+                        ①--搜索文章内容含有张三或者李四的记录<br />
+                        SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"张三" OR "李四"')<br />
+                        ②--搜索文章内容中含有以'认'开始的词的记录<br />
+                        SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"认*"')    --认为，认识
                         ③--加权词搜索的方式 - 给多个搜索条件加上权值，加权值越高的记录排在越前面，当以多个字符串作为搜索条件搜索记录时，可以为不同的字符串加上一个加权值，这个加权值是介于0和1之间的数值，加权值越高的记录排在越前面。事实上在该SELECT语句的返回结果集里，并没有按加权值的大小来排序，因为WEIGHT不影响CONTAINS查询的结果，只会影响CONTAINSTABLE查询中的排序:<br />
                         --在CONTAINS搜索中，权重并不影响排序<br />
-　　                  SELECT * FROM Article<br />
-　　                  WHERE CONTAINS(ArticleContent,'ISABOUT ("北京" weight(0.9),"上海"  weight(0.6),"广州"  weight(0.5))')<br />
+                        SELECT * FROM Article<br />
+                        WHERE CONTAINS(ArticleContent,'ISABOUT ("北京" weight(0.9),"上海"  weight(0.6),"广州"  weight(0.5))')<br />
                         ④--邻近词搜索的方式 - 可以搜索与另一个词或短语相邻近的词或短语:<br />
-                        　--搜索文章内容中第二个词在第一个词附近的记录<br />
-　　SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"张三" NEAR "李四"')<br />
-                        2.　FREETEXT搜索方式<br/>  
+                        --搜索文章内容中第二个词在第一个词附近的记录<br />
+                        SELECT * FROM Article WHERE CONTAINS(ArticleContent,'"张三" NEAR "李四"')<br />
+                        2.　FREETEXT搜索方式<br />
                         FREETEXT搜索方式与CONTAINS搜索方式相比，其搜索结果表现都十分不精确，因为FREETEXT的搜索方式是将一个句子中的每个单字拆分开进行搜索的。使用CONTAINS搜索方式搜索条件为“教育部”的记录，那么搜索出来的将是记录里包含“教育部”三个字符串的记录。<br />
                         --搜索文章内容中包含'程'字和'社'字的记录<br />
-　　SELECT * FROM Article WHERE FREETEXT(ArticleContent,'程社')<br /> 
+                        SELECT * FROM Article WHERE FREETEXT(ArticleContent,'程社')<br />
                         3.CONTAINSTABLE搜索方式
 
-                    </div>                   
+                    </div>
                 </li>
+                <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/p/3714417.html" target="_blank">事务和锁</a>
+                </li>               
+                 <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/p/3696912.html" target="_blank">表分区</a>
+                </li>               
+                 <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/p/3667395.html" target="_blank">三大范式</a>
+                </li>
+                <li>
+                    <a href="http://www.cnblogs.com/knowledgesea/archive/2013/01/02/2841588.html" target="_blank">存储过程</a>
+                </li>                               
             </ul>
         </div>
     </div>

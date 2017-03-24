@@ -240,12 +240,12 @@ var menuList = [{
                            {
                                "title": "Memcache",
                                "iconClass": "",
-                               "url": "Memcache数据库.html"
+                               "url": "http://www.cnblogs.com/knowledgesea/p/4940713.html"
                            },
                        {
                            "title": "Redis",
                            "iconClass": "",
-                           "url": "Redis数据库.html"
+                           "url": "http://www.cnblogs.com/knowledgesea/category/722602.html"
                        },
                         {
                             "title": "MongoDB",

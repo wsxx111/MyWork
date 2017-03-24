@@ -102,6 +102,7 @@
     <Compile Include="File\FileDownHelper.cs" />
     <Compile Include="File\FileHelper.cs" />
     <Compile Include="RMB\RMB.cs" />
+    <Compile Include="Sort\SortHelper.cs" />
     <Compile Include="Zip\GZip.cs" />
     <Compile Include="Json\Json.cs" />
     <Compile Include="Licence.cs" />
