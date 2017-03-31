@@ -433,6 +433,7 @@
     <Content Include="WebUI\Content\作品\生活杂作\Detail\clock\fonts\icomoon.ttf" />
     <Content Include="WebUI\Content\作品\生活杂作\Detail\clock\fonts\icomoon.woff" />
     <Content Include="WebUI\Content\作品\生活杂作\Detail\sing_ci\css\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\bbb.pubxml" />
     <None Include="WebUI\Content\总结\前端\Css\Less\site.less" />
     <Content Include="WebUI\Content\总结\前端\Css\Less\less.js" />
     <Content Include="WebUI\Content\总结\前端\Css\Css动画\显示左侧\css\component.css" />
@@ -658,6 +659,7 @@
     <Content Include="Data\FileTree.aspx" />
     <Content Include="WebUI\Content\总结\后端\设计模式\designCode.html" />
     <Content Include="WebUI\Content\总结\数据库\No-SQL数据库\MongoDB\index.html" />
+    <Content Include="WebUI\Content\总结\数据库\No-SQL数据库\No-Sql总结.html" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t0.jpg" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t1.png" />
     <Content Include="WebUI\Content\总结\数据库\SQL数据库\Sql Server\images\t10.jpg" />

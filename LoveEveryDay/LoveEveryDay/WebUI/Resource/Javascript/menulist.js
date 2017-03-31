@@ -30,7 +30,7 @@ var menuList = [{
                               {
                                   "title": "Canvas",
                                   "iconClass": "",
-                                  "url": "Canvas.html"
+                                  "url": "http://www.cnblogs.com/skyHF/tag/canvas/"
                               }
                          ]
                      },
@@ -228,7 +228,7 @@ var menuList = [{
                        {
                            "title": "mysql平时总结",
                            "iconClass": "",
-                           "url": "mysql平时总结.html"
+                           "url": "http://www.cnblogs.com/52fhy/p/4930719.html"
                        }
                        ]
                    },
@@ -251,7 +251,12 @@ var menuList = [{
                             "title": "MongoDB",
                             "iconClass": "",
                             "url": "WebUI/Content/总结/数据库/No-SQL数据库/MongoDB/index.html"
-                        }
+                        },
+                       {
+                           "title": "No-Sql总结",
+                       "iconClass": "",
+                       "url": "WebUI/Content/总结/数据库/No-SQL数据库/No-Sql总结.html"
+                       }
                        ]
                    },
                ]
