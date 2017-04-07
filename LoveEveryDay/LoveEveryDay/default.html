@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse navbar-right res">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="WebUI/Content/MainPage.html" target="frameRight">主页</a></li>
-                        <li><a href="https://home.cnblogs.com/u/wwkk/" target="_blank">博客</a></li>
+                        <li><a href="http://www.cnblogs.com/wwkk/" target="_blank">博客</a></li>
                         <li><a href="https://github.com/wsxx111" target="_blank">GitHub</a></li>
                         <li class="dropdown">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">设置&nbsp;<b class="caret"></b></a>
@@ -40,6 +40,7 @@
                                 <li><a href="#">PetShop系统</a></li>
                             </ul>
                         </li>
+                        <li><a style="color:#ccc;" href="index.html" target="_self">wap版</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,7 +87,7 @@
                             <a href="login.html" class="btn btn-default roll-link-right"><i class=""></i>退出</a>
                         </div>                   
                     <div class="content-main">
-                        <iframe id="frameRight" name="frameRight" height="100%" width="100%" src="WebUI/Content/MainPage.html" frameborder="0" seamless></iframe>
+                        <iframe id="frameRight" onload="loadFrame(this)" name="frameRight" height="100%" width="100%" src="WebUI/Content/MainPage.html" frameborder="0" seamless="seamless"></iframe>
                     </div>
                 </div>
             </div>
@@ -111,27 +112,29 @@
 <script src="WebUI/Resource/Javascript/loadnavlist.js?v=1.0"></script>
 <script src="WebUI/Resource/Javascript/wk-tabs.js?v=1.0"></script>
 
-<script type="text/javascript">
-    var win = document.getElementById('frameRight').contentWindow;
-    var targetElem = document.getElementById('frameRight').contentWindow.document
-    var docum = document.getElementById('frameRight').contentWindow.document;
-    $(win).scroll(function () {       
-        var scrollTo = $(win).scrollTop(),
-        docHeight = $(docum).height(),
-        windowHeight = $(win).height();
-        scrollPercent = (scrollTo / (docHeight - windowHeight)) * 100;
-        console.log(scrollPercent);
-        if (scrollPercent > 0) {
-            scrollPercent = scrollPercent.toFixed(1);           
-            $('#parcentNum').text(scrollPercent + "%");
-        }
-    }).trigger('scroll');
+<script type="text/javascript">    
 
+    function loadFrame(obj) {
+        $('#parcentNum').text('');
+        var win = document.getElementById('frameRight').contentWindow;
+        var targetElem = document.getElementById('frameRight').contentWindow.document
+        var docum = document.getElementById('frameRight').contentWindow.document;
+        $(win).scroll(function () {
+            var scrollTo = $(win).scrollTop(),
+            docHeight = $(docum).height(),
+            windowHeight = $(win).height();
+            scrollPercent = (scrollTo / (docHeight - windowHeight)) * 100;
+            console.log(scrollPercent);
+            if (scrollPercent > 0) {
+                scrollPercent = scrollPercent.toFixed(1);
+                $('#parcentNum').text(scrollPercent + "%");
+            }
+        }).trigger('scroll');
+    }
 
 </script>
 <script type="text/javascript">
-    $(function () {
+    $(function () {      
         setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt(new Date().getDay());", 1000);
-
     });
 </script>

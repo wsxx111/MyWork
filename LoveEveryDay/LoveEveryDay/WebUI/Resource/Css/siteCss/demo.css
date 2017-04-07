@@ -12,6 +12,8 @@
 
 body {
 	/*background: #34495e;*/
+    margin:0px;
+    padding:0px;
 	color: #fff;
 	font-weight: 300;
 	font-family: 'Lato', Calibri, Arial, sans-serif;

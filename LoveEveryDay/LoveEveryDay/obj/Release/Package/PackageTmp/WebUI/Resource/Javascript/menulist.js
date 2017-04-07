@@ -25,7 +25,7 @@ var menuList = [{
 
                                  "title": "html基础",
                                  "iconClass": "",
-                                 "url": "/WebUI/Content/总结/前端/Html/Html基础列表.html"
+                                 "url": "WebUI/Content/总结/前端/Html/Html基础列表.html"
                              },
                               {
                                   "title": "Canvas",
@@ -42,18 +42,18 @@ var menuList = [{
                             {
                                 "title": "Css基础",
                                 "iconClass": "",
-                                "url": "/WebUI/Content/总结/前端/Css/Css基础列表.html"
+                                "url": "WebUI/Content/总结/前端/Css/Css基础列表.html"
                             },
                             {
                                 "title": "Css动画",
                                 "iconClass": "",
-                                "url": "/WebUI/Content/总结/前端/Css/Css动画/页面核心切换/test.html"
+                                "url": "WebUI/Content/总结/前端/Css/Css动画/页面核心切换/test.html"
                             },
 
                              {
                                  "title": "Less",
                                  "iconClass": "",
-                                 "url": "/WebUI/Content/总结/前端/Css/Less/less.html"
+                                 "url": "WebUI/Content/总结/前端/Css/Less/less.html"
                              }
                         ]
                     },
@@ -65,12 +65,12 @@ var menuList = [{
                               {
                                   "title": "Js面向对象",
                                   "iconClass": "",
-                                  "url": "/WebUI/Content/总结/前端/Javascript/list.html",
+                                  "url": "WebUI/Content/总结/前端/Javascript/list.html",
                               },
                               {
                                   "title": "Js基础",
                                   "iconClass": "",
-                                  "url": "/WebUI/Content/总结/前端/Javascript/Detail/Js基础.html"
+                                  "url": "WebUI/Content/总结/前端/Javascript/Detail/Js基础.html"
                               },
                          ]
                      },
@@ -122,37 +122,37 @@ var menuList = [{
                                    {
                                        "title": "C#正则",
                                        "iconClass": "",
-                                       "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/CSharp正则表达式.html"
+                                       "url": "WebUI/Content/总结/后端/CSharp/CSharp平时总结/CSharp正则表达式.html"
                                    },
                                    {
                                        "title": "Lambda表达式",
                                        "iconClass": "",
-                                       "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/Lambda表达式.html"
+                                       "url": "WebUI/Content/总结/后端/CSharp/CSharp平时总结/Lambda表达式.html"
                                    },                                   
                                     {
                                         "title": "反射",
                                         "iconClass": "",
-                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/反射.html"
+                                        "url": "WebUI/Content/总结/后端/CSharp/CSharp平时总结/反射.html"
                                     },
                                     {
                                         "title": "异步线程",
                                         "iconClass": "",
-                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/异步线程.html"
+                                        "url": "WebUI/Content/总结/后端/CSharp/CSharp平时总结/异步线程.html"
                                     },
                                     {
                                         "title": "并发编程",
                                         "iconClass": "",
-                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/并发编程.html"
+                                        "url": "WebUI/Content/总结/后端/CSharp/CSharp平时总结/并发编程.html"
                                     },
                                     {
                                         "title": "开发模式架构",
                                         "iconClass": "",
-                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/开发模式.html"
+                                        "url": "WebUI/Content/总结/后端/CSharp/CSharp平时总结/开发模式.html"
                                     },
                                     {
                                         "title": "更多>>",
                                         "iconClass": "",
-                                        "url": "/WebUI/Content/总结/后端/CSharp/CSharp平时总结/list.html"
+                                        "url": "WebUI/Content/总结/后端/CSharp/CSharp平时总结/list.html"
                                     }
                                ]
                            },
@@ -164,7 +164,7 @@ var menuList = [{
                        {
                            "title": "C#类库",
                            "iconClass": "",
-                           "url": "/WebUI/Content/总结/后端/CSharp/CSharp类库/classCode.html"
+                           "url": "WebUI/Content/总结/后端/CSharp/CSharp类库/classCode.html"
                        }
                                 ]
                             },
@@ -179,7 +179,7 @@ var menuList = [{
                             {
                                 "title": "Linq基础",
                                 "iconClass": "",
-                                "url": "/WebUI/Content/总结/后端/Linq/linq.html"
+                                "url": "WebUI/Content/总结/后端/Linq/linq.html"
                             }
                         ]
                     },
@@ -191,7 +191,7 @@ var menuList = [{
                             {
                                 "title": "设计模式解析",
                                 "iconClass": "",
-                                "url": "/WebUI/Content/总结/后端/设计模式/designCode.html"
+                                "url": "WebUI/Content/总结/后端/设计模式/designCode.html"
                             }
                         ]
                     },
@@ -203,7 +203,7 @@ var menuList = [{
                             {
                                 "title": "EF基础",
                                 "iconClass": "",
-                                "url": "/WebUI/Content/总结/后端/实体框架EF/EF基础.html"
+                                "url": "WebUI/Content/总结/后端/实体框架EF/EF基础.html"
                             }
                         ]
                     }
@@ -251,7 +251,12 @@ var menuList = [{
                             "title": "MongoDB",
                             "iconClass": "",
                             "url": "WebUI/Content/总结/数据库/No-SQL数据库/MongoDB/index.html"
-                        }
+                        },
+                       {
+                           "title": "No-Sql总结",
+                       "iconClass": "",
+                       "url": "WebUI/Content/总结/数据库/No-SQL数据库/No-Sql总结.html"
+                       }
                        ]
                    },
                ]
@@ -357,7 +362,7 @@ var menuList = [{
         {
             "title": "生活杂作",
             "iconClass": "",
-            "url": "/WebUI/Content/作品/生活杂作/list.html"
+            "url": "WebUI/Content/作品/生活杂作/list.html"
         },
         {
             "title": "作品2",
@@ -382,7 +387,7 @@ var menuList = [{
         {
             "title": "日常",
             "iconClass": "",
-            "url": "/日常.html"
+            "url": "WebUI/Content/杂记/日常/note.html"
         }]
 }
 ]

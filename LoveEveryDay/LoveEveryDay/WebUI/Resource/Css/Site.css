@@ -174,9 +174,31 @@
     .nav-left li:hover > ul {
         display: block;
     }
+
+    /*底部*/
+    #time {
+        color: #bbb;
+        font-size: 12px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 4px;
+        line-height: 40px;
+    }
 }
 
 @media (max-width:790px) {
+
+    /*底部*/
+    #time {
+        color: #bbb;
+        font-size: 12px;
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        top: 4px;
+        line-height: 40px;
+    }
 
     .nav-left > li {
         width: 60px;
@@ -283,9 +305,9 @@
     color: #b9b6b6;
 }
 
-.content-tabs .roll-btn-right:hover,.content-tabs .roll-btn-left:hover {
-    color:#fff;
-}
+    .content-tabs .roll-btn-right:hover, .content-tabs .roll-btn-left:hover {
+        color: #fff;
+    }
 
 .content-tabs .roll-group-right li {
     cursor: pointer;
@@ -366,9 +388,10 @@ nav.page-tabs {
     border-left: 1px solid white;
     color: #a7b1c2;
 }
+
     .page-tabs a:hover {
-    background-color: #222;
-    color:#fff;
+        background-color: #222;
+        color: #fff;
     }
 
     .page-tabs a.active {
@@ -380,34 +403,26 @@ nav.page-tabs {
 .btn-new-black2 {
     background-color: #343434;
     color: #a7b1c2;
-    padding: 10px 12px;    
+    padding: 10px 12px;
     line-height: 1.3333333;
     border: none;
 }
+
     .btn-new-black2:hover {
-    color:#fff;
+        color: #fff;
     }
 
 .page-tabs a.active i:hover, .page-tabs a.active:hover {
     color: #fff;
 }
 
-/*底部*/
-#time {
-color:#bbb;
-font-size:12px;
-display:inline-block;
-position:absolute;
-right:20px;
-top:4px;
-line-height:40px;
-}
+
 #copy_desc {
-color:#aaa;
-font-size:11px;
-display:inline-block;
-position:absolute;
-top:4px;
-left:50%;
-line-height:40px;
+    color: #aaa;
+    font-size: 11px;
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    line-height: 40px;
 }
