@@ -101,6 +101,11 @@ var menuList = [{
                          "iconClass": "",
                          "url": "WebUI/Content/总结/前端/VueJs/vuejs.html"
                      },
+                     {
+                         "title": "更多>>",
+                         "iconClass": "",
+                         "url": "WebUI/Content/总结/前端/list.html"
+                     }
                 ]
         },
         {
