@@ -70,7 +70,7 @@ var menuList = [{
                               {
                                   "title": "Js基础",
                                   "iconClass": "",
-                                  "url": "WebUI/Content/总结/前端/Javascript/Detail/Js基础.html"
+                                  "url": "WebUI/Content/总结/前端/Javascript/b-list.html"
                               },
                          ]
                      },
@@ -88,19 +88,9 @@ var menuList = [{
                                  "title": "jQuery插件",
                                  "iconClass": "",
                                  "url": "WebUI/Content/总结/前端/jQuery/jQuery插件学习/jQuery插件.html"
-                             },
-                              {
-                                  "title": "jQuery框架",
-                                  "iconClass": "",
-                                  "url": "jQuery框架.html"
-                              }
+                             },                              
                          ]
-                     },
-                     {
-                         "title": "VueJs",
-                         "iconClass": "",
-                         "url": "WebUI/Content/总结/前端/VueJs/vuejs.html"
-                     },
+                     },                  
                      {
                          "title": "更多>>",
                          "iconClass": "",
