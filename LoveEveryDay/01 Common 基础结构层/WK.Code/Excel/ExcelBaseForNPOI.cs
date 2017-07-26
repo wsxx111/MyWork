@@ -292,6 +292,6 @@ namespace WK.Code.Excel
         {
             sheet.CreateFreezePane(cloIndex, rowIndex);
         }
-      
+
     }
 }

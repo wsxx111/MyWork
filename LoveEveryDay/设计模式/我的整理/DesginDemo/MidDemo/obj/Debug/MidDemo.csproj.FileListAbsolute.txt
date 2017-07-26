@@ -1,0 +1,6 @@
+C:\Users\WANG\Desktop\TestDemo\MidDemo\bin\Debug\MidDemo.exe.config
+C:\Users\WANG\Desktop\TestDemo\MidDemo\bin\Debug\MidDemo.exe
+C:\Users\WANG\Desktop\TestDemo\MidDemo\bin\Debug\MidDemo.pdb
+C:\Users\WANG\Desktop\TestDemo\MidDemo\obj\Debug\MidDemo.csprojResolveAssemblyReference.cache
+C:\Users\WANG\Desktop\TestDemo\MidDemo\obj\Debug\MidDemo.exe
+C:\Users\WANG\Desktop\TestDemo\MidDemo\obj\Debug\MidDemo.pdb

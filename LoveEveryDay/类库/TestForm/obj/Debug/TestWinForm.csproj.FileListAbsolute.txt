@@ -32,3 +32,15 @@ C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestForm.UserC
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestWinForm.csproj.GenerateResource.Cache
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestForm.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestForm.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\bin\Debug\TestForm.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\bin\Debug\TestForm.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\bin\Debug\FrameworkOfGoodMan.Tools.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\bin\Debug\Memcached.ClientLibrary.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\bin\Debug\FrameworkOfGoodMan.Tools.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\bin\Debug\FrameworkOfGoodMan.Tools.xml
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestWinForm.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestForm.UserControl1.resources
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestWinForm.csproj.GenerateResource.Cache
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestForm.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestForm\obj\Debug\TestForm.pdb

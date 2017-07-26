@@ -200,5 +200,4 @@ namespace DesignMethod.中介者模式
         public abstract void ChangeCount(int Count);
     }
 
-
 }

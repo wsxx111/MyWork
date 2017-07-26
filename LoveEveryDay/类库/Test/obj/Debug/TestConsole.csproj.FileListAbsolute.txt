@@ -26,3 +26,13 @@ C:\Users\user\Desktop\Work\LoveEveryDay\类库\Test\bin\Debug\FrameworkOfGoodMan
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\Test\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\Test\obj\Debug\Test.exe
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\Test\obj\Debug\Test.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\Test\bin\Debug\Test.exe
+D:\桌面内容\Work\LoveEveryDay\类库\Test\bin\Debug\Test.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\Test\bin\Debug\FrameworkOfGoodMan.Tools.dll
+D:\桌面内容\Work\LoveEveryDay\类库\Test\bin\Debug\Memcached.ClientLibrary.dll
+D:\桌面内容\Work\LoveEveryDay\类库\Test\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\桌面内容\Work\LoveEveryDay\类库\Test\bin\Debug\FrameworkOfGoodMan.Tools.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\Test\bin\Debug\FrameworkOfGoodMan.Tools.xml
+D:\桌面内容\Work\LoveEveryDay\类库\Test\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\类库\Test\obj\Debug\Test.exe
+D:\桌面内容\Work\LoveEveryDay\类库\Test\obj\Debug\Test.pdb

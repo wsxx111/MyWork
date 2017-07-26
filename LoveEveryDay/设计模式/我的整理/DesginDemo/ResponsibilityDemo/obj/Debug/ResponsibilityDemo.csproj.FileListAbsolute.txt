@@ -1,0 +1,9 @@
+C:\Users\89313\Desktop\StateDemo\ResponsibilityDemo\bin\Debug\ResponsibilityDemo.exe
+C:\Users\89313\Desktop\StateDemo\ResponsibilityDemo\bin\Debug\ResponsibilityDemo.pdb
+C:\Users\89313\Desktop\StateDemo\ResponsibilityDemo\obj\Debug\ResponsibilityDemo.exe
+C:\Users\89313\Desktop\StateDemo\ResponsibilityDemo\obj\Debug\ResponsibilityDemo.pdb
+C:\Users\WANG\Desktop\TestDemo\ResponsibilityDemo\bin\Debug\ResponsibilityDemo.exe
+C:\Users\WANG\Desktop\TestDemo\ResponsibilityDemo\bin\Debug\ResponsibilityDemo.pdb
+C:\Users\WANG\Desktop\TestDemo\ResponsibilityDemo\obj\Debug\ResponsibilityDemo.csprojResolveAssemblyReference.cache
+C:\Users\WANG\Desktop\TestDemo\ResponsibilityDemo\obj\Debug\ResponsibilityDemo.exe
+C:\Users\WANG\Desktop\TestDemo\ResponsibilityDemo\obj\Debug\ResponsibilityDemo.pdb

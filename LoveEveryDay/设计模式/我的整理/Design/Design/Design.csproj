@@ -47,7 +47,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\DesignMethod\DesignMethod.csproj">
       <Project>{9c07ddc2-c55a-44fb-bde3-2eb2944d3bca}</Project>
-      <Name>DesignMethod %28设计模式\我整理的\DesignMethod%29</Name>
+      <Name>DesignMethod</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

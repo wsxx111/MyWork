@@ -1,0 +1,6 @@
+C:\Users\WANG\Desktop\TestDemo\ModelDemo\bin\Debug\ModelDemo.exe.config
+C:\Users\WANG\Desktop\TestDemo\ModelDemo\bin\Debug\ModelDemo.exe
+C:\Users\WANG\Desktop\TestDemo\ModelDemo\bin\Debug\ModelDemo.pdb
+C:\Users\WANG\Desktop\TestDemo\ModelDemo\obj\Debug\ModelDemo.csprojResolveAssemblyReference.cache
+C:\Users\WANG\Desktop\TestDemo\ModelDemo\obj\Debug\ModelDemo.exe
+C:\Users\WANG\Desktop\TestDemo\ModelDemo\obj\Debug\ModelDemo.pdb

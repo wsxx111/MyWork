@@ -1,0 +1,5 @@
+C:\Users\89313\Desktop\StateDemo\StateDemo\obj\Debug\StateDemo.csprojResolveAssemblyReference.cache
+C:\Users\89313\Desktop\StateDemo\StateDemo\bin\Debug\StateDemo.exe
+C:\Users\89313\Desktop\StateDemo\StateDemo\bin\Debug\StateDemo.pdb
+C:\Users\89313\Desktop\StateDemo\StateDemo\obj\Debug\StateDemo.exe
+C:\Users\89313\Desktop\StateDemo\StateDemo\obj\Debug\StateDemo.pdb

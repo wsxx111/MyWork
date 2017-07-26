@@ -15,7 +15,12 @@ namespace WK.Code
         /// <param name="key"></param>
         public static string GetValue(string key)
         {
-            return ConfigurationManager.AppSettings[key].ToString().Trim();
+            var value = ConfigurationManager.AppSettings[key];
+            if (value != null)
+            {
+                return ConfigurationManager.AppSettings[key].ToString().Trim();
+            }
+            return "";
         }
 
         /// <summary>

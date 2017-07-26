@@ -16,17 +16,17 @@ namespace WK.Code.Excel
         {
             HSSFCellStyle cellstyle = (HSSFCellStyle)book.CreateCellStyle();
             //居中
-            cellstyle.VerticalAlignment = VerticalAlignment.CENTER;
-            cellstyle.Alignment = HorizontalAlignment.CENTER;
+            cellstyle.VerticalAlignment = VerticalAlignment.Center;
+            cellstyle.Alignment = HorizontalAlignment.Center;
             //边框
-            cellstyle.BorderBottom = BorderStyle.THIN;
-            cellstyle.BorderLeft = BorderStyle.THIN;
-            cellstyle.BorderRight = BorderStyle.THIN;
-            cellstyle.BorderTop = BorderStyle.THIN;
+            cellstyle.BorderBottom = BorderStyle.Thin;
+            cellstyle.BorderLeft = BorderStyle.Thin;
+            cellstyle.BorderRight = BorderStyle.Thin;
+            cellstyle.BorderTop = BorderStyle.Thin;
             //背景颜色为绿色
-            cellstyle.FillPattern = FillPatternType.SQUARES;
-            cellstyle.FillPattern = FillPatternType.SOLID_FOREGROUND;
-            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.YELLOW.index;
+            cellstyle.FillPattern = FillPattern.Squares;
+            cellstyle.FillPattern = FillPattern.SolidForeground;
+            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.Yellow.Index;
             //字体
             HSSFFont font = (NPOI.HSSF.UserModel.HSSFFont)book.CreateFont();
             font.FontName = "宋体";
@@ -40,17 +40,17 @@ namespace WK.Code.Excel
         {
             HSSFCellStyle cellstyle = (HSSFCellStyle)book.CreateCellStyle();
             //居中
-            cellstyle.VerticalAlignment = VerticalAlignment.CENTER;
-            cellstyle.Alignment = HorizontalAlignment.CENTER;
+            cellstyle.VerticalAlignment = VerticalAlignment.Center;
+            cellstyle.Alignment = HorizontalAlignment.Center;
             //边框
-            cellstyle.BorderBottom = BorderStyle.THIN;
-            cellstyle.BorderLeft = BorderStyle.THIN;
-            cellstyle.BorderRight = BorderStyle.THIN;
-            cellstyle.BorderTop = BorderStyle.THIN;
+            cellstyle.BorderBottom = BorderStyle.Thin;
+            cellstyle.BorderLeft = BorderStyle.Thin;
+            cellstyle.BorderRight = BorderStyle.Thin;
+            cellstyle.BorderTop = BorderStyle.Thin;
             //背景颜色为绿色
-            //cellstyle.FillPattern = FillPatternType.SQUARES;
-            //cellstyle.FillPattern = FillPatternType.SOLID_FOREGROUND;
-            //cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.WHITE.index;
+            cellstyle.FillPattern =  FillPattern.Squares;
+            cellstyle.FillPattern = FillPattern.SolidForeground;
+            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.White.Index;
             //字体
             HSSFFont font = (NPOI.HSSF.UserModel.HSSFFont)book.CreateFont();
             font.FontName = "宋体";
@@ -65,22 +65,22 @@ namespace WK.Code.Excel
         {
             HSSFCellStyle cellstyle = (HSSFCellStyle)book.CreateCellStyle();
             //居中
-            cellstyle.VerticalAlignment = VerticalAlignment.CENTER;
-            cellstyle.Alignment = HorizontalAlignment.CENTER;
+            cellstyle.VerticalAlignment = VerticalAlignment.Center;
+            cellstyle.Alignment = HorizontalAlignment.Center;
             //边框
-            cellstyle.BorderBottom = BorderStyle.THIN;
-            cellstyle.BorderLeft = BorderStyle.THIN;
-            cellstyle.BorderRight = BorderStyle.THIN;
-            cellstyle.BorderTop = BorderStyle.THIN;
+            cellstyle.BorderBottom = BorderStyle.Thin;
+            cellstyle.BorderLeft = BorderStyle.Thin;
+            cellstyle.BorderRight = BorderStyle.Thin;
+            cellstyle.BorderTop = BorderStyle.Thin;
             //背景颜色为绿色
-            //cellstyle.FillPattern = FillPatternType.SQUARES;
-            //cellstyle.FillPattern = FillPatternType.SOLID_FOREGROUND;
-            //cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.WHITE.index;
+            cellstyle.FillPattern = FillPattern.Squares;
+            cellstyle.FillPattern = FillPattern.SolidForeground;
+            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.White.Index;
             //字体
             HSSFFont font = (NPOI.HSSF.UserModel.HSSFFont)book.CreateFont();
             font.FontName = "宋体";
             font.FontHeightInPoints = 9;
-            font.Color = (short)FontColor.RED;
+            font.Color = (short)FontColor.Red;
             cellstyle.SetFont(font);
             //
 
@@ -92,17 +92,17 @@ namespace WK.Code.Excel
         {
             HSSFCellStyle cellstyle = (HSSFCellStyle)book.CreateCellStyle();
             //居中
-            //cellstyle.VerticalAlignment = VerticalAlignment.CENTER;
-            //cellstyle.Alignment = HorizontalAlignment.CENTER;
+            cellstyle.VerticalAlignment = VerticalAlignment.Center;
+            cellstyle.Alignment = HorizontalAlignment.Center;
             //边框
-            cellstyle.BorderBottom = BorderStyle.THIN;
-            cellstyle.BorderLeft = BorderStyle.THIN;
-            cellstyle.BorderRight = BorderStyle.THIN;
-            cellstyle.BorderTop = BorderStyle.THIN;
+            cellstyle.BorderBottom = BorderStyle.Thin;
+            cellstyle.BorderLeft = BorderStyle.Thin;
+            cellstyle.BorderRight = BorderStyle.Thin;
+            cellstyle.BorderTop = BorderStyle.Thin;
             //背景颜色
-            cellstyle.FillPattern = FillPatternType.SQUARES;
-            cellstyle.FillPattern = FillPatternType.SOLID_FOREGROUND;
-            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.WHITE.index;
+            cellstyle.FillPattern = FillPattern.Squares;
+            cellstyle.FillPattern = FillPattern.SolidForeground;
+            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.White.Index;
             //字体
             HSSFFont font = (NPOI.HSSF.UserModel.HSSFFont)book.CreateFont();
             font.FontName = "宋体";
@@ -116,17 +116,17 @@ namespace WK.Code.Excel
         {
             HSSFCellStyle cellstyle = (HSSFCellStyle)book.CreateCellStyle();
             //居中
-            //cellstyle.VerticalAlignment = VerticalAlignment.CENTER;
-            //cellstyle.Alignment = HorizontalAlignment.CENTER;
+            cellstyle.VerticalAlignment = VerticalAlignment.Center;
+            cellstyle.Alignment = HorizontalAlignment.Center;
             //边框
-            cellstyle.BorderBottom = BorderStyle.THIN;
-            cellstyle.BorderLeft = BorderStyle.THIN;
-            cellstyle.BorderRight = BorderStyle.THIN;
-            cellstyle.BorderTop = BorderStyle.THIN;
+            cellstyle.BorderBottom = BorderStyle.Thin;
+            cellstyle.BorderLeft = BorderStyle.Thin;
+            cellstyle.BorderRight = BorderStyle.Thin;
+            cellstyle.BorderTop = BorderStyle.Thin;
             //背景颜色
-            cellstyle.FillPattern = FillPatternType.SQUARES;
-            cellstyle.FillPattern = FillPatternType.SOLID_FOREGROUND;
-            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.WHITE.index;
+            cellstyle.FillPattern = FillPattern.Squares;
+            cellstyle.FillPattern = FillPattern.SolidForeground;
+            cellstyle.FillForegroundColor = NPOI.HSSF.Util.HSSFColor.White.Index;
             //字体
             HSSFFont font = (NPOI.HSSF.UserModel.HSSFFont)book.CreateFont();
             font.FontName = "宋体";
@@ -147,7 +147,7 @@ namespace WK.Code.Excel
             CellRangeAddress cellRangeAddress = new CellRangeAddress(rowstart, rowend, colstart, colend);
             sheet.AddMergedRegion(cellRangeAddress);
             //合并后的单元格添加边框
-            ((HSSFSheet)sheet).SetEnclosedBorderOfRegion(cellRangeAddress, BorderStyle.THIN, NPOI.HSSF.Util.HSSFColor.BLACK.index);
+            ((HSSFSheet)sheet).SetEnclosedBorderOfRegion(cellRangeAddress, BorderStyle.Thin, NPOI.HSSF.Util.HSSFColor.Black.Index);
 
         }
         /// 合并单元格
@@ -162,7 +162,7 @@ namespace WK.Code.Excel
                 CellRangeAddress cellRangeAddress = new CellRangeAddress(indexs[i][0], indexs[i][1], indexs[i][2], indexs[i][3]);
                 sheet.AddMergedRegion(cellRangeAddress);
                 //合并后的单元格添加边框
-                ((HSSFSheet)sheet).SetEnclosedBorderOfRegion(cellRangeAddress, BorderStyle.THIN, NPOI.HSSF.Util.HSSFColor.BLACK.index);
+                ((HSSFSheet)sheet).SetEnclosedBorderOfRegion(cellRangeAddress, BorderStyle.Thin, NPOI.HSSF.Util.HSSFColor.Black.Index);
             }
 
         }

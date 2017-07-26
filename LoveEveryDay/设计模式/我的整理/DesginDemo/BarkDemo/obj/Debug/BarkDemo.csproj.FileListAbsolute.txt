@@ -1,0 +1,9 @@
+C:\Users\WANG\Desktop\TestDemo\BarkDemo\bin\Debug\BarkDemo.exe.config
+C:\Users\WANG\Desktop\TestDemo\BarkDemo\bin\Debug\BarkDemo.exe
+C:\Users\WANG\Desktop\TestDemo\BarkDemo\bin\Debug\BarkDemo.pdb
+C:\Users\WANG\Desktop\TestDemo\BarkDemo\obj\Debug\BarkDemo.csprojResolveAssemblyReference.cache
+C:\Users\WANG\Desktop\TestDemo\BarkDemo\obj\Debug\BarkDemo.exe
+C:\Users\WANG\Desktop\TestDemo\BarkDemo\obj\Debug\BarkDemo.pdb
+C:\Users\WANG\Desktop\DesginDemo\BarkDemo\bin\Debug\BarkDemo.exe.config
+C:\Users\WANG\Desktop\DesginDemo\BarkDemo\obj\Debug\BarkDemo.exe
+C:\Users\WANG\Desktop\DesginDemo\BarkDemo\obj\Debug\BarkDemo.pdb

@@ -15,3 +15,9 @@ C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Debug\Fram
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Debug\FrameworkOfGoodMan.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Debug\FrameworkOfGoodMan.Tools.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Debug\FrameworkOfGoodMan.Tools.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Debug\FrameworkOfGoodMan.Tools.XML
+D:\桌面内容\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Debug\FrameworkOfGoodMan.Tools.dll
+D:\桌面内容\Work\LoveEveryDay\类库\FrameworkOfGoodMan\bin\Debug\FrameworkOfGoodMan.Tools.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Debug\FrameworkOfGoodMan.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Debug\FrameworkOfGoodMan.Tools.dll
+D:\桌面内容\Work\LoveEveryDay\类库\FrameworkOfGoodMan\obj\Debug\FrameworkOfGoodMan.Tools.pdb

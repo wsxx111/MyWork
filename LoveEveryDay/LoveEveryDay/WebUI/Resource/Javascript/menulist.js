@@ -263,10 +263,14 @@ var menuList = [{
             "subMenuList":
                [
                    {
-                       "title": "排序算法",
+                       "title": "二叉树算法",
                        "iconClass": "",
-                       "url": "WebUI/Content/总结/算法/排序算法.html",
-                   }]
+                       "url": "WebUI/Content/总结/算法/二叉树算法.html",
+                   },{
+                       "title": "排序算法",
+            "iconClass": "",
+            "url": "WebUI/Content/总结/算法/排序算法.html",
+        }]
         }]
 },
 {

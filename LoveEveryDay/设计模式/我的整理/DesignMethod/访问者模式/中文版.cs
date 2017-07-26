@@ -41,6 +41,7 @@ namespace DesignMethod.访问者模式
             foreach (客户 p in room.办手续的各种客户())
             {
                 p.办手续(new 柜台操作员());
+                p.需求();
             }           
             Console.Read();
         }

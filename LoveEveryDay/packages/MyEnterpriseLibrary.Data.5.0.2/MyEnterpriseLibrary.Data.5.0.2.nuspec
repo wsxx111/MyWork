@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MyEnterpriseLibrary.Data</id>
+    <version>5.0.2</version>
+    <authors>celt</authors>
+    <owners>celt</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>企业库5.0数据访问</description>
+    <summary>企业库5.0数据访问</summary>
+  </metadata>
+</package>

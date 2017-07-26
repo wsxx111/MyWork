@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MyEnterpriseLibrary.Unity</id>
+    <version>5.0.1</version>
+    <authors>celt</authors>
+    <owners>celt</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>企业库5.0 Unity</description>
+    <summary>企业库5.0 Unity</summary>
+  </metadata>
+</package>

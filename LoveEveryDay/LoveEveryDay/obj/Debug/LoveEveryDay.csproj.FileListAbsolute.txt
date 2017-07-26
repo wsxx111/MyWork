@@ -3,3 +3,9 @@ C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\bin\LoveEveryDay.pdb
 C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\obj\Debug\LoveEveryDay.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\obj\Debug\LoveEveryDay.pdb
 C:\Users\user\Desktop\Work\LoveEveryDay\LoveEveryDay\obj\Debug\LoveEveryDay.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\LoveEveryDay\bin\LoveEveryDay.dll.config
+D:\桌面内容\Work\LoveEveryDay\LoveEveryDay\bin\LoveEveryDay.dll
+D:\桌面内容\Work\LoveEveryDay\LoveEveryDay\bin\LoveEveryDay.pdb
+D:\桌面内容\Work\LoveEveryDay\LoveEveryDay\obj\Debug\LoveEveryDay.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\LoveEveryDay\obj\Debug\LoveEveryDay.dll
+D:\桌面内容\Work\LoveEveryDay\LoveEveryDay\obj\Debug\LoveEveryDay.pdb

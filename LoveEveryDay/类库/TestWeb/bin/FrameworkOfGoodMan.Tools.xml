@@ -784,6 +784,57 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:FrameworkOfGoodMan.Tools.Helper.SortHelper.BuildMaxHeap(System.Int32[])">
+            <summary>
+             创建大顶推（根节点大于左右子节点）
+            </summary>
+            <param name="array">待排数组</param>
+        </member>
+        <member name="M:FrameworkOfGoodMan.Tools.Helper.SortHelper.MaxHeapify(System.Int32[],System.Int32,System.Int32)">
+            <summary>
+             大顶推的调整过程
+            </summary>
+            <param name="array">待调整的数组</param>
+            <param name="currentIndex">待调整元素在数组中的位置（即：根节点）</param>
+            <param name="heapSize">堆中所有元素的个数</param>
+        </member>
+        <member name="M:FrameworkOfGoodMan.Tools.Helper.SortHelper.Swap(System.Int32@,System.Int32@)">
+            <summary>
+             交换函数
+            </summary>
+            <param name="a">元素a</param>
+            <param name="b">元素b</param>
+        </member>
+        <member name="M:FrameworkOfGoodMan.Tools.Helper.SortHelper.CountingSort(System.Int32[],System.Int32)">
+            <summary> 
+            counting sort 
+            </summary> 
+            <param name="arrayA">input array</param> 
+            <param name="arrange">the value arrange in input array</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:FrameworkOfGoodMan.Tools.Helper.SortHelper.HeapSort(System.Int32[])">
+            <summary> 
+            小根堆排序 
+            </summary> 
+            <param name="dblArray"></param> 
+            <param name="StartIndex"></param> 
+            <returns></returns> 
+        </member>
+        <member name="M:FrameworkOfGoodMan.Tools.Helper.SortHelper.NodeSort(System.Int32[]@,System.Int32)">
+            <summary> 
+            节点排序 
+            </summary> 
+            <param name="dblArray"></param> 
+            <param name="StartIndex"></param> 
+        </member>
+        <member name="M:FrameworkOfGoodMan.Tools.Helper.SortHelper.ExchageValue(System.Int32@,System.Int32@)">
+            <summary> 
+            交换值 
+            </summary> 
+            <param name="A"></param> 
+            <param name="B"></param> 
+        </member>
         <member name="T:FrameworkOfGoodMan.Tools.Helper.StringHelper">
             <summary>
             String操作

@@ -1,0 +1,6 @@
+C:\Users\WANG\Desktop\TestDemo\DieDemo\bin\Debug\DieDemo.exe.config
+C:\Users\WANG\Desktop\TestDemo\DieDemo\obj\Debug\DieDemo.csprojResolveAssemblyReference.cache
+C:\Users\WANG\Desktop\TestDemo\DieDemo\bin\Debug\DieDemo.exe
+C:\Users\WANG\Desktop\TestDemo\DieDemo\bin\Debug\DieDemo.pdb
+C:\Users\WANG\Desktop\TestDemo\DieDemo\obj\Debug\DieDemo.exe
+C:\Users\WANG\Desktop\TestDemo\DieDemo\obj\Debug\DieDemo.pdb

@@ -13,3 +13,8 @@ C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\obj\Debug\Desi
 C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\obj\Debug\DesignMethod.pdb
 C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\bin\Debug\DesignMethod.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\DesignMethod\bin\Debug\DesignMethod.pdb
+D:\桌面内容\Work\LoveEveryDay\设计模式\DesignMethod\bin\Debug\DesignMethod.dll
+D:\桌面内容\Work\LoveEveryDay\设计模式\DesignMethod\bin\Debug\DesignMethod.pdb
+D:\桌面内容\Work\LoveEveryDay\设计模式\DesignMethod\obj\Debug\DesignMethod.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\设计模式\DesignMethod\obj\Debug\DesignMethod.dll
+D:\桌面内容\Work\LoveEveryDay\设计模式\DesignMethod\obj\Debug\DesignMethod.pdb

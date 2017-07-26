@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
 [assembly: AssemblyProduct("WK.Web")]
-[assembly: AssemblyCopyright("版权所有(C) Microsoft 2016")]
+[assembly: AssemblyCopyright("版权所有(C) Microsoft 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("fe50b29f-68c4-4ee6-8a15-300ef96810eb")]
+[assembly: Guid("6116d127-202e-4d8e-8cf7-852c633166fb")]
 
 // 程序集的版本信息由下列四个值组成:
 //

@@ -115,6 +115,19 @@ namespace WK.Code
             return string.Empty;
         }
         /// <summary>
+        /// 读cookie值
+        /// </summary>
+        /// <param name="strName">名称</param>
+        /// <returns>cookie值</returns>
+        public static string GetCookie(string strName)
+        {
+            if (HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies[strName] != null)
+            {
+                return HttpContext.Current.Request.Cookies[strName].Value.ToString();
+            }
+            return "";
+        }
+        /// <summary>
         /// 设置指定名称的Cookie特定键的值
         /// </summary>
         /// <param name="name">Cookie名称</param>
@@ -400,11 +413,18 @@ namespace WK.Code
         /// </summary>
         private static string GetLanIp()
         {
-            foreach (var hostAddress in Dns.GetHostAddresses(Dns.GetHostName()))
+            try
             {
-                if (hostAddress.AddressFamily == AddressFamily.InterNetwork)
-                    return hostAddress.ToString();
+                foreach (var hostAddress in Dns.GetHostAddresses(Dns.GetHostName()))
+                {
+                    if (hostAddress.AddressFamily == AddressFamily.InterNetwork)
+                        return hostAddress.ToString();
+                }
             }
+            catch (Exception)
+            {
+                return string.Empty;
+            }          
             return string.Empty;
         }
 

@@ -17,3 +17,10 @@ C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Re
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Release\WK.Data.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Release\WK.Data.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\obj\Release\WK.Data.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Release\WK.Data.dll.config
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Release\EntityFramework.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Release\EntityFramework.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Release\NPOI.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Data\bin\Release\NPOI.xml

@@ -8,3 +8,8 @@ C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\b
 C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.pdb
+D:\桌面内容\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\bin\Debug\DesignMethod.dll
+D:\桌面内容\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\bin\Debug\DesignMethod.pdb
+D:\桌面内容\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.dll
+D:\桌面内容\Work\LoveEveryDay\设计模式\我的整理\DesignMethod\obj\Debug\DesignMethod.pdb

@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.Test.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.Test.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\测试\Dapper.Test\obj\Debug\Dapper.Test.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\测试\Dapper.Test\obj\Debug\Dapper.Test.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\测试\Dapper.Test\obj\Debug\Dapper.Test.pdb
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.Test.dll.config
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.Test.dll
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.Test.pdb
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.dll
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\bin\Dapper.xml
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\obj\Debug\Dapper.Test.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\obj\Debug\Dapper.Test.dll
+D:\桌面内容\Work\LoveEveryDay\测试\Dapper.Test\obj\Debug\Dapper.Test.pdb

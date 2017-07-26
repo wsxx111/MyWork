@@ -4,3 +4,15 @@ C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\bin\Debug\MongoDB.pdb
 C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\obj\Debug\MongoDB.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\obj\Debug\MongoDB.dll
 C:\Users\user\Desktop\mongodb-csharp-master\source\MongoDB\obj\Debug\MongoDB.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\MongoDB\bin\Debug\MongoDB.xml
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\MongoDB\bin\Debug\MongoDB.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\MongoDB\bin\Debug\MongoDB.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\MongoDB\obj\Debug\MongoDB.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\MongoDB\obj\Debug\MongoDB.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\类库\MongoDB\obj\Debug\MongoDB.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\MongoDB\bin\Debug\MongoDB.xml
+D:\桌面内容\Work\LoveEveryDay\类库\MongoDB\bin\Debug\MongoDB.dll
+D:\桌面内容\Work\LoveEveryDay\类库\MongoDB\bin\Debug\MongoDB.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\MongoDB\obj\Debug\MongoDB.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\类库\MongoDB\obj\Debug\MongoDB.dll
+D:\桌面内容\Work\LoveEveryDay\类库\MongoDB\obj\Debug\MongoDB.pdb

@@ -1,0 +1,6 @@
+C:\Users\WANG\Desktop\TestDemo\ComandDemo\bin\Debug\ComandDemo.exe.config
+C:\Users\WANG\Desktop\TestDemo\ComandDemo\bin\Debug\ComandDemo.exe
+C:\Users\WANG\Desktop\TestDemo\ComandDemo\bin\Debug\ComandDemo.pdb
+C:\Users\WANG\Desktop\TestDemo\ComandDemo\obj\Debug\ComandDemo.csprojResolveAssemblyReference.cache
+C:\Users\WANG\Desktop\TestDemo\ComandDemo\obj\Debug\ComandDemo.exe
+C:\Users\WANG\Desktop\TestDemo\ComandDemo\obj\Debug\ComandDemo.pdb

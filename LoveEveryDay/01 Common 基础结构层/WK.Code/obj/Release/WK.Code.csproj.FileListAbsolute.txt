@@ -5,7 +5,6 @@ C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Re
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\log4net.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\Memcached.ClientLibrary.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\Newtonsoft.Json.dll
-C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\NPOI_New.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\ServiceStack.Common.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\ServiceStack.Interfaces.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\ServiceStack.Redis.dll
@@ -17,3 +16,5 @@ C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Re
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\obj\Release\WK.Code.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\obj\Release\WK.Code.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\obj\Release\WK.Code.pdb
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\NPOI.dll
+C:\Users\user\Desktop\Work\LoveEveryDay\01 Common 基础结构层\WK.Code\bin\Release\NPOI.xml

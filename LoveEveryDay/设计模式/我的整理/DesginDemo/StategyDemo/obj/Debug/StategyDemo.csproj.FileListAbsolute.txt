@@ -1,0 +1,4 @@
+C:\Users\89313\Desktop\StateDemo\StategyDemo\bin\Debug\StategyDemo.exe
+C:\Users\89313\Desktop\StateDemo\StategyDemo\bin\Debug\StategyDemo.pdb
+C:\Users\89313\Desktop\StateDemo\StategyDemo\obj\Debug\StategyDemo.exe
+C:\Users\89313\Desktop\StateDemo\StategyDemo\obj\Debug\StategyDemo.pdb

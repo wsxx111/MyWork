@@ -26,3 +26,14 @@ C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\bin\FrameworkOfGoodMan.To
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\obj\Debug\TestWebForm.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\obj\Debug\TestWeb.dll
 C:\Users\user\Desktop\Work\LoveEveryDay\类库\TestWeb\obj\Debug\TestWeb.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\TestWeb.dll.config
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\TestWeb.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\TestWeb.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\FrameworkOfGoodMan.Tools.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\Memcached.ClientLibrary.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\ICSharpCode.SharpZipLib.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\FrameworkOfGoodMan.Tools.pdb
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\bin\FrameworkOfGoodMan.Tools.xml
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\obj\Debug\TestWebForm.csprojResolveAssemblyReference.cache
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\obj\Debug\TestWeb.dll
+D:\桌面内容\Work\LoveEveryDay\类库\TestWeb\obj\Debug\TestWeb.pdb

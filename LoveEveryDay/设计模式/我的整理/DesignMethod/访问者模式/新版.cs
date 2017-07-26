@@ -62,11 +62,11 @@ namespace DesignMethod.访问者模式
     {
         public override void GetManConclusion(Man man)
         {
-            Console.WriteLine("男人成功，纯属没用");
+            Console.WriteLine("男人失败，纯属没用");
         }
         public override void GetWomanConclusion(Woman woman)
         {
-            Console.WriteLine("女人成功，有情可原");
+            Console.WriteLine("女人失败，有情可原");
         }
 
         public override void GetGoldConclusion(GoldPerson gold)
@@ -95,7 +95,7 @@ namespace DesignMethod.访问者模式
         public void Display(Action visitor)
         {
             foreach (var e in elements)
-            {
+            {              
                 e.Accept(visitor);
             }
         }

@@ -27,7 +27,7 @@ namespace WK.Code.Excel
         {
             FileStream fs = new FileStream(this._filePath, FileMode.OpenOrCreate, FileAccess.ReadWrite);
             IWorkbook workBook = new HSSFWorkbook();
-            this._sheetName =string.IsNullOrEmpty(this._sheetName) ? "sheet1" : this._sheetName;
+            this._sheetName = string.IsNullOrEmpty(this._sheetName) ? "sheet1" : this._sheetName;
             ISheet sheet = workBook.CreateSheet(this._sheetName);
 
             //处理表格标题
@@ -41,8 +41,8 @@ namespace WK.Code.Excel
             font.FontName = "微软雅黑";
             font.FontHeightInPoints = 17;
             cellStyle.SetFont(font);
-            cellStyle.VerticalAlignment = VerticalAlignment.CENTER;
-            cellStyle.Alignment = HorizontalAlignment.CENTER;
+            cellStyle.VerticalAlignment = VerticalAlignment.Center;
+            cellStyle.Alignment = HorizontalAlignment.Center;
             row.Cells[0].CellStyle = cellStyle;
 
             //处理表格列头
@@ -371,6 +371,6 @@ namespace WK.Code.Excel
         {
             sheet.CreateFreezePane(cloIndex, rowIndex);
         }
-      
+
     }
 }
